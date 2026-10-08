@@ -1698,6 +1698,8 @@ h1,h2,h3,
 .gw-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .gw-close{padding-top:8px}
 .tts-hero-img{object-fit:contain}
+/* Ảnh chai trong popup mua hàng: hiện đủ chai, không cắt */
+.tts-popup-img{width:84px;height:104px;object-fit:contain;background:#fff;border:1px solid var(--tt-bg-border)}
 </style>
 </head>
 <body>
@@ -2816,7 +2818,7 @@ TikTokShopBuyPopup.config({
 function onBuyClick(preIdx) {
   TikTokShopBuyPopup.open({
     name:      CONFIG.productName,
-    image:     'assets/product-front-sq.webp',
+    image:     'assets/gw-chai-500ml.webp',
     basePrice: 199000,
     sku:       CONFIG.sku,
     options: [
