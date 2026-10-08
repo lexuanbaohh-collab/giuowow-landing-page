@@ -246,7 +246,7 @@ a { color: inherit; text-decoration: none; }
 /* Combined Deal Banner (Price + Promo) */
 .tts-deal-banner {
   display: flex;
-  margin: -24px var(--tt-gap-lg) 0;
+  margin: 12px var(--tt-gap-lg) 0;
   border-radius: var(--tt-r-md);
   overflow: hidden;
   box-shadow: 0 3px 10px rgba(254,44,85,0.2);
@@ -1700,6 +1700,11 @@ h1,h2,h3,
 .tts-hero-img{object-fit:contain}
 /* Ảnh chai trong popup mua hàng: hiện đủ chai, không cắt */
 .tts-popup-img{width:84px;height:104px;object-fit:contain;background:#fff;border:1px solid var(--tt-bg-border)}
+/* 3 nhãn thẳng một hàng, cao đều nhau */
+.a.tts-info-row,a.tts-info-row{color:inherit;text-decoration:none;cursor:pointer}
+.tts-feature-chips{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tts-feat-chip{flex-direction:column;justify-content:center;text-align:center;gap:4px;padding:8px 6px;font-size:13px;line-height:1.25;white-space:normal;min-height:58px}
+.tts-feat-chip svg{width:16px;height:16px}
 </style>
 </head>
 <body>
@@ -1809,7 +1814,7 @@ h1,h2,h3,
       </span>
       <span class="tts-feat-chip">
         <svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
-        Tư vấn miễn&nbsp;phí
+        Tư vấn&nbsp;24/7
       </span>
     </div>
 
@@ -1841,11 +1846,11 @@ h1,h2,h3,
         <div class="tts-info-label">Dùng&nbsp;cho</div>
         <div class="tts-info-value">Máy giặt cửa trên · Máy giặt cửa&nbsp;trước</div>
       </div>
-      <div class="tts-info-row">
+      <a class="tts-info-row" href="chinh-sach-doi-tra.html" aria-label="Xem chính sách đổi trả">
         <div class="tts-info-label">Đổi trả</div>
         <div class="tts-info-value">7 ngày · Hỗ trợ nếu lỗi hoặc giao&nbsp;sai</div>
         <svg class="tts-info-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6V6z"/></svg>
-      </div>
+      </a>
       <div class="tts-info-row">
         <div class="tts-info-label">Lưu ý</div>
         <div class="tts-info-value">Để xa trẻ em · Tránh mắt và da · Không trộn hóa&nbsp;chất</div>
