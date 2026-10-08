@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/product-infographic.webp">
 <link rel="preload" as="image" href="assets/product-infographic.webp">
-<link rel="icon" href="assets/brand-avatar.webp">
+<link rel="icon" href="assets/brand-avatar.svg">
 <style>
 /* ==========================================================================
    TikTok Shop — Design Tokens
@@ -1611,26 +1611,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ===== GiuoWow additions (same TikTok-pink design tokens) ===== */
-.gw-cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px;border-radius:var(--tt-r-lg);overflow:hidden;border:1px solid #FFE0E8;background:#fff}
-.gw-cmp th,.gw-cmp td{padding:10px 6px;text-align:center;border-bottom:1px solid #FFE0E8;vertical-align:middle;color:var(--tt-text-secondary)}
-.gw-cmp th:first-child,.gw-cmp td:first-child{text-align:left;font-weight:700;color:var(--tt-black);width:30%;padding-left:10px}
-.gw-cmp thead th{background:var(--cos-soft-pink);font-size:11.5px;font-weight:600}
-.gw-cmp thead th.us{background:var(--tt-grad-pink);color:#fff;font-weight:700}
-.gw-cmp td.us{background:#FFF7FA;font-weight:700;color:var(--tt-pink-dark)}
-.gw-cmp tr:last-child td{border-bottom:0}
-.gw-ba{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.gw-ba .cos-img-wrap{position:relative}
-.gw-ba-tag{position:absolute;left:8px;top:8px;background:rgba(22,24,35,.78);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px}
-.gw-ba-tag.after{background:var(--tt-pink)}
 .gw-cus{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.gw-pkgs{display:grid;gap:10px;margin-top:14px}
-.gw-pkg{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:14px 16px;background:#fff;border:1.5px solid #FFD0DB;border-radius:var(--tt-r-lg);cursor:pointer;font-family:inherit;text-align:left;box-shadow:var(--tt-shadow-sm)}
-.gw-pkg.hot{border-color:var(--tt-pink);background:#FFF7FA}
-.gw-pkg:active{transform:translateY(1px)}
-.gw-pkg-name{font-size:14.5px;font-weight:700;color:var(--tt-black);line-height:1.3}
-.gw-pkg-name small{display:block;font-size:11.5px;font-weight:500;color:var(--tt-text-muted);margin-top:2px}
-.gw-pkg-price{font-size:19px;font-weight:800;color:var(--tt-pink);white-space:nowrap}
-.gw-pkg-tag{position:absolute;top:-9px;right:12px;background:var(--tt-grad-pink);color:#fff;font-size:10.5px;font-weight:700;padding:2px 9px;border-radius:999px}
 </style>
 </head>
 <body>
@@ -1647,14 +1628,16 @@ a { color: inherit; text-decoration: none; }
   <section id="tongquan">
     <!-- Brand Strip -->
     <div class="tts-brand-strip">
-      <img class="tts-brand-logo" src="assets/brand-avatar.webp" alt="GiuoWow" width="40" height="40">
+      <img class="tts-brand-logo" src="assets/brand-avatar.svg" alt="GiuoWow">
       <div class="tts-brand-textgroup">
         <div class="tts-brand-row1">
           <span class="tts-brand-name">GiuoWow</span>
+          <svg class="tts-verified-icon" viewBox="0 0 24 24"><path fill="#FE2C55" d="M12 2l2.39 2.21 3.18-.42 1.31 2.94 2.94 1.31-.42 3.18L23.5 12l-2.1 2.39.42 3.18-2.94 1.31-1.31 2.94-3.18-.42L12 22l-2.39-2.1-3.18.42-1.31-2.94L2.18 16.07l.42-3.18L.5 12l2.1-2.39-.42-3.18 2.94-1.31L6.43 2.18l3.18.42L12 2z"/><path fill="#FFFFFF" d="M9.5 16.2L5.3 12l1.4-1.4 2.8 2.8 7.8-7.8 1.4 1.4z"/></svg>
+          <span class="tts-official-badge">Official Store</span>
         </div>
-        <span class="tts-brand-sub">Tẩy lồng máy giặt · Sản xuất tại Việt Nam</span>
+        <span class="tts-brand-sub">Sản xuất tại Việt Nam 🇻🇳</span>
       </div>
-      <a class="tts-follow-btn" href="tel:0868468832" data-call style="text-decoration:none">Gọi shop</a>
+      <button class="tts-follow-btn" type="button">+ Theo dõi</button>
     </div>
 
     <!-- Hero Gallery -->
@@ -1681,7 +1664,7 @@ a { color: inherit; text-decoration: none; }
             <span class="tts-deal-price">199.000<span class="tts-deal-price-sym">đ</span></span>
             <span class="tts-deal-pct">FREESHIP</span>
           </div>
-          <span style="font-size:11px;font-weight:600;color:rgba(255,255,255,.9)">Mua 2: 299.000đ · Mua 3: 399.000đ</span>
+          <span class="tts-deal-old" style="text-decoration:none">Mua 2: 299.000đ · Mua 3: 399.000đ</span>
         </div>
       </div>
       <div class="tts-deal-right">
@@ -1702,7 +1685,11 @@ a { color: inherit; text-decoration: none; }
 
     <!-- Meta Row -->
     <div class="tts-meta">
-      <span class="tts-meta-item">Thể tích thực 500ml</span>
+      <span class="tts-meta-rating">
+        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        Mới
+        <span class="tts-rating-count">(500ml)</span>
+      </span>
       <span class="tts-meta-divider">|</span>
       <span class="tts-meta-item">Công nghệ Nhật Bản</span>
       <span class="tts-meta-divider">|</span>
@@ -1764,11 +1751,12 @@ a { color: inherit; text-decoration: none; }
       </div>
       <div class="tts-info-row">
         <div class="tts-info-label">Đổi trả</div>
-        <div class="tts-info-value">7 ngày nếu lỗi hoặc giao sai</div>
+        <div class="tts-info-value">7 ngày · Hỗ trợ nếu lỗi hoặc giao sai</div>
+        <svg class="tts-info-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6V6z"/></svg>
       </div>
       <div class="tts-info-row">
-        <div class="tts-info-label">Thành phần</div>
-        <div class="tts-info-value">Acid hữu cơ · Hương liệu dịu nhẹ · Không ăn mòn lồng máy</div>
+        <div class="tts-info-label">Kiểm chứng</div>
+        <div class="tts-info-value">Kiểm nghiệm NSX · Không ăn mòn · Hương dịu nhẹ</div>
       </div>
     </div>
 
@@ -1814,8 +1802,12 @@ a { color: inherit; text-decoration: none; }
           <span class="cos-pain-num">4</span>
           <span class="cos-pain-text"><b>Dùng máy lâu ngày chưa từng vệ sinh</b> — ngại tháo lắp hoặc gọi thợ.</span>
         </div>
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">5</span>
+          <span class="cos-pain-text"><b>Gọi thợ vệ sinh tốn kém</b> — mất thời gian chờ đợi, hẹn lịch, lại phát sinh chi phí.</span>
+        </div>
       </div>
-      <div class="cos-pain-cta">↓ Chỉ cần đổ chất tẩy vào lồng và chạy máy ↓</div>
+      <div class="cos-pain-cta">↓ GiuoWow giải quyết cả 5 vấn đề<br>— đổ vào, chạy máy, không cần tháo máy ↓</div>
     </div>
 
     <!-- Ingredient Spotlight: công dụng -->
@@ -1913,6 +1905,7 @@ a { color: inherit; text-decoration: none; }
 
       <div class="cos-img-wrap cos-lic-image-wrap">
         <img class="cos-lic-image" src="assets/product-back-sq.webp" alt="Mặt sau chai GiuoWow: công dụng, thành phần, hướng dẫn sử dụng" loading="lazy">
+        <span class="cos-lic-corner-stamp">GIUOWOW</span>
       </div>
       <div class="cos-lic-zoom-hint">
         <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -2001,21 +1994,14 @@ a { color: inherit; text-decoration: none; }
       <div class="cos-ba-note">Thành phần: Nước, Acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu vừa đủ.</div>
     </div>
 
-    <!-- So sánh -->
+    <!-- Vì sao dùng chất tẩy chuyên dụng -->
     <div class="cos-texture">
       <h2 class="cos-tex-title">Vì Sao Nên Dùng Chất Tẩy Lồng Chuyên Dụng?</h2>
-      <p class="cos-tex-sub">So sánh nhanh giữa các cách xử lý lồng máy giặt.</p>
-      <table class="gw-cmp">
-        <thead><tr><th></th><th class="us">GiuoWow</th><th>Không vệ sinh</th><th>Mẹo tự pha</th></tr></thead>
-        <tbody>
-          <tr><td>Cặn bám lâu ngày</td><td class="us">Xử lý chuyên sâu</td><td>Tích tụ thêm</td><td>Tùy cách pha</td></tr>
-          <tr><td>Khử mùi</td><td class="us">Có</td><td>Mùi dễ quay lại</td><td>Hạn chế</td></tr>
-          <tr><td>Thao tác</td><td class="us">Đổ vào, chạy máy</td><td>-</td><td>Pha, đo, thử</td></tr>
-          <tr><td>Công thức</td><td class="us">Có nhãn, hướng dẫn</td><td>-</td><td>Khó kiểm soát</td></tr>
-          <tr><td>Tháo máy</td><td class="us">Không cần</td><td>-</td><td>Không cần</td></tr>
-        </tbody>
-      </table>
-      <div class="cos-tex-attrs" style="margin-top:14px">
+      <p class="cos-tex-sub">Không vệ sinh: cặn bẩn tích tụ, mùi dễ quay lại.<br>Dùng GiuoWow: đổ vào, chạy máy — không cần tháo máy.</p>
+      <div class="cos-img-wrap" style="margin-bottom:12px;aspect-ratio:1/1">
+        <img class="cos-tex-img" src="assets/demo-truoc-sau.svg" alt="Lồng máy giặt trước và sau khi tẩy bằng GiuoWow" loading="lazy">
+      </div>
+      <div class="cos-tex-attrs">
         <div class="cos-tex-attr">
           <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
           Không cần tháo máy
@@ -2035,69 +2021,63 @@ a { color: inherit; text-decoration: none; }
       </div>
     </div>
 
-    <!-- Ảnh demo -->
-    <div class="cos-texture" style="background:var(--cos-soft-pink)">
-      <h2 class="cos-tex-title">Hình Ảnh Thực Tế Khi Dùng</h2>
-      <p class="cos-tex-sub">Lồng máy giặt trước và sau khi tẩy.</p>
-      <div class="gw-ba">
-        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/demo-truoc.svg" alt="Lồng máy giặt trước khi tẩy" loading="lazy"><span class="gw-ba-tag">Trước</span></div>
-        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/demo-sau.svg" alt="Lồng máy giặt sau khi tẩy" loading="lazy"><span class="gw-ba-tag after">Sau</span></div>
-      </div>
-      <p style="font-size:11px;color:var(--tt-text-muted);margin-top:10px;text-align:center">Kết quả có thể khác nhau tùy tình trạng và thời gian sử dụng của máy giặt.</p>
-    </div>
-
     <!-- Cách dùng -->
     <div class="cos-routine">
-      <h2 class="cos-rt-title">Cách Dùng — Chỉ 3 Bước</h2>
-      <p class="cos-rt-sub">Làm theo hướng dẫn in trên nhãn sản phẩm.<br>Nên vệ sinh lồng khoảng 1 – 2 tháng/lần.</p>
+      <h2 class="cos-rt-title">Cách Dùng — Chỉ 5 Bước Đơn Giản</h2>
+      <p class="cos-rt-sub">Làm theo hướng dẫn in trên nhãn sản phẩm.<br>Nên vệ sinh lồng khoảng 1 - 2 tháng/lần.</p>
+      <div class="cos-img-wrap" style="margin-bottom:14px;aspect-ratio:1/1">
+        <img class="cos-rt-img" src="assets/huong-dan.svg" alt="Đổ GiuoWow vào lồng máy giặt" loading="lazy">
+      </div>
       <div class="cos-rt-steps">
-        <div class="cos-rt-step cos-rt-highlight">
+        <div class="cos-rt-step">
           <span class="cos-rt-num">1</span>
           <div class="cos-rt-content">
-            <div class="cos-rt-name">✦ Đổ chất tẩy vào lồng</div>
-            <div class="cos-rt-desc">Đổ ½ – 1 chai (250ml – 500ml) vào lồng máy giặt</div>
+            <div class="cos-rt-name">Để lồng giặt trống</div>
+            <div class="cos-rt-desc">Không cho quần áo vào lồng khi tẩy</div>
           </div>
         </div>
         <div class="cos-rt-step cos-rt-highlight">
           <span class="cos-rt-num">2</span>
           <div class="cos-rt-content">
-            <div class="cos-rt-name">✦ Chạy chế độ giặt thường</div>
-            <div class="cos-rt-desc">Chọn chế độ giặt thường với mức nước cao nhất</div>
+            <div class="cos-rt-name">✦ Đổ ½ - 1 chai GiuoWow</div>
+            <div class="cos-rt-desc">Tương đương 250ml - 500ml, đổ thẳng vào lồng máy giặt</div>
+          </div>
+        </div>
+        <div class="cos-rt-step cos-rt-highlight">
+          <span class="cos-rt-num">3</span>
+          <div class="cos-rt-content">
+            <div class="cos-rt-name">✦ Chọn chế độ giặt thường</div>
+            <div class="cos-rt-desc">Chọn mức nước cao nhất</div>
           </div>
         </div>
         <div class="cos-rt-step">
-          <span class="cos-rt-num">3</span>
+          <span class="cos-rt-num">4</span>
+          <div class="cos-rt-content">
+            <div class="cos-rt-name">Chạy hết chương trình giặt</div>
+            <div class="cos-rt-desc">Không cần tháo máy, không cần ngâm thủ công</div>
+          </div>
+        </div>
+        <div class="cos-rt-step">
+          <span class="cos-rt-num">5</span>
           <div class="cos-rt-content">
             <div class="cos-rt-name">Để lồng khô tự nhiên</div>
-            <div class="cos-rt-desc">Giặt xong, mở nắp/cửa máy để lồng khô tự nhiên</div>
+            <div class="cos-rt-desc">Mở nắp/cửa máy cho lồng khô thoáng, lồng sạch thơm mát</div>
           </div>
         </div>
       </div>
       <div class="cos-rt-pm-note">
-        <b>⚠️ Lưu ý:</b> Giặt lồng không có quần áo. Với máy cửa trước, hãy làm theo hướng dẫn vệ sinh lồng của hãng máy nếu có. Không trộn với thuốc tẩy hoặc hóa chất khác.
+        <b>⚠️ Lưu ý:</b> Với máy cửa trước, hãy làm theo hướng dẫn vệ sinh lồng của hãng máy nếu có. Không trộn với thuốc tẩy hoặc hóa chất khác.
       </div>
     </div>
 
-    <!-- Chọn gói -->
+    <!-- Inline CTA -->
     <div class="cos-cta-block">
-      <div class="cos-cta-headline">Chọn gói phù hợp — <b>Freeship toàn quốc</b></div>
-      <div class="cos-cta-sub">Thanh toán khi nhận hàng (COD) · Đổi trả 7 ngày</div>
-      <div class="gw-pkgs">
-        <button class="gw-pkg" type="button" onclick="onBuyClick(0)">
-          <span class="gw-pkg-name">1 chai<small>GiuoWow 500ml</small></span>
-          <span class="gw-pkg-price">199.000đ</span>
-        </button>
-        <button class="gw-pkg hot" type="button" onclick="onBuyClick(1)">
-          <span class="gw-pkg-tag">Tiết kiệm 99k</span>
-          <span class="gw-pkg-name">Combo 2 chai<small>~150.000đ / chai</small></span>
-          <span class="gw-pkg-price">299.000đ</span>
-        </button>
-        <button class="gw-pkg hot" type="button" onclick="onBuyClick(2)">
-          <span class="gw-pkg-tag">Tiết kiệm 198k</span>
-          <span class="gw-pkg-name">Combo 3 chai<small>~133.000đ / chai</small></span>
-          <span class="gw-pkg-price">399.000đ</span>
-        </button>
-      </div>
+      <div class="cos-cta-headline">Đổ vào, chạy máy — <b>lồng sạch, quần áo thơm mát</b></div>
+      <div class="cos-cta-sub">Từ 199.000đ · Combo 2 chai 299.000đ · Combo 3 chai 399.000đ · Freeship · COD</div>
+      <button class="cos-cta-btn" type="button" onclick="onBuyClick()">
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21 4.96 19.27 4H5.21l-.94-2H1z"/></svg>
+        Mua Ngay — từ 199.000đ
+      </button>
     </div>
 
     <!-- Quick facts -->
@@ -2133,7 +2113,6 @@ a { color: inherit; text-decoration: none; }
     <!-- Phản hồi khách hàng (ảnh thật sẽ thay sau) -->
     <div class="cos-review">
       <h2 class="cos-rev-title">Phản Hồi Từ Khách Hàng</h2>
-      <p class="cos-faq-sub" style="text-align:center;font-size:13px;color:var(--tt-text-secondary);margin-bottom:12px">Hình ảnh và tin nhắn phản hồi thực tế.</p>
       <div class="gw-cus">
         <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-1.svg" alt="Phản hồi khách hàng 1" loading="lazy"></div>
         <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-2.svg" alt="Phản hồi khách hàng 2" loading="lazy"></div>
@@ -2151,11 +2130,7 @@ a { color: inherit; text-decoration: none; }
         </details>
         <details class="cos-faq-item">
           <summary class="cos-faq-q">Một chai 500ml dùng được mấy lần?</summary>
-          <div class="cos-faq-a">Liều dùng trên nhãn là ½ – 1 chai (250ml – 500ml) mỗi lần, nên 1 chai dùng được khoảng 1 – 2 lần tùy dung tích lồng và mức độ bám bẩn. Mua combo 2 – 3 chai sẽ tiết kiệm hơn và đủ dùng cho nhiều lần vệ sinh.</div>
-        </details>
-        <details class="cos-faq-item">
-          <summary class="cos-faq-q">Bao lâu nên vệ sinh lồng máy giặt một lần?</summary>
-          <div class="cos-faq-a">Thông thường nên vệ sinh lồng giặt khoảng 1 – 2 tháng/lần. Máy dùng nhiều hoặc đặt nơi ẩm ướt có thể vệ sinh thường xuyên hơn.</div>
+          <div class="cos-faq-a">Liều dùng trên nhãn là ½ – 1 chai (250ml – 500ml) mỗi lần, nên 1 chai dùng được khoảng 1 – 2 lần tùy dung tích lồng và mức độ bám bẩn. Thông thường nên vệ sinh lồng khoảng 1 – 2 tháng/lần; mua combo 2 – 3 chai sẽ tiết kiệm hơn và đủ dùng cho nhiều lần.</div>
         </details>
         <details class="cos-faq-item">
           <summary class="cos-faq-q">Có làm hỏng máy giặt không?</summary>
@@ -2172,10 +2147,6 @@ a { color: inherit; text-decoration: none; }
         <details class="cos-faq-item">
           <summary class="cos-faq-q">Giao hàng thế nào? Thanh toán ra sao?</summary>
           <div class="cos-faq-a">Đơn hàng được xác nhận qua điện thoại, giao toàn quốc, miễn phí vận chuyển cho cả 3 gói (1, 2, 3 chai). Bạn thanh toán khi nhận hàng (COD). Đổi trả trong 7 ngày nếu sản phẩm lỗi hoặc giao sai.</div>
-        </details>
-        <details class="cos-faq-item">
-          <summary class="cos-faq-q">Tôi cần hỗ trợ thêm thì liên hệ ở đâu?</summary>
-          <div class="cos-faq-a">Gọi hotline <a href="tel:0868468832" style="color:var(--tt-pink);font-weight:700">0868 468 832</a> để được tư vấn miễn phí.</div>
         </details>
       </div>
     </div>
@@ -2216,9 +2187,8 @@ a { color: inherit; text-decoration: none; }
     <!-- Legal Footer -->
     <div class="cos-legal-footer">
       <div class="cos-legal-distrib">
-        <div class="cos-legal-label">Liên hệ</div>
-        <div class="cos-legal-company">Hotline 0868 468 832</div>
-        <div class="cos-legal-label" style="margin-top:4px">643 Phạm Văn Đồng, Nam Từ Liêm, Hà Nội</div>
+        <div class="cos-legal-label">Phân phối bởi</div>
+        <div class="cos-legal-company">GiuoWow · Hotline 0868 468 832</div>
       </div>
       <div class="cos-legal-links">
         <a class="cos-legal-link" href="chinh-sach-doi-tra.html">Chính sách đổi trả</a>
@@ -2227,7 +2197,7 @@ a { color: inherit; text-decoration: none; }
         <span class="cos-legal-sep">·</span>
         <a class="cos-legal-link" href="dieu-khoan.html">Điều khoản</a>
       </div>
-      <div class="cos-legal-copy">© 2026 GiuoWow · Đọc kỹ hướng dẫn sử dụng trước khi dùng</div>
+      <div class="cos-legal-copy">© 2026 GiuoWow · 643 Phạm Văn Đồng, Nam Từ Liêm, Hà Nội · Đọc kỹ hướng dẫn sử dụng trước khi dùng</div>
     </div>
 
   </section>
