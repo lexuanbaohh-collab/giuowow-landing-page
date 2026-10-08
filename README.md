@@ -15,7 +15,7 @@ Trang bán hàng tĩnh (một file `index.html`), deploy lên Vercel, dùng đ�
 | `webhookUrl` | URL Google Apps Script nhận đơn (bắt buộc để form hoạt động) |
 | `fbPixelId` | Facebook Pixel ID |
 | `ttPixelId` | TikTok Pixel ID |
-| `unitPrice` | Giá 1 chai (hiện 199000) |
+| `prices` | Giá theo gói, đã gồm freeship: 1 chai 199.000đ, 2 chai 299.000đ, 3 chai 399.000đ |
 
 ## Kết nối Google Sheets
 1. Tạo Google Sheet mới -> Tiện ích mở rộng -> Apps Script.
