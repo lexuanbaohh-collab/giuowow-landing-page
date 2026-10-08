@@ -3,7 +3,7 @@
  * Cách dùng: xem README.md (mục "Kết nối Google Sheets").
  */
 var SHEET_NAME = 'Orders';
-var HEADERS = ['Thời gian','Họ tên','SĐT','Địa chỉ','Gói','Số lượng','Đơn giá','Tổng tiền','Ghi chú','Thanh toán','Trang','utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','ttclid','event_id','fbp','fbc','Referrer','User agent'];
+var HEADERS = ['Thời gian','Mã đơn','Họ tên','SĐT','Địa chỉ','Ghi chú','Sản phẩm','Gói','Số lượng','Đơn giá','Tổng tiền','utm_source','utm_medium','utm_campaign','utm_content','utm_term','Trang','Referrer','Thời gian trên trang (s)','User agent'];
 
 function doPost(e) {
   try {
@@ -12,9 +12,10 @@ function doPost(e) {
     var sh = ss.getSheetByName(SHEET_NAME) || ss.insertSheet(SHEET_NAME);
     if (sh.getLastRow() === 0) sh.appendRow(HEADERS);
     sh.appendRow([
-      d.time, d.name, "'" + d.phone, d.address, d.package, d.qty, d.unitPrice, d.total, d.note, d.payment, d.page,
-      d.utm_source, d.utm_medium, d.utm_campaign, d.utm_content, d.utm_term, d.fbclid, d.ttclid,
-      d.event_id, d.fbp, d.fbc, d.referrer, d.user_agent
+      d.timestamp, d.order_code, d.fullname, "'" + d.phone, d.address, d.note, d.product_name, d.option_labels,
+      d.quantity, d.unit_price, d.total_value,
+      d.utm_source, d.utm_medium, d.utm_campaign, d.utm_content, d.utm_term,
+      d.page_url, d.referrer, d.session_duration, d.client_user_agent
     ]);
     return ContentService.createTextOutput(JSON.stringify({ok: true})).setMimeType(ContentService.MimeType.JSON);
   } catch (err) {

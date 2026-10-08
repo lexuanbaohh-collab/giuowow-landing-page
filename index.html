@@ -2,716 +2,2767 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GiuoWow - Tẩy lồng máy giặt 500ml | Sạch sâu, khử mùi, diệt khuẩn</title>
 <meta name="description" content="GiuoWow tẩy lồng máy giặt 500ml: loại bỏ cặn bẩn, cặn vôi, nấm mốc bám lâu ngày, khử mùi, diệt khuẩn. Dùng cho máy giặt cửa trên và cửa trước. Miễn phí vận chuyển, thanh toán khi nhận hàng.">
-<meta name="theme-color" content="#CF3445">
+<meta name="theme-color" content="#FE2C55">
 <meta property="og:title" content="GiuoWow - Tẩy lồng máy giặt 500ml">
 <meta property="og:description" content="Sạch sâu - Khử mùi - Diệt khuẩn. Miễn phí vận chuyển, thanh toán khi nhận hàng.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/product-infographic.webp">
 <link rel="preload" as="image" href="assets/product-infographic.webp">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23CF3445%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2738%27 font-family=%27Arial%27 font-weight=%27900%27 fill=%27%23fff%27 text-anchor=%27middle%27%3EG%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="assets/brand-avatar.webp">
 <style>
-:root{
-  --red:#CF3445;
-  --red-dark:#A12236;
-  --red-deep:#6F1827;
-  --gold:#F6C453;
-  --gold-dark:#D49A1F;
-  --cream:#FFF7F5;
-  --pink:#FCEAEB;
-  --ink:#2B1A1D;
-  --muted:#6F5A5E;
-  --line:#F3DADC;
-  --grad:linear-gradient(165deg,#E4616C 0%,#D0384A 48%,#A82A3F 100%);
-  --grad-soft:linear-gradient(180deg,#FFF7F5 0%,#FDEBEC 100%);
-  --white:#fff;
-  --ok:#17803D;
-  --radius:16px;
-  --shadow:0 6px 20px rgba(161,34,54,.13);
+/* ==========================================================================
+   TikTok Shop — Design Tokens
+   ========================================================================== */
+:root {
+  --tt-pink:           #FE2C55;
+  --tt-pink-dark:      #E5142E;
+  --tt-rose:           #FF3B5C;
+  --tt-pink-soft:      #FFB3C1;
+  --tt-pastel:         #FFE5EC;
+  --tt-peach:          #FFD8C2;
+  --tt-cream:          #FFF4E6;
+  --tt-mint:           #E8F8F0;
+  --tt-promo-yellow:   #FFB800;
+  --tt-promo-orange:   #FF7A00;
+  --tt-flash-red:      #E5142E;
+  --tt-bg:             #FFFFFF;
+  --tt-bg-soft:        #F8F8F8;
+  --tt-bg-border:      #F0F0F0;
+  --tt-bg-overlay:     rgba(22, 24, 35, 0.5);
+  --tt-black:          #161823;
+  --tt-text-primary:   #161823;
+  --tt-text-secondary: #555555;
+  --tt-text-muted:     #8A8B91;
+  --tt-text-disabled:  #BBBBBB;
+  --tt-strike-price:   #999999;
+  --tt-cyan:           #25F4EE;
+  --tt-star-active:    #FFB800;
+  --tt-star-inactive:  #DDDDDD;
+  --tt-grad-pink:      linear-gradient(90deg, #FF3B5C 0%, #FE2C55 100%);
+  --tt-grad-promo:     linear-gradient(90deg, #FFB800 0%, #FF7A00 100%);
+  --tt-grad-xtra:      linear-gradient(135deg, #FFB800 0%, #FE2C55 100%);
+  --tt-grad-pastel:    linear-gradient(180deg, #FFE5EC 0%, #FFD8C2 100%);
+  --tt-grad-mint:      linear-gradient(180deg, #E8F8F0 0%, #FFFFFF 100%);
+  --tt-r-sm:           4px;
+  --tt-r-md:           8px;
+  --tt-r-lg:           12px;
+  --tt-r-xl:           16px;
+  --tt-r-pill:         999px;
+  --tt-gap-xs:         4px;
+  --tt-gap-sm:         8px;
+  --tt-gap-md:         12px;
+  --tt-gap-lg:         16px;
+  --tt-gap-xl:         24px;
+  --tt-gap-2xl:        32px;
+  --tt-shadow-sm:      0 1px 2px rgba(22, 24, 35, 0.05);
+  --tt-shadow-md:      0 2px 8px rgba(22, 24, 35, 0.08);
+  --tt-shadow-tab:     0 1px 0 rgba(22, 24, 35, 0.04);
+  --tt-shadow-modal:   0 8px 24px rgba(22, 24, 35, 0.16);
+  --tt-shadow-cta:     0 4px 12px rgba(254, 44, 85, 0.32);
+  --tt-container:      480px;
+  --tt-tabnav-height:  44px;
+  /* Cosmetic accents */
+  --cos-soft-pink:     #FFF0F5;
+  --cos-soft-peach:    #FFF5EE;
+  --cos-soft-mint:     #F0F9F4;
 }
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html{scroll-behavior:smooth}
-body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  color:var(--ink);background:#E9D9DA;line-height:1.55;font-size:15px;
-  padding-bottom:calc(76px + env(safe-area-inset-bottom));
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; line-height: 1.5;
+  color: var(--tt-text-primary);
+  background: var(--tt-bg-soft);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 84px;
 }
-img{max-width:100%;display:block}
-a{color:inherit}
-.page{max-width:520px;margin:0 auto;background:var(--white);box-shadow:0 0 40px rgba(0,0,0,.12);overflow:hidden}
-section{padding:36px 18px}
-h1,h2,h3{line-height:1.25}
-h2{font-size:23px;font-weight:800;color:var(--red-dark);text-align:center;letter-spacing:-.2px}
-.sub{text-align:center;color:var(--muted);margin:8px auto 22px;max-width:420px}
-.eyebrow{display:block;text-align:center;font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--red);margin-bottom:6px}
-.bg-cream{background:var(--grad-soft)}
-.bg-red{background:radial-gradient(90% 45% at 50% 0%,rgba(255,255,255,.16),transparent 70%),var(--grad);color:#fff}
-.bg-red h2{color:#fff}
-.bg-red .sub{color:#FFD9DB}
-.bg-red .eyebrow{color:var(--gold)}
+img { max-width: 100%; display: block; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+a { color: inherit; text-decoration: none; }
 
-/* Top strip */
-.topstrip{background:linear-gradient(90deg,#9A2A3D,#B13348);color:#fff;font-size:12.5px;text-align:center;padding:8px 12px;font-weight:600}
-.topstrip b{color:var(--gold)}
+/* iOS auto-zoom fix */
+@media (max-width: 767px) {
+  input, select, textarea { font-size: 16px !important; }
+}
 
-/* Hero */
-.hero{background:radial-gradient(100% 50% at 50% 0%,rgba(255,255,255,.18),transparent 70%),var(--grad);color:#fff;padding:26px 18px 30px;text-align:center;position:relative}
-.hero-badge{display:inline-block;background:var(--gold);color:var(--red-deep);font-weight:800;font-size:12px;padding:5px 12px;border-radius:999px;letter-spacing:.5px}
-.hero h1{font-size:28px;font-weight:900;margin:14px 0 10px;letter-spacing:-.3px}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.hero p.lead{font-size:15.5px;color:#FFE6E7;max-width:400px;margin:0 auto}
-.hero-img{margin:18px auto 4px;width:100%;max-width:380px;height:auto;border-radius:20px;box-shadow:0 14px 30px rgba(90,15,28,.3);background:#fff}
-.price-box{display:inline-flex;align-items:baseline;gap:8px;background:#fff;color:var(--red);border-radius:14px;padding:10px 18px;margin:16px 0 4px;box-shadow:var(--shadow)}
-.price-box strong{font-size:32px;font-weight:900;letter-spacing:-.5px}
-.price-box small{font-size:13px;color:var(--muted);font-weight:600}
-.price-note{font-size:13px;color:#FFD9DB;margin-bottom:16px;line-height:1.6}.price-note b{color:var(--gold)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
-.chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:12.5px;font-weight:700;padding:6px 11px;border-radius:999px}
-.chip svg{width:14px;height:14px;fill:var(--gold)}
+.tts-page {
+  max-width: var(--tt-container);
+  margin: 0 auto;
+  background: var(--tt-bg);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+@media (min-width: 768px) {
+  body { padding: 24px 0 84px; }
+  .tts-page {
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(22, 24, 35, 0.08);
+    overflow: hidden;
+  }
+}
 
-/* Buttons */
-.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;border:0;cursor:pointer;font-family:inherit;font-weight:800;font-size:17px;padding:15px 18px;border-radius:14px;text-decoration:none;transition:transform .12s}
-.btn:active{transform:scale(.98)}
-.btn-gold{background:linear-gradient(180deg,#FFD976 0%,var(--gold) 100%);color:var(--red-deep);box-shadow:0 4px 0 var(--gold-dark),0 10px 20px rgba(111,24,39,.2)}
-.btn-red{background:linear-gradient(135deg,#E4616C 0%,#CF3445 55%,#B52B40 100%);color:#fff;box-shadow:0 4px 0 #8E2335,0 10px 20px rgba(161,34,54,.22)}
-.btn svg{width:20px;height:20px;fill:currentColor}
-.btn-pulse{animation:pulse 2.2s infinite}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
-@media (prefers-reduced-motion:reduce){.btn-pulse{animation:none}html{scroll-behavior:auto}}
+/* Tab Nav */
+.tts-tabnav {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: stretch;
+  background: var(--tt-bg);
+  height: var(--tt-tabnav-height);
+  border-bottom: 1px solid var(--tt-bg-border);
+  box-shadow: var(--tt-shadow-tab);
+}
+.tts-tab {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 500;
+  color: var(--tt-text-muted);
+  position: relative; cursor: pointer;
+  transition: color 0.15s ease;
+  user-select: none; text-decoration: none;
+}
+.tts-tab:hover { color: var(--tt-text-primary); }
+.tts-tab.active { color: var(--tt-black); font-weight: 600; }
+.tts-tab.active::after {
+  content: ""; position: absolute; bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 24px; height: 2px;
+  background: var(--tt-black);
+  border-radius: 2px 2px 0 0;
+}
+@media (max-width: 480px) { .tts-tab { font-size: 14px; } }
 
-/* Pain */
-.pain-list{display:grid;gap:10px;margin-top:6px}
-.pain-item{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-left:4px solid #E4616C;border-radius:12px;padding:12px 14px}
-.pain-item .n{flex:0 0 26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#E4616C,#CF3445);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:1px}
-.pain-item b{color:var(--red-dark)}
-.callout{margin-top:18px;text-align:center;font-weight:800;color:var(--red);font-size:16px}
+/* Brand Strip */
+.tts-brand-strip {
+  display: flex; align-items: center;
+  gap: var(--tt-gap-sm);
+  padding: var(--tt-gap-md) var(--tt-gap-lg);
+  background: var(--tt-bg);
+  border-bottom: 1px solid var(--tt-bg-border);
+}
+.tts-brand-logo {
+  width: 32px; height: 32px;
+  border-radius: 50%; object-fit: cover;
+  flex-shrink: 0;
+  border: 1.5px solid var(--tt-pink);
+  display: block;
+}
+.tts-brand-info { display: flex; align-items: center; gap: 6px; flex: 1; min-width: 0; }
+.tts-brand-name {
+  font-size: 14px; font-weight: 600;
+  color: var(--tt-black);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.tts-verified-icon { width: 14px; height: 14px; flex-shrink: 0; }
+.tts-official-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 8px;
+  background: var(--tt-rose);
+  color: #FFFFFF;
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: var(--tt-r-sm);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.tts-follow-btn {
+  padding: 6px 14px;
+  background: transparent;
+  border: 1px solid var(--tt-pink);
+  color: var(--tt-pink);
+  font-size: 12px; font-weight: 600;
+  border-radius: var(--tt-r-pill);
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+.tts-follow-btn:hover { background: var(--tt-pink); color: #FFFFFF; }
 
-/* Photo blocks */
-.photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:var(--pink)}
-.photo img{width:100%;height:auto}
-.cause-grid{display:grid;gap:12px;margin-top:18px}
-.cause{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}
-.cause h3{font-size:15.5px;color:var(--red-dark);margin-bottom:3px}
-.cause p{font-size:14px;color:var(--muted)}
+/* Brand Strip subtitle */
+.tts-brand-sub {
+  font-size: 9px; font-weight: 700;
+  color: var(--tt-text-muted);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 2px;
+}
+.tts-brand-textgroup {
+  display: flex; flex-direction: column;
+  gap: 1px; min-width: 0; flex: 1;
+}
+.tts-brand-row1 { display: flex; align-items: center; gap: 6px; }
 
-/* Benefits */
-.ben-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
-.ben{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:16px 12px;text-align:center}
-.ben .ic{width:46px;height:46px;border-radius:50%;background:#fff;margin:0 auto 10px;display:flex;align-items:center;justify-content:center}
-.ben .ic svg{width:26px;height:26px;fill:var(--red)}
-.ben h3{font-size:15px;color:var(--gold);margin-bottom:4px}
-.ben p{font-size:13px;color:#FFE6E7}
-.fine{font-size:12px;color:#FFD0D3;text-align:center;margin-top:14px;line-height:1.45}
+/* Hero Gallery */
+.tts-hero {
+  position: relative; width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--tt-grad-pastel);
+  overflow: hidden;
+}
+.tts-hero-track {
+  display: flex; width: 100%; height: 100%;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scrollbar-width: none; -ms-overflow-style: none;
+}
+.tts-hero-track::-webkit-scrollbar { display: none; }
+.tts-hero-slide {
+  flex: 0 0 100%; width: 100%; height: 100%;
+  scroll-snap-align: start;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.tts-hero-img { width: 100%; height: 100%; object-fit: cover; }
+.tts-hero-arrow {
+  position: absolute; top: 50%;
+  transform: translateY(-50%);
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.4);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 3;
+  transition: background 0.15s ease;
+  backdrop-filter: blur(2px);
+}
+.tts-hero-arrow:hover, .tts-hero-arrow:active { background: rgba(0,0,0,0.6); }
+.tts-hero-arrow.prev { left: 8px; }
+.tts-hero-arrow.next { right: 8px; }
+.tts-hero-arrow svg { width: 20px; height: 20px; }
+.tts-hero-counter {
+  position: absolute; bottom: 32px; right: 12px;
+  padding: 3px 10px;
+  background: rgba(0,0,0,0.55);
+  color: #FFFFFF;
+  font-size: 12px; font-weight: 600;
+  border-radius: var(--tt-r-pill);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+  letter-spacing: 0.3px;
+}
 
-/* Steps */
-.steps{display:grid;gap:12px;margin-top:6px;counter-reset:s}
-.step{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;align-items:flex-start;box-shadow:0 2px 8px rgba(161,34,54,.06)}
-.step .num{flex:0 0 38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#E4616C,#CF3445);color:#fff;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center}
-.step h3{font-size:15.5px;color:var(--red-dark)}
-.step p{font-size:14px;color:var(--muted)}
-.note-box{margin-top:14px;background:#FFF4D6;border:1px solid #F0D58A;border-radius:12px;padding:12px 14px;font-size:13.5px;color:#6A4B00}
+/* Combined Deal Banner (Price + Promo) */
+.tts-deal-banner {
+  display: flex;
+  margin: -24px var(--tt-gap-lg) 0;
+  border-radius: var(--tt-r-md);
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(254,44,85,0.2);
+  position: relative; z-index: 4;
+  min-height: 64px;
+}
+.tts-deal-left {
+  flex: 0 0 60%;
+  background: linear-gradient(135deg, #FE2C55 0%, #E5142E 100%);
+  padding: 8px 12px 8px;
+  position: relative;
+  color: #FFFFFF;
+  display: flex; flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+}
+.tts-deal-left-info { display: contents; }
+@keyframes deal-badge-pulse {
+  0%, 100% { transform: scale(1);   box-shadow: 0 0 0 0 rgba(255,224,102,0.55); }
+  50%       { transform: scale(1.07); box-shadow: 0 0 0 6px rgba(255,224,102,0); }
+}
+.tts-deal-save-badge {
+  width: 58px; height: 58px; flex-shrink: 0;
+  border-radius: 50%;
+  background: #FFE066;
+  border: 2.5px solid #FFFFFF;
+  box-shadow: 0 0 0 0 rgba(255,224,102,0.55);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center; gap: 0px;
+  animation: deal-badge-pulse 1.4s ease-in-out infinite;
+}
+.tts-deal-save-num {
+  font-size: 15px; font-weight: 900;
+  color: #C8000E; line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+.tts-deal-save-lbl {
+  font-size: 8px; font-weight: 800;
+  color: #C8000E; line-height: 1;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.tts-deal-pricerow {
+  display: flex; align-items: center;
+  gap: 6px; flex-wrap: wrap;
+}
+.tts-deal-price {
+  font-size: 22px; font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1; letter-spacing: -0.5px;
+}
+.tts-deal-price-sym {
+  font-size: 12px; font-weight: 700;
+  vertical-align: super;
+}
+.tts-deal-pct {
+  display: inline-block;
+  padding: 1px 6px;
+  background: rgba(0,0,0,0.28);
+  color: #FFFFFF;
+  font-size: 10px; font-weight: 800;
+  border-radius: var(--tt-r-sm);
+  letter-spacing: 0.3px;
+}
+.tts-deal-old {
+  font-size: 11px; font-weight: 500;
+  color: rgba(255,255,255,0.78);
+  text-decoration: line-through;
+  letter-spacing: 0.2px;
+}
+.tts-deal-stock {
+  font-size: 10px; font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 0.2px;
+}
+.tts-deal-stock b { color: #FFE066; font-weight: 800; }
+.tts-deal-right {
+  flex: 0 0 40%;
+  background: linear-gradient(180deg, #FFF5DC 0%, #FFE9B3 100%);
+  padding: 6px 8px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 2px;
+  position: relative;
+  border-left: 1px solid rgba(255,200,100,0.45);
+}
+.tts-deal-right-title {
+  font-size: 9px; font-weight: 800;
+  color: #8A4A00;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  text-align: center;
+  line-height: 1.1;
+}
+.tts-deal-right-sub {
+  font-size: 8px; font-weight: 600;
+  color: #A06016;
+  letter-spacing: 0.2px;
+}
+.tts-promo-countdown {
+  display: inline-flex; align-items: center;
+}
+.tts-promo-countdown b {
+  display: inline-block;
+  padding: 2px 7px;
+  background: #161823;
+  border-radius: 3px;
+  font-size: 12px; font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.8px;
+  color: #FFD24A;
+  min-width: 86px; text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
 
-/* Demo */
-.ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
-.ba .photo{position:relative}
-.ba .tag{position:absolute;left:8px;top:8px;background:var(--red-deep);color:#fff;font-size:11.5px;font-weight:800;padding:3px 9px;border-radius:999px}
-.ba .tag.after{background:var(--ok)}
-.demo-video{margin-top:12px}
-.demo-video video,.demo-video img{width:100%;display:block}
-.caption{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
+/* Title + Meta */
+.tts-title-block {
+  padding: var(--tt-gap-md) var(--tt-gap-lg) 6px;
+  display: flex; flex-wrap: nowrap;
+  align-items: flex-start; gap: 8px;
+}
+.tts-tag-mall {
+  display: inline-flex; align-items: center;
+  padding: 2px 7px;
+  background: #FE2C55;
+  color: #FFFFFF;
+  font-size: 11px; font-weight: 800;
+  letter-spacing: 0.3px;
+  border-radius: var(--tt-r-sm);
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+.tts-title {
+  font-size: 15px; font-weight: 600;
+  color: var(--tt-black);
+  line-height: 1.4;
+  flex: 1; min-width: 0;
+}
+.tts-bookmark-btn {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  transition: all 0.15s ease;
+  margin-top: -2px;
+}
+.tts-bookmark-btn svg {
+  width: 20px; height: 20px;
+  stroke: var(--tt-text-muted); fill: none; stroke-width: 1.8;
+  transition: all 0.15s ease;
+}
+.tts-bookmark-btn:hover svg, .tts-bookmark-btn:active svg {
+  stroke: var(--tt-pink); fill: var(--tt-pink);
+}
 
-/* Compare */
-.cmp{width:100%;border-collapse:separate;border-spacing:0;margin-top:6px;font-size:13.5px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
-.cmp th,.cmp td{padding:11px 8px;text-align:center;border-bottom:1px solid var(--line);vertical-align:middle}
-.cmp th:first-child,.cmp td:first-child{text-align:left;font-weight:700;color:var(--red-dark);width:34%;padding-left:12px}
-.cmp thead th{background:var(--cream);color:var(--muted);font-size:12.5px}
-.cmp thead th.us{background:linear-gradient(135deg,#E4616C,#CF3445);color:#fff;font-size:13.5px}
-.cmp td.us{background:#FFF1F1;font-weight:700;color:var(--red-dark)}
-.cmp tr:last-child td{border-bottom:0}
-.yes{color:var(--ok);font-weight:800}
-.no{color:#B1202B;font-weight:800}
-.mid{color:#B07A00;font-weight:700}
+.tts-meta {
+  display: flex; flex-wrap: wrap;
+  align-items: center; gap: 6px;
+  padding: 4px var(--tt-gap-lg) var(--tt-gap-md);
+  font-size: 12px;
+  color: var(--tt-text-muted);
+}
+.tts-meta-rating {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-weight: 600;
+  color: var(--tt-text-primary);
+}
+.tts-meta-rating svg { width: 14px; height: 14px; fill: var(--tt-star-active); }
+.tts-meta-rating .tts-rating-count { color: var(--tt-text-muted); font-weight: 400; }
+.tts-meta-divider { color: var(--tt-text-disabled); font-size: 10px; }
+.tts-meta-item { display: inline-flex; align-items: center; gap: 3px; }
+.tts-meta-item-ship {
+  display: inline-flex; align-items: center; gap: 3px;
+  color: var(--tt-pink); font-weight: 600;
+}
+.tts-meta-item-ship svg { width: 14px; height: 14px; fill: var(--tt-pink); }
 
-/* Who */
-.who{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.who-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 12px;text-align:center}
-.who-card .em{font-size:26px;display:block;margin-bottom:4px}
-.who-card b{display:block;font-size:14px;color:var(--red-dark)}
-.who-card span{font-size:12.5px;color:var(--muted)}
+/* Hot Category Strip */
+.tts-hot-strip {
+  display: flex; align-items: center; gap: 6px;
+  margin: 0 var(--tt-gap-lg) var(--tt-gap-md);
+  padding: 8px 12px;
+  background: linear-gradient(90deg, #FFF5E6 0%, #FFE9C2 100%);
+  border: 1px solid #FFD898;
+  border-radius: var(--tt-r-md);
+  font-size: 12px;
+  color: #8A4A00;
+  line-height: 1.3;
+}
+.tts-hot-strip svg.trophy {
+  width: 16px; height: 16px; flex-shrink: 0;
+}
+.tts-hot-strip-bold {
+  font-weight: 700;
+  color: #C44900;
+}
+.tts-hot-strip-text { flex: 1; min-width: 0; }
+.tts-hot-strip svg.chev { width: 14px; height: 14px; flex-shrink: 0; fill: #8A4A00; }
 
-/* Offer */
-.offer{background:radial-gradient(90% 40% at 50% 0%,rgba(255,255,255,.16),transparent 70%),var(--grad);color:#fff}
-.offer-card{background:#fff;color:var(--ink);border-radius:20px;padding:20px 18px 22px;box-shadow:0 14px 34px rgba(0,0,0,.3);text-align:center;position:relative;margin-top:30px}
-.offer-ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--red-deep);font-weight:900;font-size:12.5px;padding:6px 16px;border-radius:999px;white-space:nowrap}
-.offer-card img{width:34%;max-width:140px;margin:8px auto 10px;border-radius:14px}
-.offer-card h3{font-size:18px;color:var(--red-dark)}
-.offer-price{font-size:38px;font-weight:900;color:var(--red);margin:6px 0 2px;letter-spacing:-.5px}
-.offer-list{list-style:none;text-align:left;margin:14px auto 18px;max-width:300px}
-.offer-list li{display:flex;gap:9px;align-items:flex-start;font-size:14.5px;padding:5px 0}
-.offer-list svg{flex:0 0 18px;width:18px;height:18px;fill:var(--ok);margin-top:3px}
+/* Feature Chips */
+.tts-feature-chips {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  padding: 0 var(--tt-gap-lg) var(--tt-gap-md);
+}
+.tts-feat-chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 5px 10px;
+  background: #FFF5F8;
+  color: #FE2C55;
+  border: 1px solid #FFD8E0;
+  border-radius: var(--tt-r-pill);
+  font-size: 11px; font-weight: 600;
+  line-height: 1.2;
+}
+.tts-feat-chip svg { width: 12px; height: 12px; fill: #FE2C55; flex-shrink: 0; }
 
-/* Packages */
-.pkgs{display:grid;gap:14px;margin-top:28px}
-.pkg{position:relative;background:#fff;color:var(--ink);border-radius:18px;padding:16px 14px 16px;box-shadow:0 10px 26px rgba(90,15,28,.22);border:3px solid transparent}
-.pkg.hot{border-color:var(--gold)}
-.pkg-ribbon{position:absolute;top:-12px;right:14px;background:var(--gold);color:var(--red-deep);font-weight:900;font-size:11.5px;padding:5px 12px;border-radius:999px}
-.pkg-row{display:flex;align-items:center;gap:12px}
-.pkg-imgs{flex:0 0 96px;display:flex;justify-content:center;align-items:flex-end;min-height:84px}
-.pkg-imgs img{width:34px;height:auto;border-radius:6px;margin:0 -3px;box-shadow:0 2px 6px rgba(0,0,0,.2)}
-.pkg-imgs.one img{width:46px}
-.pkg-info{flex:1;text-align:left}
-.pkg-info h3{font-size:16.5px;color:var(--red-dark)}
-.pkg-price{font-size:28px;font-weight:900;color:var(--red);letter-spacing:-.4px;line-height:1.15}
-.pkg-save{display:inline-block;margin-top:2px;background:#E3F6EA;color:var(--ok);font-weight:800;font-size:12px;padding:2px 8px;border-radius:999px}
-.pkg-sub{font-size:12.5px;color:var(--muted);margin-top:3px}
-.pkg .btn{margin-top:12px;font-size:16px;padding:13px 16px}
-.offer-perks{list-style:none;margin:20px auto 0;max-width:320px}
-.offer-perks li{display:flex;gap:9px;align-items:flex-start;font-size:14px;padding:4px 0;color:#fff}
-.offer-perks svg{flex:0 0 18px;width:18px;height:18px;fill:var(--gold);margin-top:3px}
+/* Info Rows */
+.tts-info-rows {
+  margin: 0 var(--tt-gap-lg) var(--tt-gap-md);
+  background: var(--tt-bg);
+  border: 1px solid var(--tt-bg-border);
+  border-radius: var(--tt-r-md);
+  overflow: hidden;
+}
+.tts-info-row {
+  display: flex; align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--tt-bg-border);
+  font-size: 12.5px;
+  min-height: 38px;
+}
+.tts-info-row:last-child { border-bottom: 0; }
+.tts-info-label {
+  flex: 0 0 96px;
+  font-weight: 700;
+  color: var(--tt-black);
+  font-size: 12.5px;
+}
+.tts-info-value {
+  flex: 1; min-width: 0;
+  display: flex; align-items: center;
+  gap: 6px; flex-wrap: wrap;
+  color: var(--tt-text-secondary);
+}
+.tts-info-chev {
+  width: 14px; height: 14px;
+  fill: var(--tt-text-muted);
+  flex-shrink: 0; margin-left: auto;
+}
+.tts-cod-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  background: #FFF0F4;
+  color: #FE2C55;
+  font-size: 10px; font-weight: 800;
+  border-radius: var(--tt-r-sm);
+  letter-spacing: 0.3px;
+}
+.tts-ship-old {
+  text-decoration: line-through;
+  color: var(--tt-strike-price);
+  font-size: 12px;
+}
+.tts-ship-free {
+  display: inline-block;
+  padding: 1px 8px;
+  background: #E8F8F0;
+  color: #00875A;
+  font-size: 11px; font-weight: 700;
+  border-radius: var(--tt-r-pill);
+}
 
-/* Spec */
-.spec{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
-.spec th,.spec td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-.spec th{width:36%;color:var(--red-dark);font-weight:700}
-.spec-imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+/* Inline CTA after info-rows */
+.tts-inline-cta {
+  display: flex; gap: 10px;
+  padding: 4px 16px 14px;
+}
+.tts-inline-btn {
+  flex: 1; display: inline-flex;
+  align-items: center; justify-content: center; gap: 6px;
+  padding: 12px 8px;
+  font-size: 13px; font-weight: 800;
+  border-radius: var(--tt-r-pill);
+  cursor: pointer;
+  border: none;
+  letter-spacing: 0.2px;
+  transition: filter 0.15s, transform 0.05s;
+}
+.tts-inline-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+.tts-inline-btn.cart {
+  flex: 0.85;
+  background: #FFFFFF;
+  border: 1.5px solid var(--tt-pink);
+  color: var(--tt-pink);
+}
+.tts-inline-btn.cart svg { fill: var(--tt-pink); }
+.tts-inline-btn.buy {
+  flex: 1.15;
+  background: var(--tt-grad-pink);
+  color: #FFFFFF;
+  box-shadow: var(--tt-shadow-cta);
+}
+.tts-inline-btn:hover { filter: brightness(1.05); }
+.tts-inline-btn:active { transform: translateY(1px); }
 
-/* Customers */
-.cus{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}
-.cus .photo{border-radius:12px}
+/* Section divider */
+.tts-section-divider {
+  height: 8px;
+  background: var(--tt-bg-soft);
+}
 
-/* Trust */
-.trust{display:grid;gap:10px}
-.trust-item{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 14px}
-.trust-item .ic{flex:0 0 38px;height:38px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center}
-.trust-item .ic svg{width:21px;height:21px;fill:var(--red)}
-.trust-item b{display:block;color:var(--red-dark);font-size:14.5px}
-.trust-item span{font-size:13.5px;color:var(--muted)}
+/* ==========================================================================
+   COSMETIC SECTIONS
+   ========================================================================== */
+
+/* Pain Strip */
+.cos-pain-strip { background: var(--cos-soft-pink); padding: 24px 16px; }
+.cos-pain-title {
+  font-size: 18px; font-weight: 700;
+  color: var(--tt-black);
+  text-align: center;
+  margin-bottom: 8px; line-height: 1.4;
+}
+.cos-pain-sub {
+  font-size: 13px; color: var(--tt-text-secondary);
+  text-align: center; margin-bottom: 16px; line-height: 1.5;
+}
+.cos-pain-image {
+  width: 100%; aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: var(--tt-r-lg);
+  box-shadow: var(--tt-shadow-sm);
+  margin-bottom: 14px;
+}
+.cos-pain-list { display: flex; flex-direction: column; gap: 8px; }
+.cos-pain-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 10px 12px;
+  background: var(--tt-bg);
+  border-radius: var(--tt-r-md);
+  box-shadow: var(--tt-shadow-sm);
+}
+.cos-pain-num {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--tt-grad-pink);
+  color: #FFFFFF;
+  font-size: 12px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.cos-pain-text {
+  font-size: 13px;
+  color: var(--tt-text-primary);
+  line-height: 1.5;
+}
+.cos-pain-text b { color: var(--tt-pink); }
+.cos-pain-cta {
+  text-align: center;
+  font-size: 14px;
+  color: var(--tt-pink);
+  font-weight: 700;
+  margin-top: 14px;
+  text-wrap: balance;
+}
+
+/* Ingredient Spotlight */
+.cos-ingredient {
+  background: var(--cos-soft-mint);
+  padding: 24px 16px;
+}
+.cos-ing-title {
+  font-size: 18px; font-weight: 700;
+  color: var(--tt-black);
+  text-align: center;
+  margin-bottom: 6px;
+}
+.cos-ing-sub {
+  font-size: 13px; color: var(--tt-text-secondary);
+  text-align: center; margin-bottom: 14px;
+}
+.cos-ing-hero {
+  width: 100%; aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: var(--tt-r-lg);
+  margin-bottom: 16px;
+  box-shadow: var(--tt-shadow-sm);
+}
+.cos-ing-list { display: flex; flex-direction: column; gap: 10px; }
+.cos-ing-item {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 14px;
+  background: var(--tt-bg);
+  border-radius: var(--tt-r-md);
+  border: 1px solid #E0F0E5;
+}
+.cos-ing-circle {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: var(--tt-grad-pink);
+  color: #FFFFFF;
+  font-size: 13px; font-weight: 800;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  flex-shrink: 0; line-height: 1.1;
+  box-shadow: 0 2px 6px rgba(254, 44, 85, 0.24);
+  text-align: center;
+}
+.cos-ing-circle b { font-size: 16px; }
+.cos-ing-circle span { font-size: 9px; opacity: 0.95; margin-top: 2px; }
+.cos-ing-body { flex: 1; min-width: 0; }
+.cos-ing-name {
+  font-size: 14px; font-weight: 700;
+  color: var(--tt-black);
+  margin-bottom: 4px;
+}
+.cos-ing-name .cos-ing-cert {
+  display: inline-block;
+  font-size: 10px; font-weight: 700;
+  background: var(--cos-soft-mint);
+  color: #2E7D32;
+  padding: 1px 6px;
+  border-radius: var(--tt-r-sm);
+  margin-left: 4px;
+  vertical-align: middle;
+}
+.cos-ing-desc {
+  font-size: 12px; line-height: 1.5;
+  color: var(--tt-text-secondary);
+}
+
+/* Safety Cert */
+.cos-safety { background: var(--tt-bg); padding: 24px 16px; }
+.cos-saf-title {
+  font-size: 17px; font-weight: 700;
+  color: var(--tt-black);
+  text-align: center;
+  margin-bottom: 6px; line-height: 1.4;
+}
+.cos-saf-sub {
+  font-size: 13px; color: var(--tt-text-secondary);
+  text-align: center; margin-bottom: 16px; line-height: 1.5;
+}
+.cos-saf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.cos-saf-badge {
+  background: var(--tt-bg-soft);
+  border-radius: var(--tt-r-md);
+  padding: 12px 6px;
+  text-align: center;
+  border: 1px solid #ECECEC;
+}
+.cos-saf-icon {
+  width: 36px; height: 36px;
+  margin: 0 auto 6px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--tt-bg);
+  border: 1.5px solid var(--tt-pink-soft);
+  border-radius: 50%;
+  color: var(--tt-pink);
+}
+.cos-saf-icon svg { width: 20px; height: 20px; fill: var(--tt-pink); }
+.cos-saf-name {
+  font-size: 11px; font-weight: 700;
+  color: var(--tt-black);
+  margin-bottom: 2px; line-height: 1.3;
+}
+.cos-saf-desc {
+  font-size: 10px;
+  color: var(--tt-text-muted);
+  line-height: 1.3;
+}
+.cos-saf-callout {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: linear-gradient(90deg, #FFF0F4 0%, #FFFFFF 100%);
+  border: 1px solid #FFE0E8;
+  border-radius: var(--tt-r-md);
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.cos-saf-callout svg {
+  width: 20px; height: 20px; fill: var(--tt-pink); flex-shrink: 0;
+  margin-top: 2px;
+}
+.cos-saf-callout-text {
+  font-size: 13px; color: var(--tt-text-primary); line-height: 1.5;
+}
+.cos-saf-callout-text b { color: var(--tt-pink); }
+
+/* License / Authenticity section */
+.cos-license {
+  background: linear-gradient(180deg, #FFF5F8 0%, #FFFFFF 100%);
+  padding: 28px 16px 28px;
+  text-align: center;
+  border-top: 1px dashed #FFD0DC;
+}
+.cos-lic-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px;
+  background: linear-gradient(90deg, #00A86B 0%, #008f5a 100%);
+  color: #FFFFFF;
+  font-size: 11px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  border-radius: var(--tt-r-pill);
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,168,107,0.32);
+}
+.cos-lic-badge svg { width: 14px; height: 14px; fill: #FFFFFF; }
+.cos-lic-title {
+  font-size: 20px; font-weight: 800;
+  color: var(--tt-black);
+  line-height: 1.3;
+  margin-bottom: 8px;
+  padding: 0 8px;
+}
+.cos-lic-title em {
+  font-style: normal;
+  background: linear-gradient(90deg, #FE2C55, #FF7A00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.cos-lic-sub {
+  font-size: 13px; color: var(--tt-text-secondary);
+  line-height: 1.55;
+  margin-bottom: 18px;
+  padding: 0 4px;
+}
+.cos-lic-image-wrap {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(22,24,35,0.2), 0 4px 12px rgba(254,44,85,0.15);
+  border: 5px solid #FFFFFF;
+  background: #FFFFFF;
+  max-width: 100%;
+  margin-bottom: 12px;
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+.cos-lic-image-wrap:hover { transform: none; }
+.cos-lic-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.cos-lic-corner-stamp {
+  position: absolute;
+  top: 14px; right: -32px;
+  background: var(--tt-pink);
+  color: #FFFFFF;
+  font-size: 10px; font-weight: 800;
+  letter-spacing: 1px;
+  padding: 4px 36px;
+  transform: rotate(35deg);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+}
+.cos-lic-zoom-hint {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; color: var(--tt-text-muted);
+  margin-bottom: 16px;
+}
+.cos-lic-zoom-hint svg { width: 12px; height: 12px; fill: var(--tt-text-muted); }
+.cos-lic-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 4px;
+}
+.cos-lic-feat {
+  background: #FFFFFF;
+  border: 1px solid #FFE0E8;
+  border-radius: var(--tt-r-md);
+  padding: 12px 6px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(254,44,85,0.06);
+}
+.cos-lic-feat-num {
+  font-size: 18px; font-weight: 800;
+  color: var(--tt-pink);
+  line-height: 1.1;
+  margin-bottom: 4px;
+  letter-spacing: -0.3px;
+}
+.cos-lic-feat-text {
+  font-size: 10.5px; color: var(--tt-text-secondary);
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+/* Benefit Grid */
+.cos-benefit-grid { background: var(--tt-bg); padding: 24px 16px; }
+.cos-ben-title {
+  font-size: 18px; font-weight: 700;
+  color: var(--tt-black);
+  text-align: center;
+  margin-bottom: 6px;
+}
+.cos-ben-sub {
+  font-size: 13px; color: var(--tt-text-secondary);
+  text-align: center; margin-bottom: 14px;
+}
+.cos-ben-banner {
+  width: 100%; aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: var(--tt-r-lg);
+  margin-bottom: 14px;
+  box-shadow: var(--tt-shadow-sm);
+}
+.cos-ben-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.cos-ben-card {
+  background: var(--tt-bg-soft);
+  border-radius: var(--tt-r-lg);
+  padding: 14px 12px;
+  border: 1px solid var(--tt-bg-border);
+  text-align: center;
+}
+.cos-ben-icon-wrap {
+  width: 40px; height: 40px;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  background: var(--tt-pastel);
+  display: flex; align-items: center; justify-content: center;
+}
+.cos-ben-icon { width: 22px; height: 22px; fill: var(--tt-pink); }
+.cos-ben-name {
+  font-size: 13px; font-weight: 700;
+  color: var(--tt-black);
+  margin-bottom: 4px;
+}
+.cos-ben-desc {
+  font-size: 11px;
+  color: var(--tt-text-muted);
+  line-height: 1.4;
+}
+
+/* Before/After */
+.cos-ba { background: var(--cos-soft-pink); padding: 24px 16px; }
+.cos-ba-title {
+  font-size: 18px; font-weight: 700;
+  color: var(--tt-black);
+  text-align: center;
+  margin-bottom: 6px;
+}
+.cos-ba-sub {
+  font-size: 13px; color: var(--tt-text-secondary);
+  text-align: center; margin-bottom: 14px;
+}
+.cos-ba-img-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: var(--tt-r-lg);
+  overflow: hidden;
+  box-shadow: var(--tt-shadow-sm);
+}
+.cos-ba-img-wrap img {
+  width: 100%; aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.cos-ba-label {
+  position: absolute; top: 12px;
+  padding: 4px 10px;
+  font-size: 11px; font-weight: 700;
+  border-radius: var(--tt-r-pill);
+  background: rgba(0,0,0,0.55);
+  color: #FFFFFF;
+}
+.cos-ba-label-before { left: 12px; }
+.cos-ba-label-after  { right: 12px; background: var(--tt-pink); }
+.cos-ba-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+.cos-ba-stat {
+  text-align: center;
+  background: var(--tt-bg);
+  border-radius: var(--tt-r-md);
+  padding: 10px 6px;
+}
+.cos-ba-stat-num {
+  font-size: 24px; font-weight: 800;
+  color: var(--tt-pink);
+  line-height: 1;
+}
+.cos-ba-stat-num span { font-size: 12px; }
+.cos-ba-stat-label {
+  font-size: 11px;
+  color: var(--tt-text-muted);
+  margin-top: 4px;
+  line-height: 1.3;
+}
+.cos-ba-note {
+  font-size: 11px;
+  color: var(--tt-text-muted);
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Texture Showcase */
+.cos-texture { background: var(--tt-bg); padding: 24px 16px; }
+.cos-tex-title {
+  font-size: 18px; font-weight: 700;
+  color: var(--tt-black);
+  text-align: center;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.cos-tex-sub {
+  font-size: 13px; color: var(--tt-text-secondary);
+  text-align: center; margin-bottom: 14px;
+  text-wrap: balance;
+}
+.cos-tex-img {
+  width: 100%; aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: var(--tt-r-lg);
+  margin-bottom: 12px;
+  box-shadow: var(--tt-shadow-sm);
+}
+.cos-tex-attrs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.cos-tex-attr {
+  background: var(--tt-bg-soft);
+  border-radius: var(--tt-r-md);
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--tt-text-primary);
+  display: flex; align-items: center; gap: 8px;
+  border: 1px solid var(--tt-bg-border);
+}
+.cos-tex-attr svg {
+  width: 18px; height: 18px; fill: var(--tt-pink); flex-shrink: 0;
+}
+
+/* Routine AM */
+.cos-routine { background: var(--cos-soft-peach); padding: 24px 16px; }
+.cos-rt-title {
+  font-size: 18px; font-weight: 700;
+  color: var(--tt-black);
+  text-align: center;
+  margin-bottom: 6px;
+}
+.cos-rt-sub {
+  font-size: 13px; color: var(--tt-text-secondary);
+  text-align: center; margin-bottom: 14px;
+  text-wrap: balance;
+}
+.cos-rt-img {
+  width: 100%; aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: var(--tt-r-lg);
+  margin-bottom: 14px;
+  box-shadow: var(--tt-shadow-sm);
+}
+
+/* ── Image zoom wrapper & lightbox ─────────────────────── */
+.cos-img-wrap {
+  overflow: hidden;
+  border-radius: var(--tt-r-lg);
+  cursor: zoom-in;
+  display: block;
+  box-shadow: var(--tt-shadow-sm);
+}
+.cos-img-wrap img {
+  transition: transform 0.35s ease;
+  display: block; width: 100%;
+  margin-bottom: 0 !important;
+  box-shadow: none !important;
+}
+.cos-img-wrap:hover img { transform: scale(1.05); }
+#cos-lightbox {
+  display: none; position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,0.88); padding: 20px;
+  align-items: center; justify-content: center;
+  cursor: zoom-out;
+}
+#cos-lightbox.open { display: flex; }
+#cos-lightbox-img {
+  max-width: 100%; max-height: 90vh;
+  object-fit: contain; border-radius: 10px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+#cos-lightbox-close {
+  position: absolute; top: 14px; right: 14px;
+  width: 36px; height: 36px;
+  background: rgba(255,255,255,0.18); border-radius: 50%;
+  border: none; color: #fff; font-size: 24px; line-height: 1;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.cos-rt-steps { display: flex; flex-direction: column; gap: 8px; }
+.cos-rt-step {
+  display: flex; gap: 12px; align-items: center;
+  padding: 12px 14px;
+  background: var(--tt-bg);
+  border-radius: var(--tt-r-md);
+}
+.cos-rt-step.cos-rt-highlight {
+  background: linear-gradient(90deg, #FFF0F4 0%, #FFFFFF 100%);
+  border: 1px solid var(--tt-pink-soft);
+}
+.cos-rt-num {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--tt-bg-soft);
+  color: var(--tt-text-primary);
+  font-size: 14px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.cos-rt-step.cos-rt-highlight .cos-rt-num {
+  background: var(--tt-grad-pink);
+  color: #FFFFFF;
+}
+.cos-rt-content { flex: 1; min-width: 0; }
+.cos-rt-name {
+  font-size: 14px; font-weight: 700;
+  color: var(--tt-text-primary);
+}
+.cos-rt-desc {
+  font-size: 12px; color: var(--tt-text-muted);
+  margin-top: 2px;
+}
+.cos-rt-pm-note {
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: var(--tt-bg);
+  border-radius: var(--tt-r-md);
+  font-size: 12px;
+  color: var(--tt-text-secondary);
+  text-align: center;
+  border: 1px dashed var(--tt-pink-soft);
+}
+.cos-rt-pm-note b { color: var(--tt-pink); }
+
+/* Inline CTA Block */
+.cos-cta-block {
+  background: var(--tt-bg);
+  padding: 20px 16px 24px;
+  text-align: center;
+}
+.cos-cta-headline {
+  font-size: 16px; font-weight: 700;
+  color: var(--tt-black);
+  margin-bottom: 6px; line-height: 1.4;
+}
+.cos-cta-headline b { color: var(--tt-pink); }
+.cos-cta-sub {
+  font-size: 12px; color: var(--tt-text-muted);
+  margin-bottom: 14px;
+}
+.cos-cta-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 14px 32px;
+  background: var(--tt-grad-pink);
+  color: #FFFFFF;
+  font-size: 15px; font-weight: 700;
+  border-radius: var(--tt-r-pill);
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--tt-shadow-cta);
+  transition: all 0.15s ease;
+}
+.cos-cta-btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.cos-cta-btn:active { transform: translateY(0); }
+.cos-cta-btn svg { width: 18px; height: 18px; fill: #FFFFFF; }
+
+/* Usage Stats */
+.cos-stats {
+  background: var(--tt-grad-pink);
+  padding: 28px 16px;
+  color: #FFFFFF;
+}
+.cos-stat-title {
+  font-size: 14px; font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.cos-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.cos-stat-item { text-align: center; }
+.cos-stat-num {
+  font-size: 32px; font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.cos-stat-num span {
+  font-size: 16px; font-weight: 700;
+  margin-left: 2px;
+}
+.cos-stat-label {
+  font-size: 12px;
+  margin-top: 6px;
+  opacity: 0.95;
+  line-height: 1.4;
+}
+
+/* Review Carousel */
+.cos-review { background: var(--tt-bg); padding: 24px 16px; }
+.cos-rev-title {
+  font-size: 16px; font-weight: 700;
+  color: var(--tt-black);
+  margin-bottom: 8px;
+}
+.cos-rev-summary {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.cos-rev-rating-big {
+  font-size: 24px; font-weight: 800;
+  color: var(--tt-pink);
+}
+.cos-rev-stars {
+  color: var(--tt-star-active); font-size: 14px;
+  letter-spacing: 1px;
+}
+.cos-rev-count {
+  font-size: 12px; color: var(--tt-text-muted);
+}
+.cos-rev-list { display: flex; flex-direction: column; gap: 12px; }
+.cos-rev-card {
+  padding: 14px;
+  background: var(--tt-bg-soft);
+  border-radius: var(--tt-r-lg);
+  border: 1px solid var(--tt-bg-border);
+}
+.cos-rev-header { display: flex; align-items: center; gap: 8px; }
+.cos-rev-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--tt-pastel);
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; color: var(--tt-pink); font-size: 14px;
+}
+.cos-rev-name {
+  font-size: 13px; font-weight: 600;
+  color: var(--tt-text-primary);
+}
+.cos-rev-stars-sm {
+  color: var(--tt-star-active);
+  font-size: 11px; letter-spacing: 1px;
+}
+.cos-rev-skin-type {
+  margin-left: auto;
+  font-size: 10px;
+  background: var(--tt-pink-soft);
+  color: var(--tt-pink);
+  padding: 2px 8px;
+  border-radius: var(--tt-r-pill);
+  font-weight: 600;
+}
+.cos-rev-content {
+  font-size: 13px;
+  color: var(--tt-text-primary);
+  line-height: 1.55;
+  margin-top: 8px;
+}
+.cos-rev-meta {
+  font-size: 11px;
+  color: var(--tt-text-muted);
+  margin-top: 8px;
+}
 
 /* FAQ */
-.faq{display:grid;gap:10px}
-.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.faq summary{list-style:none;cursor:pointer;padding:14px 40px 14px 14px;font-weight:700;color:var(--red-dark);position:relative;font-size:14.5px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--red);font-weight:400}
-.faq details[open] summary::after{content:"–"}
-.faq .a{padding:0 14px 14px;font-size:14px;color:var(--muted)}
+.cos-faq { background: var(--tt-bg); padding: 24px 16px; }
+.cos-faq-title {
+  font-size: 18px; font-weight: 700;
+  color: var(--tt-black);
+  text-align: center;
+  margin-bottom: 14px;
+}
+.cos-faq-list { display: flex; flex-direction: column; gap: 8px; }
+.cos-faq-item {
+  background: var(--tt-bg-soft);
+  border-radius: var(--tt-r-md);
+  overflow: hidden;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+.cos-faq-item[open] {
+  background: var(--tt-bg);
+  border-color: var(--tt-pink-soft);
+}
+.cos-faq-q {
+  padding: 14px 16px;
+  font-size: 14px; font-weight: 600;
+  color: var(--tt-text-primary);
+  cursor: pointer;
+  list-style: none;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 10px;
+}
+.cos-faq-q::-webkit-details-marker { display: none; }
+.cos-faq-q::after {
+  content: '+';
+  font-size: 22px; font-weight: 700;
+  color: var(--tt-pink);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+.cos-faq-item[open] .cos-faq-q::after { transform: rotate(45deg); }
+.cos-faq-a {
+  padding: 0 16px 14px;
+  font-size: 13px;
+  color: var(--tt-text-secondary);
+  line-height: 1.6;
+}
 
-/* Final CTA */
-.final{text-align:center}
-.final .btn{max-width:360px;margin:16px auto 0}
+/* Brand story footer */
+.cos-brand-footer {
+  background: linear-gradient(180deg, var(--cos-soft-pink) 0%, var(--tt-bg) 100%);
+  padding: 24px 16px 28px;
+  text-align: center;
+}
+.cos-brand-name {
+  font-size: 22px; font-weight: 800;
+  color: var(--tt-pink);
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.cos-brand-tag {
+  font-size: 12px; font-weight: 600;
+  color: var(--tt-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.cos-brand-text {
+  font-size: 13px;
+  color: var(--tt-text-secondary);
+  line-height: 1.6;
+  max-width: 380px;
+  margin: 0 auto 14px;
+}
+.cos-brand-certs {
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 6px;
+}
+.cos-brand-cert {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 5px 10px;
+  background: var(--tt-bg);
+  border: 1px solid var(--tt-bg-border);
+  border-radius: var(--tt-r-pill);
+  font-size: 11px; font-weight: 600;
+  color: var(--tt-text-secondary);
+}
+.cos-brand-cert svg { width: 12px; height: 12px; fill: var(--tt-pink); }
 
-/* Footer */
-footer{background:linear-gradient(180deg,#9A2A3D,#6F1827);color:#F5CFD2;padding:26px 18px 30px;font-size:13px;text-align:center}
-footer b{color:#fff;display:block;font-size:15px;margin-bottom:6px}
-footer .links{margin:14px 0;display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center}
-footer .links a{color:#fff;text-decoration:underline;text-underline-offset:3px}
-footer .legal{font-size:11.5px;color:#D9A6AA;margin-top:12px;line-height:1.5}
+/* Legal Footer */
+.cos-legal-footer {
+  background: #F5F5F7;
+  padding: 18px 16px 22px;
+  text-align: center;
+  border-top: 1px solid var(--tt-bg-border);
+}
+.cos-legal-distrib {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #D8D8DC;
+}
+.cos-legal-label {
+  font-size: 11px;
+  color: var(--tt-text-muted);
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+.cos-legal-company {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--tt-text-primary);
+  letter-spacing: 0.3px;
+}
+.cos-legal-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.cos-legal-link {
+  font-size: 12px;
+  color: var(--tt-pink);
+  text-decoration: none;
+  font-weight: 600;
+}
+.cos-legal-link:hover { text-decoration: underline; }
+.cos-legal-sep {
+  color: var(--tt-text-disabled);
+  font-size: 12px;
+}
+.cos-legal-copy {
+  font-size: 10.5px;
+  color: var(--tt-text-muted);
+  line-height: 1.4;
+}
 
-/* Sticky bar */
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.12);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
-.sticky-in{max-width:520px;margin:0 auto;display:flex;gap:10px}
-.sticky .call{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:0 14px;border:1.5px solid var(--red);border-radius:12px;color:var(--red);font-weight:800;font-size:11.5px;text-decoration:none}
-.sticky .call svg{width:20px;height:20px;fill:var(--red)}
-.sticky .btn{padding:12px 14px;font-size:16px;box-shadow:0 3px 0 #8E2335}
+/* Sticky CTA — luôn match width của .tts-page */
+.tts-sticky-cta {
+  position: fixed; bottom: 0;
+  left: 50%; transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--tt-container);
+  z-index: 40;
+  background: var(--tt-bg);
+  border-top: 1px solid var(--tt-bg-border);
+  padding: 10px 16px;
+  display: flex; gap: 14px; align-items: center;
+  box-shadow: 0 -4px 16px rgba(22,24,35,0.1);
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .tts-sticky-cta {
+    border-radius: 0 0 16px 16px;
+    box-shadow: -8px 0 24px rgba(22,24,35,0.06),
+                 8px 0 24px rgba(22,24,35,0.06),
+                 0 -4px 16px rgba(22,24,35,0.1);
+  }
+}
+.tts-cta-sidegroup {
+  display: flex; gap: 16px;
+  padding-right: 8px;
+  border-right: 1px solid var(--tt-bg-border);
+}
+.tts-cta-side {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 3px; min-width: 40px;
+  cursor: pointer;
+  color: var(--tt-text-secondary);
+  font-size: 10px; font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.tts-cta-side:hover { color: var(--tt-pink); }
+.tts-cta-side:hover svg { fill: var(--tt-pink); }
+.tts-cta-side svg { width: 22px; height: 22px; fill: var(--tt-text-secondary); transition: fill 0.15s; }
+.tts-cta-buy { flex: 1; display: flex; gap: 10px; }
+.tts-btn-cart {
+  flex: 1; padding: 12px 10px;
+  background: var(--tt-bg);
+  border: 1.5px solid var(--tt-pink);
+  color: var(--tt-pink);
+  font-size: 13px; font-weight: 700;
+  border-radius: var(--tt-r-pill);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tts-btn-buy {
+  flex: 1.3; padding: 12px 14px;
+  background: var(--tt-grad-pink);
+  color: #FFFFFF;
+  font-size: 14px; font-weight: 800;
+  border-radius: var(--tt-r-pill);
+  cursor: pointer;
+  box-shadow: var(--tt-shadow-cta);
+  border: none;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+.tts-btn-buy:hover { filter: brightness(1.05); }
 
-/* Modal */
-.modal{position:fixed;inset:0;z-index:100;display:none;align-items:flex-end;justify-content:center;background:rgba(43,20,25,.55)}
-.modal.open{display:flex}
-.sheet{width:100%;max-width:520px;max-height:94vh;overflow:auto;background:#fff;border-radius:22px 22px 0 0;padding:20px 18px calc(22px + env(safe-area-inset-bottom));animation:up .22s ease-out}
-@keyframes up{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
-.sheet-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px}
-.sheet h3{font-size:19px;color:var(--red-dark)}
-.sheet .x{border:0;background:var(--pink);color:var(--red-dark);width:34px;height:34px;border-radius:50%;font-size:20px;cursor:pointer;line-height:1}
-.sum{display:flex;gap:12px;align-items:center;background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:14px}
-.sum img{width:48px;height:auto;border-radius:8px}
-.sum .t{flex:1;font-size:13.5px}
-.sum .t b{display:block;color:var(--red-dark);font-size:14px}
-.sum .p{font-weight:900;color:var(--red);font-size:16px;white-space:nowrap}
-.field{margin-bottom:12px}
-.field label{display:block;font-size:13px;font-weight:700;color:var(--red-dark);margin-bottom:5px}
-.field input,.field select,.field textarea{width:100%;font-family:inherit;font-size:16px;padding:12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
-.field textarea{resize:vertical;min-height:58px}
-.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px rgba(207,52,69,.16)}
-.field .err{display:none;color:#B1202B;font-size:12.5px;margin-top:4px}
-.field.bad input{border-color:#B1202B}
-.field.bad .err{display:block}
-.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
-.total{display:flex;justify-content:space-between;align-items:center;font-weight:800;margin:4px 0 14px;font-size:15px}
-.total span:last-child{color:var(--red);font-size:20px}
-.form-note{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
-.form-msg{display:none;margin-top:12px;padding:11px 12px;border-radius:10px;font-size:14px}
-.form-msg.err{display:block;background:#FDE8E8;color:#A12236}
-.thanks{display:none;text-align:center;padding:14px 4px 6px}
-.thanks .ok{width:62px;height:62px;border-radius:50%;background:#E3F6EA;margin:0 auto 12px;display:flex;align-items:center;justify-content:center}
-.thanks .ok svg{width:34px;height:34px;fill:var(--ok)}
-.thanks h3{margin-bottom:6px}
-.thanks p{color:var(--muted);font-size:14.5px;margin-bottom:14px}
-.btn[disabled]{opacity:.65;cursor:wait}
+/* Buy popup */
+.tts-popup-overlay {
+  position: fixed; inset: 0;
+  background: rgba(22,24,35,0.5);
+  z-index: 100;
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.tts-popup-overlay.open { display: flex; opacity: 1; }
+.tts-popup {
+  width: 100%; max-width: 480px;
+  max-height: 90vh;
+  background: var(--tt-bg);
+  border-radius: var(--tt-r-xl) var(--tt-r-xl) 0 0;
+  display: flex; flex-direction: column;
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative; overflow: hidden;
+}
+.tts-popup-overlay.open .tts-popup { transform: translateY(0); }
+@media (min-width: 768px) {
+  .tts-popup-overlay { align-items: center; }
+  .tts-popup { border-radius: var(--tt-r-xl); max-height: 80vh; }
+}
+.tts-popup-header {
+  display: flex; gap: 12px; padding: 16px;
+  border-bottom: 1px solid var(--tt-bg-border);
+}
+.tts-popup-img {
+  width: 80px; height: 80px;
+  border-radius: var(--tt-r-md);
+  object-fit: cover; flex-shrink: 0;
+  background: var(--tt-bg-soft);
+}
+.tts-popup-info { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
+.tts-popup-price { font-size: 22px; font-weight: 800; color: var(--tt-pink); line-height: 1.2; }
+.tts-popup-price-old { font-size: 12px; color: var(--tt-strike-price); text-decoration: line-through; margin-top: 2px; }
+.tts-popup-stock { font-size: 12px; color: var(--tt-text-muted); margin-top: 4px; }
+.tts-popup-close {
+  position: absolute; top: 8px; right: 8px;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.05);
+  border: none; cursor: pointer;
+  z-index: 1;
+}
+.tts-popup-close svg { width: 18px; height: 18px; fill: var(--tt-text-muted); }
+.tts-popup-body { flex: 1; overflow-y: auto; padding: 16px; }
+.tts-popup-section { margin-bottom: 16px; }
+.tts-popup-section:last-child { margin-bottom: 0; }
+.tts-popup-label {
+  font-size: 14px; font-weight: 600;
+  color: var(--tt-text-primary);
+  margin-bottom: 8px;
+  display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap;
+}
+.tts-popup-label .req { color: var(--tt-pink); }
+.tts-popup-label-note {
+  font-size: 11px; font-weight: 400;
+  color: var(--tt-pink);
+  line-height: 1.4;
+}
+.tts-popup-options { display: flex; flex-direction: column; gap: 8px; }
+.tts-popup-option {
+  padding: 12px 14px;
+  background: var(--tt-bg-soft);
+  border: 1px solid transparent;
+  border-radius: var(--tt-r-md);
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--tt-text-primary);
+  text-align: left;
+  width: 100%;
+  position: relative;
+}
+@keyframes badge-blink {
+  0%, 100% { opacity: 1;    transform: translateY(-50%) scale(1);    box-shadow: 0 0 0 0 rgba(254,44,85,0.5); }
+  50%       { opacity: 0.7; transform: translateY(-50%) scale(0.96); box-shadow: 0 0 0 4px rgba(254,44,85,0); }
+}
+.tts-popup-option-badge {
+  position: absolute;
+  top: 50%; right: 8px;
+  transform: translateY(-50%);
+  padding: 2px 8px;
+  background: var(--tt-pink);
+  color: #FFFFFF;
+  font-size: 10px; font-weight: 800;
+  border-radius: var(--tt-r-pill);
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  pointer-events: none;
+  animation: badge-blink 1.2s ease-in-out infinite;
+}
+.tts-popup-option.selected {
+  background: #FFF0F4;
+  border-color: var(--tt-pink);
+  color: var(--tt-pink);
+  font-weight: 600;
+}
+.tts-popup-input, .tts-popup-textarea {
+  width: 100%; padding: 10px 12px;
+  border: 1px solid var(--tt-bg-border);
+  border-radius: var(--tt-r-md);
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--tt-text-primary);
+  background: var(--tt-bg);
+  outline: none;
+}
+.tts-popup-input:focus, .tts-popup-textarea:focus { border-color: var(--tt-pink); }
+.tts-popup-input.error, .tts-popup-textarea.error { border-color: var(--tt-flash-red); }
+.tts-popup-textarea { resize: vertical; min-height: 60px; }
+.tts-popup-error-msg {
+  font-size: 12px; color: var(--tt-flash-red);
+  margin-top: 4px;
+}
+.tts-honeypot {
+  position: absolute; left: -9999px;
+  opacity: 0; pointer-events: none;
+}
+.tts-popup-footer {
+  padding: 12px 16px;
+  border-top: 1px solid var(--tt-bg-border);
+  background: var(--tt-bg);
+}
+.tts-popup-total {
+  display: flex; justify-content: space-between;
+  align-items: baseline; margin-bottom: 10px;
+}
+.tts-popup-total-label { font-size: 13px; color: var(--tt-text-muted); }
+.tts-popup-total-value { font-size: 20px; font-weight: 800; color: var(--tt-pink); }
+.tts-popup-submit {
+  width: 100%; padding: 14px;
+  background: var(--tt-grad-pink);
+  color: #FFFFFF;
+  font-size: 15px; font-weight: 700;
+  border-radius: var(--tt-r-pill);
+  cursor: pointer; border: none;
+  box-shadow: var(--tt-shadow-cta);
+}
+.tts-popup-submit:disabled {
+  background: var(--tt-bg-soft);
+  color: var(--tt-text-disabled);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.tts-popup-success { padding: 32px 16px; text-align: center; }
+.tts-popup-success-icon {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: var(--tt-mint);
+  color: #4CAF50;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 32px; font-weight: 800;
+}
+.tts-popup-success-title { font-size: 18px; font-weight: 700; color: var(--tt-text-primary); margin-bottom: 8px; }
+.tts-popup-success-msg { font-size: 13px; color: var(--tt-text-muted); margin-bottom: 16px; }
+.tts-popup-order-code {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--tt-bg-soft);
+  border-radius: var(--tt-r-md);
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  font-size: 14px; font-weight: 700;
+  color: var(--tt-pink);
+  letter-spacing: 1px;
+}
+
+/* ===== GiuoWow additions (same TikTok-pink design tokens) ===== */
+.gw-cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px;border-radius:var(--tt-r-lg);overflow:hidden;border:1px solid #FFE0E8;background:#fff}
+.gw-cmp th,.gw-cmp td{padding:10px 6px;text-align:center;border-bottom:1px solid #FFE0E8;vertical-align:middle;color:var(--tt-text-secondary)}
+.gw-cmp th:first-child,.gw-cmp td:first-child{text-align:left;font-weight:700;color:var(--tt-black);width:30%;padding-left:10px}
+.gw-cmp thead th{background:var(--cos-soft-pink);font-size:11.5px;font-weight:600}
+.gw-cmp thead th.us{background:var(--tt-grad-pink);color:#fff;font-weight:700}
+.gw-cmp td.us{background:#FFF7FA;font-weight:700;color:var(--tt-pink-dark)}
+.gw-cmp tr:last-child td{border-bottom:0}
+.gw-ba{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gw-ba .cos-img-wrap{position:relative}
+.gw-ba-tag{position:absolute;left:8px;top:8px;background:rgba(22,24,35,.78);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px}
+.gw-ba-tag.after{background:var(--tt-pink)}
+.gw-cus{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gw-pkgs{display:grid;gap:10px;margin-top:14px}
+.gw-pkg{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:14px 16px;background:#fff;border:1.5px solid #FFD0DB;border-radius:var(--tt-r-lg);cursor:pointer;font-family:inherit;text-align:left;box-shadow:var(--tt-shadow-sm)}
+.gw-pkg.hot{border-color:var(--tt-pink);background:#FFF7FA}
+.gw-pkg:active{transform:translateY(1px)}
+.gw-pkg-name{font-size:14.5px;font-weight:700;color:var(--tt-black);line-height:1.3}
+.gw-pkg-name small{display:block;font-size:11.5px;font-weight:500;color:var(--tt-text-muted);margin-top:2px}
+.gw-pkg-price{font-size:19px;font-weight:800;color:var(--tt-pink);white-space:nowrap}
+.gw-pkg-tag{position:absolute;top:-9px;right:12px;background:var(--tt-grad-pink);color:#fff;font-size:10.5px;font-weight:700;padding:2px 9px;border-radius:999px}
 </style>
-
-<!-- Meta Pixel (chỉ chạy khi điền CONFIG.fbPixelId bên dưới) -->
-<script>
-var CONFIG = {
-  // Webhook Google Apps Script nhận đơn (xem README.md). Để trống = chưa kết nối.
-  webhookUrl: '',
-  fbPixelId: '',       // ví dụ: '123456789012345'
-  ttPixelId: '',       // ví dụ: 'CXXXXXXXXXXXXXXX'
-  hotline: '0868468832',
-  prices: {1: 199000, 2: 299000, 3: 399000},   // giá theo số chai (đã gồm freeship)
-  productName: 'GiuoWow - Tẩy lồng máy giặt 500ml'
-};
-</script>
 </head>
 <body>
-<div class="page">
+<div class="tts-page">
 
-  <div class="topstrip">🚚 <b>Miễn phí vận chuyển</b> toàn quốc · Thanh toán khi nhận hàng (COD)</div>
+  <!-- ========== HEADER ZONE ========== -->
+  <nav class="tts-tabnav" aria-label="Section navigation">
+    <a class="tts-tab active" href="#tongquan">Tổng quan</a>
+    <a class="tts-tab" href="#dacdiem">Đặc điểm</a>
+    <a class="tts-tab" href="#mota">Mô tả</a>
+    <a class="tts-tab" href="#dexuat">Đề xuất</a>
+  </nav>
 
-  <!-- HERO -->
-  <header class="hero" id="top">
-    <span class="hero-badge">MỚI · CÔNG THỨC VƯỢT TRỘI</span>
-    <h1>Lồng máy giặt của bạn đang <em>bẩn hơn</em> bạn nghĩ</h1>
-    <p class="lead">GiuoWow giúp làm sạch cặn bẩn, cặn vôi, nấm mốc bám lâu ngày, khử mùi và diệt khuẩn cho lồng máy giặt.</p>
-    <img class="hero-img" src="assets/product-infographic.webp" width="1000" height="1000" alt="Chai GiuoWow tẩy lồng máy giặt 500ml - sạch sâu, khử mùi, diệt khuẩn" fetchpriority="high">
-    <div class="price-box"><strong>199.000đ</strong><small>/ chai 500ml</small></div>
-    <div class="price-note">Mua 2 chai chỉ <b>299.000đ</b> · Mua 3 chai chỉ <b>399.000đ</b><br>Miễn phí vận chuyển · Thanh toán khi nhận hàng</div>
-    <button class="btn btn-gold btn-pulse" type="button" data-order>
-      <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21 4.96 19.27 4H5.21l-.94-2H1z"/></svg>
-      ĐẶT HÀNG NGAY
-    </button>
-    <div class="chips">
-      <span class="chip"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Dùng cho máy cửa trên &amp; cửa trước</span>
-      <span class="chip"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Công nghệ Nhật Bản · SX tại Việt Nam</span>
-      <span class="chip"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Không ăn mòn lồng máy</span>
-    </div>
-  </header>
-
-  <!-- NỖI ĐAU -->
-  <section class="bg-cream" id="noi-dau">
-    <span class="eyebrow">Bạn có đang gặp?</span>
-    <h2>Giặt xong rồi mà quần áo vẫn không &ldquo;sạch&rdquo;?</h2>
-    <p class="sub">Nếu bạn gật đầu với 2 trong 4 điều dưới đây, đã đến lúc vệ sinh lồng máy giặt.</p>
-    <div class="pain-list">
-      <div class="pain-item"><span class="n">1</span><span><b>Quần áo có mùi hôi, ẩm mốc</b> dù đã giặt bằng nước giặt thơm và phơi nắng.</span></div>
-      <div class="pain-item"><span class="n">2</span><span><b>Nước giặt có cặn đen, xơ nổi</b> hoặc vụn bẩn bám trên áo quần sau khi giặt.</span></div>
-      <div class="pain-item"><span class="n">3</span><span><b>Lồng giặt có mùi khó chịu</b> mỗi lần mở nắp hoặc mở cửa máy.</span></div>
-      <div class="pain-item"><span class="n">4</span><span><b>Máy dùng lâu ngày nhưng chưa từng vệ sinh</b> vì ngại tháo lắp hoặc gọi thợ.</span></div>
-    </div>
-    <div class="callout">↓ Chỉ cần đổ chất tẩy vào lồng và chạy máy ↓</div>
-  </section>
-
-  <!-- VÌ SAO BẨN -->
-  <section id="vi-sao">
-    <span class="eyebrow">Sự thật ít ai thấy</span>
-    <h2>Phần bẩn nằm ở nơi bạn không nhìn thấy</h2>
-    <p class="sub">Thành lồng bên trong thường xuyên ẩm ướt, nên rất dễ tích tụ cặn theo thời gian.</p>
-    <div class="photo"><img src="assets/long-ban-thuc-te.svg" width="800" height="600" alt="Lồng máy giặt bám cặn bẩn lâu ngày" loading="lazy"></div>
-    <div class="cause-grid">
-      <div class="cause"><h3>🧼 Cặn xà phòng &amp; cặn vôi</h3><p>Bột giặt, nước xả và nước cứng để lại lớp cặn bám dần vào thành lồng.</p></div>
-      <div class="cause"><h3>💧 Ẩm ướt kéo dài</h3><p>Lồng ít được khô thoáng, tạo điều kiện cho nấm mốc và vi khuẩn gây mùi phát triển.</p></div>
-      <div class="cause"><h3>👕 Bám ngược lên quần áo</h3><p>Cặn bẩn bong ra trong lúc giặt có thể dính lại lên quần áo, làm đồ có mùi khó chịu.</p></div>
-    </div>
-  </section>
-
-  <!-- GIẢI PHÁP -->
-  <section class="bg-red" id="giai-phap">
-    <span class="eyebrow">Giải pháp</span>
-    <h2>GiuoWow - Sạch sâu · Khử mùi · Diệt khuẩn</h2>
-    <p class="sub">Bảo vệ máy giặt cho quần áo thơm mát. Hiệu quả sau 1 lần sử dụng.</p>
-    <div class="ben-grid">
-      <div class="ben">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15l-4-4 1.41-1.41L11 13.17l4.59-4.58L17 10l-6 6z"/></svg></div>
-        <h3>Sạch sâu</h3><p>Loại bỏ cặn bẩn, cặn vôi, nấm mốc bám lâu ngày</p>
-      </div>
-      <div class="ben">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5c0 2.4 1.7 4.4 4 4.9V14H9v2h2v2H9v2h6v-2h-2v-2h2v-2h-2v-2.1c2.3-.5 4-2.5 4-4.9a5 5 0 0 0-5-5z"/></svg></div>
-        <h3>Diệt khuẩn 99,9%</h3><p>Loại bỏ vi khuẩn, nấm mốc gây mùi hôi*</p>
-      </div>
-      <div class="ben">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9zM5.6 10.25a2.5 2.5 0 0 0 4.4 1.58 2.5 2.5 0 0 0 4 0 2.5 2.5 0 0 0 4.4-1.58A2.5 2.5 0 0 0 16 7.5 2.5 2.5 0 0 0 12 5.17 2.5 2.5 0 0 0 8 7.5a2.5 2.5 0 0 0-2.4 2.75zM12 22C7.03 22 3 17.97 3 13c4.97 0 9 4.03 9 9z"/></svg></div>
-        <h3>Khử mùi hiệu quả</h3><p>Lồng máy thơm mát, sạch sẽ</p>
-      </div>
-      <div class="ben">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
-        <h3>An toàn cho lồng máy</h3><p>Không ăn mòn, bảo vệ lồng máy giặt</p>
-      </div>
-    </div>
-    <p class="fine">* Theo công bố và kết quả kiểm nghiệm của nhà sản xuất. Hiệu quả thực tế có thể khác nhau tùy tình trạng máy giặt và mức độ bám bẩn.</p>
-    
-  </section>
-
-  <!-- HƯỚNG DẪN -->
-  <section id="cach-dung">
-    <span class="eyebrow">Cách dùng</span>
-    <h2>Chỉ 3 bước - không cần tháo máy</h2>
-    <p class="sub">Làm theo hướng dẫn in trên nhãn sản phẩm.</p>
-    <div class="steps">
-      <div class="step"><span class="num">1</span><div><h3>Đổ chất tẩy vào lồng</h3><p>Đổ ½ - 1 chai (250ml - 500ml) vào lồng máy giặt.</p></div></div>
-      <div class="step"><span class="num">2</span><div><h3>Chạy chế độ giặt thường</h3><p>Chọn chế độ giặt thường với mức nước cao nhất.</p></div></div>
-      <div class="step"><span class="num">3</span><div><h3>Để lồng khô tự nhiên</h3><p>Sau khi giặt xong, mở nắp/cửa máy để lồng khô tự nhiên.</p></div></div>
-    </div>
-    <div class="note-box"><b>Lưu ý:</b> Giặt lồng không có quần áo. Với máy cửa trước, hãy làm theo hướng dẫn vệ sinh lồng của hãng máy nếu có. Không trộn với thuốc tẩy hoặc hóa chất khác. Nên vệ sinh lồng khoảng 1 - 2 tháng/lần.</div>
-  </section>
-
-  <!-- DEMO -->
-  <section class="bg-cream" id="demo">
-    <span class="eyebrow">Thực tế sử dụng</span>
-    <h2>Xem GiuoWow hoạt động</h2>
-    <p class="sub">Hình ảnh và video thực tế khi vệ sinh lồng máy giặt.</p>
-    <div class="ba">
-      <div class="photo"><span class="tag">Trước</span><img src="assets/demo-truoc.svg" width="600" height="600" alt="Lồng máy giặt trước khi tẩy" loading="lazy"></div>
-      <div class="photo"><span class="tag after">Sau</span><img src="assets/demo-sau.svg" width="600" height="600" alt="Lồng máy giặt sau khi tẩy" loading="lazy"></div>
-    </div>
-    <div class="photo demo-video"><img src="assets/demo-video-poster.svg" width="800" height="450" alt="Video hướng dẫn sử dụng GiuoWow" loading="lazy"></div>
-    <p class="caption">Kết quả có thể khác nhau tùy tình trạng và thời gian sử dụng của máy giặt.</p>
-  </section>
-
-  <!-- SO SÁNH -->
-  <section id="so-sanh">
-    <span class="eyebrow">So sánh nhanh</span>
-    <h2>Vì sao nên dùng chất tẩy lồng chuyên dụng?</h2>
-    <p class="sub">&nbsp;</p>
-    <table class="cmp">
-      <thead><tr><th></th><th class="us">GiuoWow</th><th>Không vệ sinh</th><th>Mẹo tự pha</th></tr></thead>
-      <tbody>
-        <tr><td>Cặn bám lâu ngày</td><td class="us yes">Xử lý chuyên sâu</td><td class="no">Tích tụ thêm</td><td class="mid">Tùy cách pha</td></tr>
-        <tr><td>Khử mùi</td><td class="us yes">Có</td><td class="no">Mùi dễ quay lại</td><td class="mid">Hạn chế</td></tr>
-        <tr><td>Thao tác</td><td class="us yes">Đổ vào, chạy máy</td><td>-</td><td class="mid">Pha, đo, thử</td></tr>
-        <tr><td>Công thức rõ ràng</td><td class="us yes">Có nhãn, hướng dẫn</td><td>-</td><td class="mid">Khó kiểm soát</td></tr>
-        <tr><td>Tháo máy</td><td class="us yes">Không cần</td><td>-</td><td class="yes">Không cần</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- PHÙ HỢP VỚI AI -->
-  <section class="bg-cream" id="phu-hop">
-    <span class="eyebrow">Phù hợp với</span>
-    <h2>Ai nên dùng GiuoWow?</h2>
-    <p class="sub">Dùng được cho cả máy giặt cửa trên và cửa trước.</p>
-    <div class="who">
-      <div class="who-card"><span class="em">🏠</span><b>Gia đình</b><span>Muốn quần áo thơm mát, sạch sẽ</span></div>
-      <div class="who-card"><span class="em">👶</span><b>Nhà có trẻ nhỏ</b><span>Quan tâm vệ sinh đồ giặt hằng ngày</span></div>
-      <div class="who-card"><span class="em">🧺</span><b>Máy dùng lâu năm</b><span>Chưa từng vệ sinh lồng giặt</span></div>
-      <div class="who-card"><span class="em">🏢</span><b>Phòng trọ, căn hộ</b><span>Máy dùng chung, dùng nhiều</span></div>
-    </div>
-  </section>
-
-  <!-- ƯU ĐÃI -->
-  <section class="offer" id="uu-dai">
-    <span class="eyebrow" style="color:var(--gold)">Ưu đãi đặt hàng online</span>
-    <h2 style="color:#fff">Chọn gói phù hợp - Freeship toàn quốc</h2>
-    <p class="sub" style="color:#FFD9DB">Mua càng nhiều càng tiết kiệm. Thanh toán khi nhận hàng (COD).</p>
-    <div class="pkgs">
-      <div class="pkg">
-        <div class="pkg-row">
-          <div class="pkg-imgs one"><img src="assets/product-front.webp" width="444" height="1100" alt="" loading="lazy"></div>
-          <div class="pkg-info"><h3>1 chai GiuoWow 500ml</h3><div class="pkg-price">199.000đ</div><div class="pkg-sub">Miễn phí vận chuyển</div></div>
+  <section id="tongquan">
+    <!-- Brand Strip -->
+    <div class="tts-brand-strip">
+      <img class="tts-brand-logo" src="assets/brand-avatar.webp" alt="GiuoWow" width="40" height="40">
+      <div class="tts-brand-textgroup">
+        <div class="tts-brand-row1">
+          <span class="tts-brand-name">GiuoWow</span>
         </div>
-        <button class="btn btn-red" type="button" data-order data-pkg="1">CHỌN GÓI 1 CHAI</button>
+        <span class="tts-brand-sub">Tẩy lồng máy giặt · Sản xuất tại Việt Nam</span>
       </div>
-      <div class="pkg hot">
-        <span class="pkg-ribbon">TIẾT KIỆM 99K</span>
-        <div class="pkg-row">
-          <div class="pkg-imgs"><img src="assets/product-front.webp" width="444" height="1100" alt="" loading="lazy"><img src="assets/product-front.webp" width="444" height="1100" alt="" loading="lazy"></div>
-          <div class="pkg-info"><h3>Combo 2 chai</h3><div class="pkg-price">299.000đ</div><span class="pkg-save">Tiết kiệm 99.000đ</span><div class="pkg-sub">Miễn phí vận chuyển · ~150k/chai</div></div>
+      <a class="tts-follow-btn" href="tel:0868468832" data-call style="text-decoration:none">Gọi shop</a>
+    </div>
+
+    <!-- Hero Gallery -->
+    <div class="tts-hero">
+      <div class="tts-hero-track">
+        <div class="tts-hero-slide"><img class="tts-hero-img" src="assets/product-infographic.webp" alt="GiuoWow tẩy lồng máy giặt 500ml - sạch sâu, khử mùi, diệt khuẩn" fetchpriority="high"></div>
+        <div class="tts-hero-slide"><img class="tts-hero-img" src="assets/product-front-sq.webp" alt="Chai GiuoWow tẩy lồng máy giặt 500ml - mặt trước" loading="lazy"></div>
+        <div class="tts-hero-slide"><img class="tts-hero-img" src="assets/product-back-sq.webp" alt="Chai GiuoWow - mặt sau: thành phần và hướng dẫn sử dụng" loading="lazy"></div>
+      </div>
+      <button class="tts-hero-arrow prev" type="button" aria-label="Trước">
+        <svg viewBox="0 0 24 24"><path fill="#fff" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button class="tts-hero-arrow next" type="button" aria-label="Tiếp">
+        <svg viewBox="0 0 24 24"><path fill="#fff" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+      <div class="tts-hero-counter">1/3</div>
+    </div>
+
+    <!-- Deal Banner: Price + shipping -->
+    <div class="tts-deal-banner">
+      <div class="tts-deal-left">
+        <div class="tts-deal-left-info">
+          <div class="tts-deal-pricerow">
+            <span class="tts-deal-price">199.000<span class="tts-deal-price-sym">đ</span></span>
+            <span class="tts-deal-pct">FREESHIP</span>
+          </div>
+          <span style="font-size:11px;font-weight:600;color:rgba(255,255,255,.9)">Mua 2: 299.000đ · Mua 3: 399.000đ</span>
         </div>
-        <button class="btn btn-red btn-pulse" type="button" data-order data-pkg="2">CHỌN COMBO 2 CHAI</button>
       </div>
-      <div class="pkg hot">
-        <span class="pkg-ribbon">TIẾT KIỆM NHẤT · 198K</span>
-        <div class="pkg-row">
-          <div class="pkg-imgs"><img src="assets/product-front.webp" width="444" height="1100" alt="" loading="lazy"><img src="assets/product-front.webp" width="444" height="1100" alt="" loading="lazy"><img src="assets/product-front.webp" width="444" height="1100" alt="" loading="lazy"></div>
-          <div class="pkg-info"><h3>Combo 3 chai</h3><div class="pkg-price">399.000đ</div><span class="pkg-save">Tiết kiệm 198.000đ</span><div class="pkg-sub">Miễn phí vận chuyển · ~133k/chai</div></div>
+      <div class="tts-deal-right">
+        <div class="tts-deal-right-title">Ưu đãi đặt online</div>
+        <div class="tts-deal-right-sub">Phí vận chuyển</div>
+        <div class="tts-promo-countdown"><b>0đ</b></div>
+      </div>
+    </div>
+
+    <!-- Title Block -->
+    <div class="tts-title-block">
+      <span class="tts-tag-mall">Mới</span>
+      <h1 class="tts-title">GiuoWow - Tẩy lồng máy giặt 500ml | Sạch sâu, khử mùi, diệt khuẩn | Dùng cho máy cửa trên &amp; cửa trước</h1>
+      <button class="tts-bookmark-btn" type="button" aria-label="Lưu sản phẩm">
+        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4v17l7-4 7 4V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1z"/></svg>
+      </button>
+    </div>
+
+    <!-- Meta Row -->
+    <div class="tts-meta">
+      <span class="tts-meta-item">Thể tích thực 500ml</span>
+      <span class="tts-meta-divider">|</span>
+      <span class="tts-meta-item">Công nghệ Nhật Bản</span>
+      <span class="tts-meta-divider">|</span>
+      <span class="tts-meta-item-ship">
+        <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3a2 2 0 0 0-2 2v11h2a3 3 0 0 0 6 0h6a3 3 0 0 0 6 0h2v-5l-3-4zM6 18.5A1.5 1.5 0 1 1 7.5 17 1.5 1.5 0 0 1 6 18.5zm12 0A1.5 1.5 0 1 1 19.5 17 1.5 1.5 0 0 1 18 18.5zM17 12V9.5h2.5L21.46 12H17z"/></svg>
+        Miễn phí vận chuyển
+      </span>
+    </div>
+
+    <!-- Hot Category Strip -->
+    <div class="tts-hot-strip">
+      <svg class="trophy" viewBox="0 0 24 24"><path fill="#C44900" d="M19 5h-2V3H7v2H5a2 2 0 0 0-2 2v2c0 2.21 1.79 4 4 4 .14 0 .27-.02.4-.05A6.01 6.01 0 0 0 11 14.92V17H8v2h8v-2h-3v-2.08a6.01 6.01 0 0 0 3.6-3.97c.13.03.26.05.4.05 2.21 0 4-1.79 4-4V7a2 2 0 0 0-2-2zM5 9V7h2v3.82A2 2 0 0 1 5 9zm14 0a2 2 0 0 1-2 1.82V7h2v2z"/></svg>
+      <div class="tts-hot-strip-text">
+        <span class="tts-hot-strip-bold">Công thức mới vượt trội</span>
+        Làm sạch lồng giặt, khử mùi, bảo vệ máy giặt
+      </div>
+      <svg class="chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6V6z"/></svg>
+    </div>
+
+    <!-- Feature Chips -->
+    <div class="tts-feature-chips">
+      <span class="tts-feat-chip">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        Máy cửa trên &amp; cửa trước
+      </span>
+      <span class="tts-feat-chip">
+        <svg viewBox="0 0 24 24"><path d="M17.65 6.35A8 8 0 1 0 19.73 14h-2.08a6 6 0 1 1-1.42-6.22L13 11h7V4z"/></svg>
+        Đổi trả 7 ngày
+      </span>
+      <span class="tts-feat-chip">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+        Tư vấn miễn phí
+      </span>
+    </div>
+
+    <!-- Info Rows List -->
+    <div class="tts-info-rows">
+      <div class="tts-info-row" onclick="onBuyClick()" style="cursor:pointer">
+        <div class="tts-info-label">Phân loại</div>
+        <div class="tts-info-value">1 chai · Combo 2 chai · Combo 3 chai</div>
+        <svg class="tts-info-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6V6z"/></svg>
+      </div>
+      <div class="tts-info-row">
+        <div class="tts-info-label">Thanh toán</div>
+        <div class="tts-info-value">
+          <span class="tts-cod-tag">COD</span>
+          Thanh toán khi nhận hàng
         </div>
-        <button class="btn btn-red btn-pulse" type="button" data-order data-pkg="3">CHỌN COMBO 3 CHAI</button>
+      </div>
+      <div class="tts-info-row">
+        <div class="tts-info-label">Vận chuyển</div>
+        <div class="tts-info-value">
+          <span class="tts-ship-free">Miễn phí</span> toàn quốc
+        </div>
+      </div>
+      <div class="tts-info-row">
+        <div class="tts-info-label">Xuất xứ</div>
+        <div class="tts-info-value">Công nghệ Nhật Bản · Sản xuất tại Việt Nam</div>
+      </div>
+      <div class="tts-info-row">
+        <div class="tts-info-label">Đổi trả</div>
+        <div class="tts-info-value">7 ngày nếu lỗi hoặc giao sai</div>
+      </div>
+      <div class="tts-info-row">
+        <div class="tts-info-label">Thành phần</div>
+        <div class="tts-info-value">Acid hữu cơ · Hương liệu dịu nhẹ · Không ăn mòn lồng máy</div>
       </div>
     </div>
-    <ul class="offer-perks">
-      <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Miễn phí vận chuyển toàn quốc</li>
-      <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Thanh toán khi nhận hàng (COD)</li>
-      <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Hỗ trợ đổi trả trong 7 ngày nếu lỗi hoặc giao sai</li>
-      <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Tư vấn miễn phí qua hotline 0868 468 832</li>
-    </ul>
-  </section>
 
-  <!-- THÔNG TIN SẢN PHẨM -->
-  <section id="thong-tin">
-    <span class="eyebrow">Thông tin sản phẩm</span>
-    <h2>Thành phần &amp; thông số</h2>
-    <table class="spec">
-      <tr><th>Tên sản phẩm</th><td>GiuoWow - Tẩy lồng máy giặt</td></tr>
-      <tr><th>Thể tích thực</th><td>500ml</td></tr>
-      <tr><th>Công nghệ</th><td>Công nghệ Nhật Bản, áp dụng sản xuất tại nhà máy ở Việt Nam</td></tr>
-      <tr><th>Thành phần</th><td>Nước, Acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu vừa đủ</td></tr>
-      <tr><th>Công dụng</th><td>Loại bỏ cặn bẩn, cặn vôi, nấm mốc bám lâu ngày trong lồng máy giặt. Diệt khuẩn, khử mùi hôi, giúp lồng giặt sạch sẽ, quần áo thơm mát và bảo vệ máy giặt luôn bền đẹp.</td></tr>
-      <tr><th>Liều dùng</th><td>½ - 1 chai (250ml - 500ml) cho mỗi lần vệ sinh</td></tr>
-      <tr><th>Bảo quản</th><td>Nơi khô ráo, thoáng mát, để xa tầm tay trẻ em</td></tr>
-      <tr><th>Cảnh báo</th><td>Tránh tiếp xúc với mắt và da. Không uống. Nếu nuốt phải, uống nhiều nước và đến cơ sở y tế.</td></tr>
-    </table>
-    <div class="spec-imgs">
-      <div class="photo"><img src="assets/product-front.webp" width="444" height="1100" alt="Mặt trước chai GiuoWow" loading="lazy"></div>
-      <div class="photo"><img src="assets/product-back.webp" width="450" height="1100" alt="Mặt sau chai GiuoWow: thành phần và hướng dẫn sử dụng" loading="lazy"></div>
+    <!-- Inline CTA buttons -->
+    <div class="tts-inline-cta">
+      <a class="tts-inline-btn cart" href="tel:0868468832" data-call style="text-decoration:none">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+        Gọi tư vấn
+      </a>
+      <button class="tts-inline-btn buy" type="button" onclick="onBuyClick()">
+        <svg viewBox="0 0 24 24"><path fill="#fff" d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
+        Mua ngay · 199.000đ
+      </button>
     </div>
   </section>
 
-  <!-- KHÁCH HÀNG -->
-  <section class="bg-cream" id="khach-hang">
-    <span class="eyebrow">Khách hàng nói gì</span>
-    <h2>Phản hồi từ khách hàng</h2>
-    <p class="sub">Hình ảnh và tin nhắn phản hồi thực tế.</p>
-    <div class="cus">
-      <div class="photo"><img src="assets/khach-1.svg" width="600" height="600" alt="Phản hồi khách hàng 1" loading="lazy"></div>
-      <div class="photo"><img src="assets/khach-2.svg" width="600" height="600" alt="Phản hồi khách hàng 2" loading="lazy"></div>
-      <div class="photo"><img src="assets/khach-3.svg" width="600" height="600" alt="Phản hồi khách hàng 3" loading="lazy"></div>
+  <div class="tts-section-divider"></div>
+
+  <!-- ========== ĐẶC ĐIỂM ========== -->
+  <section id="dacdiem">
+
+    <!-- Pain Strip -->
+    <div class="cos-pain-strip">
+      <h2 class="cos-pain-title">Lồng máy giặt của bạn đang bẩn hơn bạn nghĩ?</h2>
+      <p class="cos-pain-sub">Nếu bạn gật đầu với 2 trong số này, đã đến lúc vệ sinh lồng máy giặt.</p>
+      <div class="cos-img-wrap" style="margin-bottom:14px;aspect-ratio:4/3">
+        <img class="cos-pain-image" src="assets/long-ban-thuc-te.svg" alt="Lồng máy giặt bám cặn bẩn lâu ngày" loading="lazy">
+      </div>
+      <div class="cos-pain-list">
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">1</span>
+          <span class="cos-pain-text"><b>Quần áo có mùi hôi, ẩm mốc</b> — dù đã giặt bằng nước giặt thơm và phơi nắng.</span>
+        </div>
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">2</span>
+          <span class="cos-pain-text"><b>Nước giặt có cặn đen, xơ nổi</b> — vụn bẩn dính trên áo quần sau khi giặt.</span>
+        </div>
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">3</span>
+          <span class="cos-pain-text"><b>Lồng giặt có mùi khó chịu</b> — mỗi lần mở nắp hoặc mở cửa máy.</span>
+        </div>
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">4</span>
+          <span class="cos-pain-text"><b>Dùng máy lâu ngày chưa từng vệ sinh</b> — ngại tháo lắp hoặc gọi thợ.</span>
+        </div>
+      </div>
+      <div class="cos-pain-cta">↓ Chỉ cần đổ chất tẩy vào lồng và chạy máy ↓</div>
     </div>
+
+    <!-- Ingredient Spotlight: công dụng -->
+    <div class="cos-ingredient">
+      <h2 class="cos-ing-title">GiuoWow: Sạch Sâu · Khử Mùi · Diệt Khuẩn</h2>
+      <p class="cos-ing-sub">Bảo vệ máy giặt cho quần áo thơm mát. Hiệu quả sau 1 lần sử dụng.</p>
+      <div class="cos-img-wrap" style="margin-bottom:16px;aspect-ratio:1/1">
+        <img class="cos-ing-hero" src="assets/product-infographic.webp" alt="GiuoWow tẩy lồng máy giặt - công dụng" loading="lazy">
+      </div>
+      <div class="cos-ing-list">
+        <div class="cos-ing-item">
+          <div class="cos-ing-circle"><b>Sạch</b><span>sâu</span></div>
+          <div class="cos-ing-body">
+            <div class="cos-ing-name">Sạch sâu cặn bẩn <span class="cos-ing-cert">GiuoWow</span></div>
+            <div class="cos-ing-desc">Loại bỏ cặn bẩn, cặn vôi, nấm mốc bám lâu ngày trong lồng máy giặt.</div>
+          </div>
+        </div>
+        <div class="cos-ing-item">
+          <div class="cos-ing-circle"><b>99,9</b><span>%</span></div>
+          <div class="cos-ing-body">
+            <div class="cos-ing-name">Diệt khuẩn 99,9%* <span class="cos-ing-cert">GiuoWow</span></div>
+            <div class="cos-ing-desc">Loại bỏ vi khuẩn, nấm mốc gây mùi hôi, giúp lồng giặt sạch sẽ.</div>
+          </div>
+        </div>
+        <div class="cos-ing-item">
+          <div class="cos-ing-circle"><b>Khử</b><span>mùi</span></div>
+          <div class="cos-ing-body">
+            <div class="cos-ing-name">Khử mùi, thơm mát <span class="cos-ing-cert">GiuoWow</span></div>
+            <div class="cos-ing-desc">Lồng máy thơm mát, sạch sẽ; hương thơm dịu nhẹ cho quần áo thơm mát.</div>
+          </div>
+        </div>
+        <div class="cos-ing-item">
+          <div class="cos-ing-circle"><b>Bảo</b><span>vệ</span></div>
+          <div class="cos-ing-body">
+            <div class="cos-ing-name">Bảo vệ lồng máy <span class="cos-ing-cert">GiuoWow</span></div>
+            <div class="cos-ing-desc">Không ăn mòn, bảo vệ lồng máy giặt luôn bền đẹp.</div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--tt-text-muted);margin-top:12px;line-height:1.5;text-align:center">* Theo công bố và kết quả kiểm nghiệm của nhà sản xuất. Hiệu quả thực tế có thể khác nhau tùy tình trạng máy giặt và mức độ bám bẩn.</p>
+    </div>
+
+    <!-- Safety -->
+    <div class="cos-safety">
+      <h2 class="cos-saf-title">Dùng Cho Cả 2 Loại Máy Giặt</h2>
+      <p class="cos-saf-sub">Máy cửa trên (lồng đứng) và cửa trước (lồng ngang) — làm theo hướng dẫn in trên nhãn.</p>
+      <div class="cos-saf-grid">
+        <div class="cos-saf-badge">
+          <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+          <div class="cos-saf-name">Không ăn mòn</div>
+          <div class="cos-saf-desc">Bảo vệ lồng máy</div>
+        </div>
+        <div class="cos-saf-badge">
+          <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg></div>
+          <div class="cos-saf-name">Cửa trên</div>
+          <div class="cos-saf-desc">Máy lồng đứng</div>
+        </div>
+        <div class="cos-saf-badge">
+          <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+          <div class="cos-saf-name">Cửa trước</div>
+          <div class="cos-saf-desc">Máy lồng ngang</div>
+        </div>
+        <div class="cos-saf-badge">
+          <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M12 3l1.45 4.55L18 9l-4.55 1.45L12 15l-1.45-4.55L6 9l4.55-1.45z"/></svg></div>
+          <div class="cos-saf-name">Hương dịu nhẹ</div>
+          <div class="cos-saf-desc">Quần áo thơm mát</div>
+        </div>
+        <div class="cos-saf-badge">
+          <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg></div>
+          <div class="cos-saf-name">Sản xuất VN</div>
+          <div class="cos-saf-desc">Công nghệ Nhật Bản</div>
+        </div>
+        <div class="cos-saf-badge">
+          <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/></svg></div>
+          <div class="cos-saf-name">Đổi trả 7 ngày</div>
+          <div class="cos-saf-desc">Hỗ trợ tận tâm</div>
+        </div>
+      </div>
+      <div class="cos-saf-callout">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        <div class="cos-saf-callout-text">
+          <b>Lưu ý an toàn:</b> Để xa tầm tay trẻ em. Tránh tiếp xúc với mắt và da. Không uống — nếu nuốt phải, uống nhiều nước và đến cơ sở y tế. Không trộn với thuốc tẩy hoặc hóa chất khác. Bảo quản nơi khô ráo, thoáng mát.
+        </div>
+      </div>
+    </div>
+
+    <!-- Product info -->
+    <div class="cos-license">
+      <div class="cos-lic-badge">
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        Công nghệ Nhật Bản · Sản xuất tại nhà máy ở Việt Nam
+      </div>
+      <h2 class="cos-lic-title">Thông Tin Rõ Ràng — <em>Trên Nhãn</em></h2>
+      <p class="cos-lic-sub">Thành phần, hướng dẫn sử dụng và cảnh báo được in đầy đủ trên nhãn sản phẩm. Gọi 0868 468 832 để được tư vấn cách dùng cho từng loại máy giặt.</p>
+
+      <div class="cos-img-wrap cos-lic-image-wrap">
+        <img class="cos-lic-image" src="assets/product-back-sq.webp" alt="Mặt sau chai GiuoWow: công dụng, thành phần, hướng dẫn sử dụng" loading="lazy">
+      </div>
+      <div class="cos-lic-zoom-hint">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        Bấm vào ảnh để xem kích thước lớn
+      </div>
+
+      <div class="cos-lic-features">
+        <div class="cos-lic-feat">
+          <div class="cos-lic-feat-num">500ml</div>
+          <div class="cos-lic-feat-text">Thể tích thực</div>
+        </div>
+        <div class="cos-lic-feat">
+          <div class="cos-lic-feat-num">1–2</div>
+          <div class="cos-lic-feat-text">Lần dùng / chai</div>
+        </div>
+        <div class="cos-lic-feat">
+          <div class="cos-lic-feat-num">1 lần</div>
+          <div class="cos-lic-feat-text">Thấy hiệu quả</div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
-  <!-- TRUST -->
-  <section id="cam-ket">
-    <span class="eyebrow">Mua hàng yên tâm</span>
-    <h2>Cam kết khi đặt hàng</h2>
-    <div class="trust" style="margin-top:18px">
-      <div class="trust-item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3a2 2 0 0 0-2 2v11h2a3 3 0 0 0 6 0h6a3 3 0 0 0 6 0h2v-5l-3-4zM6 18.5A1.5 1.5 0 1 1 7.5 17 1.5 1.5 0 0 1 6 18.5zm12 0A1.5 1.5 0 1 1 19.5 17 1.5 1.5 0 0 1 18 18.5zM17 12V9.5h2.5L21.46 12H17z"/></svg></div><div><b>Miễn phí vận chuyển</b><span>Giao hàng toàn quốc, không phụ thu phí ship.</span></div></div>
-      <div class="trust-item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 7H3a1 1 0 0 0-1 1v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a1 1 0 0 0-1-1zm-9 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zM3 4h18v2H3z"/></svg></div><div><b>Thanh toán khi nhận hàng</b><span>Nhận hàng rồi mới thanh toán (COD).</span></div></div>
-      <div class="trust-item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M17.65 6.35A8 8 0 1 0 19.73 14h-2.08a6 6 0 1 1-1.42-6.22L13 11h7V4z"/></svg></div><div><b>Hỗ trợ đổi trả</b><span>Hỗ trợ đổi trả nếu sản phẩm lỗi hoặc giao sai. Xem <a href="chinh-sach-doi-tra.html">chính sách đổi trả</a>.</span></div></div>
-      <div class="trust-item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg></div><div><b>Tư vấn miễn phí</b><span>Hotline <a href="tel:0868468832"><b style="display:inline">0868 468 832</b></a> giải đáp cách dùng cho từng loại máy giặt.</span></div></div>
+  <div class="tts-section-divider"></div>
+
+  <!-- ========== MÔ TẢ ========== -->
+  <section id="mota">
+
+    <!-- 4 công dụng -->
+    <div class="cos-benefit-grid">
+      <h2 class="cos-ben-title">GiuoWow Làm Được Gì Cho Máy Giặt?</h2>
+      <p class="cos-ben-sub">4 công dụng chính — theo công bố của nhà sản xuất</p>
+      <div class="cos-img-wrap" style="margin-bottom:14px;aspect-ratio:1/1">
+        <img class="cos-ben-banner" src="assets/product-front-sq.webp" alt="Chai GiuoWow 500ml" loading="lazy">
+      </div>
+      <div class="cos-ben-row">
+        <div class="cos-ben-card">
+          <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+          <div class="cos-ben-name">Sạch sâu</div>
+          <div class="cos-ben-desc">Cặn bẩn, cặn vôi, nấm mốc bám lâu ngày</div>
+        </div>
+        <div class="cos-ben-card">
+          <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 3l1.45 4.55L18 9l-4.55 1.45L12 15l-1.45-4.55L6 9l4.55-1.45z"/></svg></div>
+          <div class="cos-ben-name">Diệt khuẩn 99,9%*</div>
+          <div class="cos-ben-desc">Vi khuẩn, nấm mốc gây mùi hôi</div>
+        </div>
+      </div>
+      <div class="cos-ben-row">
+        <div class="cos-ben-card">
+          <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 22a8 8 0 0 0 8-8c0-3.5-2-6.5-5-8.5L12 2 9 5.5C6 7.5 4 10.5 4 14a8 8 0 0 0 8 8z"/></svg></div>
+          <div class="cos-ben-name">Khử mùi hiệu quả</div>
+          <div class="cos-ben-desc">Lồng máy thơm mát, sạch sẽ</div>
+        </div>
+        <div class="cos-ben-card">
+          <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+          <div class="cos-ben-name">Bảo vệ lồng máy</div>
+          <div class="cos-ben-desc">Không ăn mòn, giữ máy giặt bền đẹp</div>
+        </div>
+      </div>
     </div>
+
+    <!-- Thành phần -->
+    <div class="cos-ba">
+      <h2 class="cos-ba-title">Thành Phần &amp; Thông Số</h2>
+      <p class="cos-ba-sub">Thông tin in trên nhãn sản phẩm</p>
+      <div class="cos-ba-img-wrap">
+        <img src="assets/product-infographic.webp" alt="GiuoWow tẩy lồng máy giặt 500ml" loading="lazy">
+        <span class="cos-ba-label cos-ba-label-before">GiuoWow</span>
+        <span class="cos-ba-label cos-ba-label-after">500ml</span>
+      </div>
+      <div class="cos-ba-stats">
+        <div class="cos-ba-stat">
+          <div class="cos-ba-stat-num" style="font-size:16px;">Acid hữu cơ</div>
+          <div class="cos-ba-stat-label">Làm sạch cặn vôi, cặn bám</div>
+        </div>
+        <div class="cos-ba-stat">
+          <div class="cos-ba-stat-num" style="font-size:16px;">Hoạt động<span>BM</span></div>
+          <div class="cos-ba-stat-label">Chất hoạt động bề mặt tẩy rửa</div>
+        </div>
+        <div class="cos-ba-stat">
+          <div class="cos-ba-stat-num" style="font-size:16px;">Hương<span>dịu</span></div>
+          <div class="cos-ba-stat-label">Hương liệu vừa đủ, thơm mát</div>
+        </div>
+      </div>
+      <div class="cos-ba-note">Thành phần: Nước, Acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu vừa đủ.</div>
+    </div>
+
+    <!-- So sánh -->
+    <div class="cos-texture">
+      <h2 class="cos-tex-title">Vì Sao Nên Dùng Chất Tẩy Lồng Chuyên Dụng?</h2>
+      <p class="cos-tex-sub">So sánh nhanh giữa các cách xử lý lồng máy giặt.</p>
+      <table class="gw-cmp">
+        <thead><tr><th></th><th class="us">GiuoWow</th><th>Không vệ sinh</th><th>Mẹo tự pha</th></tr></thead>
+        <tbody>
+          <tr><td>Cặn bám lâu ngày</td><td class="us">Xử lý chuyên sâu</td><td>Tích tụ thêm</td><td>Tùy cách pha</td></tr>
+          <tr><td>Khử mùi</td><td class="us">Có</td><td>Mùi dễ quay lại</td><td>Hạn chế</td></tr>
+          <tr><td>Thao tác</td><td class="us">Đổ vào, chạy máy</td><td>-</td><td>Pha, đo, thử</td></tr>
+          <tr><td>Công thức</td><td class="us">Có nhãn, hướng dẫn</td><td>-</td><td>Khó kiểm soát</td></tr>
+          <tr><td>Tháo máy</td><td class="us">Không cần</td><td>-</td><td>Không cần</td></tr>
+        </tbody>
+      </table>
+      <div class="cos-tex-attrs" style="margin-top:14px">
+        <div class="cos-tex-attr">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+          Không cần tháo máy
+        </div>
+        <div class="cos-tex-attr">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Cửa trên &amp; cửa trước
+        </div>
+        <div class="cos-tex-attr">
+          <svg viewBox="0 0 24 24"><path d="M12 3l1.45 4.55L18 9l-4.55 1.45L12 15l-1.45-4.55L6 9l4.55-1.45z"/></svg>
+          Hiệu quả sau 1 lần dùng
+        </div>
+        <div class="cos-tex-attr">
+          <svg viewBox="0 0 24 24"><path d="M12 22a8 8 0 0 0 8-8c0-3.5-2-6.5-5-8.5L12 2 9 5.5C6 7.5 4 10.5 4 14a8 8 0 0 0 8 8z"/></svg>
+          Không ăn mòn lồng máy
+        </div>
+      </div>
+    </div>
+
+    <!-- Ảnh demo -->
+    <div class="cos-texture" style="background:var(--cos-soft-pink)">
+      <h2 class="cos-tex-title">Hình Ảnh Thực Tế Khi Dùng</h2>
+      <p class="cos-tex-sub">Lồng máy giặt trước và sau khi tẩy.</p>
+      <div class="gw-ba">
+        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/demo-truoc.svg" alt="Lồng máy giặt trước khi tẩy" loading="lazy"><span class="gw-ba-tag">Trước</span></div>
+        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/demo-sau.svg" alt="Lồng máy giặt sau khi tẩy" loading="lazy"><span class="gw-ba-tag after">Sau</span></div>
+      </div>
+      <p style="font-size:11px;color:var(--tt-text-muted);margin-top:10px;text-align:center">Kết quả có thể khác nhau tùy tình trạng và thời gian sử dụng của máy giặt.</p>
+    </div>
+
+    <!-- Cách dùng -->
+    <div class="cos-routine">
+      <h2 class="cos-rt-title">Cách Dùng — Chỉ 3 Bước</h2>
+      <p class="cos-rt-sub">Làm theo hướng dẫn in trên nhãn sản phẩm.<br>Nên vệ sinh lồng khoảng 1 – 2 tháng/lần.</p>
+      <div class="cos-rt-steps">
+        <div class="cos-rt-step cos-rt-highlight">
+          <span class="cos-rt-num">1</span>
+          <div class="cos-rt-content">
+            <div class="cos-rt-name">✦ Đổ chất tẩy vào lồng</div>
+            <div class="cos-rt-desc">Đổ ½ – 1 chai (250ml – 500ml) vào lồng máy giặt</div>
+          </div>
+        </div>
+        <div class="cos-rt-step cos-rt-highlight">
+          <span class="cos-rt-num">2</span>
+          <div class="cos-rt-content">
+            <div class="cos-rt-name">✦ Chạy chế độ giặt thường</div>
+            <div class="cos-rt-desc">Chọn chế độ giặt thường với mức nước cao nhất</div>
+          </div>
+        </div>
+        <div class="cos-rt-step">
+          <span class="cos-rt-num">3</span>
+          <div class="cos-rt-content">
+            <div class="cos-rt-name">Để lồng khô tự nhiên</div>
+            <div class="cos-rt-desc">Giặt xong, mở nắp/cửa máy để lồng khô tự nhiên</div>
+          </div>
+        </div>
+      </div>
+      <div class="cos-rt-pm-note">
+        <b>⚠️ Lưu ý:</b> Giặt lồng không có quần áo. Với máy cửa trước, hãy làm theo hướng dẫn vệ sinh lồng của hãng máy nếu có. Không trộn với thuốc tẩy hoặc hóa chất khác.
+      </div>
+    </div>
+
+    <!-- Chọn gói -->
+    <div class="cos-cta-block">
+      <div class="cos-cta-headline">Chọn gói phù hợp — <b>Freeship toàn quốc</b></div>
+      <div class="cos-cta-sub">Thanh toán khi nhận hàng (COD) · Đổi trả 7 ngày</div>
+      <div class="gw-pkgs">
+        <button class="gw-pkg" type="button" onclick="onBuyClick(0)">
+          <span class="gw-pkg-name">1 chai<small>GiuoWow 500ml</small></span>
+          <span class="gw-pkg-price">199.000đ</span>
+        </button>
+        <button class="gw-pkg hot" type="button" onclick="onBuyClick(1)">
+          <span class="gw-pkg-tag">Tiết kiệm 99k</span>
+          <span class="gw-pkg-name">Combo 2 chai<small>~150.000đ / chai</small></span>
+          <span class="gw-pkg-price">299.000đ</span>
+        </button>
+        <button class="gw-pkg hot" type="button" onclick="onBuyClick(2)">
+          <span class="gw-pkg-tag">Tiết kiệm 198k</span>
+          <span class="gw-pkg-name">Combo 3 chai<small>~133.000đ / chai</small></span>
+          <span class="gw-pkg-price">399.000đ</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick facts -->
+    <div class="cos-stats">
+      <h2 class="cos-stat-title">Thông Tin Nhanh</h2>
+      <div class="cos-stat-grid">
+        <div class="cos-stat-item">
+          <div class="cos-stat-num">500<span>ml</span></div>
+          <div class="cos-stat-label">Thể tích thực</div>
+        </div>
+        <div class="cos-stat-item">
+          <div class="cos-stat-num">1–2<span>lần</span></div>
+          <div class="cos-stat-label">Dùng được / chai</div>
+        </div>
+        <div class="cos-stat-item">
+          <div class="cos-stat-num">1–2<span>tháng</span></div>
+          <div class="cos-stat-label">Vệ sinh 1 lần</div>
+        </div>
+        <div class="cos-stat-item">
+          <div class="cos-stat-num">2<span>loại</span></div>
+          <div class="cos-stat-label">Máy cửa trên &amp; trước</div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
-  <!-- FAQ -->
-  <section class="bg-cream" id="faq">
-    <span class="eyebrow">Giải đáp</span>
-    <h2>Câu hỏi thường gặp</h2>
-    <div class="faq" style="margin-top:18px">
-      <details><summary>GiuoWow dùng được cho máy giặt cửa trên và cửa trước không?</summary><div class="a">Sản phẩm dùng được cho cả máy giặt cửa trên (lồng đứng) và cửa trước (lồng ngang). Với máy cửa trước, bạn nên ưu tiên chế độ vệ sinh lồng của hãng máy nếu có, và làm theo hướng dẫn của hãng.</div></details>
-      <details><summary>Một chai 500ml dùng được mấy lần?</summary><div class="a">Liều dùng trên nhãn là ½ - 1 chai (250ml - 500ml) mỗi lần, nên 1 chai dùng được khoảng 1 - 2 lần tùy dung tích lồng và mức độ bám bẩn. Mua combo 2 - 3 chai sẽ tiết kiệm hơn và đủ dùng cho nhiều lần vệ sinh.</div></details>
-      <details><summary>Bao lâu nên vệ sinh lồng máy giặt một lần?</summary><div class="a">Thông thường nên vệ sinh lồng giặt khoảng 1 - 2 tháng/lần. Máy dùng nhiều hoặc đặt nơi ẩm ướt có thể vệ sinh thường xuyên hơn.</div></details>
-      <details><summary>Có làm hỏng máy giặt không?</summary><div class="a">Nhà sản xuất công bố sản phẩm không ăn mòn, bảo vệ lồng máy. Để an toàn, bạn hãy dùng đúng liều lượng, đúng hướng dẫn trên nhãn và không trộn với hóa chất khác.</div></details>
-      <details><summary>Có cần cho quần áo vào khi tẩy lồng không?</summary><div class="a">Không. Bạn nên để lồng trống, đổ chất tẩy vào rồi chạy chương trình giặt như hướng dẫn.</div></details>
-      <details><summary>Sản phẩm có an toàn cho trẻ nhỏ không?</summary><div class="a">Đây là hóa phẩm tẩy rửa, cần để xa tầm tay trẻ em, tránh tiếp xúc với mắt và da, không uống. Nếu nuốt phải, uống nhiều nước và đến cơ sở y tế gần nhất.</div></details>
-      <details><summary>Giao hàng bao lâu? Thanh toán thế nào?</summary><div class="a">Đơn hàng được xác nhận qua điện thoại, giao toàn quốc, miễn phí vận chuyển cho cả 3 gói (1, 2, 3 chai). Bạn thanh toán khi nhận hàng (COD).</div></details>
-      <details><summary>Tôi cần hỗ trợ thêm thì liên hệ ở đâu?</summary><div class="a">Gọi hotline <a href="tel:0868468832"><b>0868 468 832</b></a> để được tư vấn miễn phí.</div></details>
+  <div class="tts-section-divider"></div>
+
+  <!-- ========== ĐỀ XUẤT ========== -->
+  <section id="dexuat">
+
+    <!-- Phản hồi khách hàng (ảnh thật sẽ thay sau) -->
+    <div class="cos-review">
+      <h2 class="cos-rev-title">Phản Hồi Từ Khách Hàng</h2>
+      <p class="cos-faq-sub" style="text-align:center;font-size:13px;color:var(--tt-text-secondary);margin-bottom:12px">Hình ảnh và tin nhắn phản hồi thực tế.</p>
+      <div class="gw-cus">
+        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-1.svg" alt="Phản hồi khách hàng 1" loading="lazy"></div>
+        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-2.svg" alt="Phản hồi khách hàng 2" loading="lazy"></div>
+        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-3.svg" alt="Phản hồi khách hàng 3" loading="lazy"></div>
+      </div>
     </div>
+
+    <!-- FAQ -->
+    <div class="cos-faq" id="faq">
+      <h2 class="cos-faq-title">Câu Hỏi Thường Gặp</h2>
+      <div class="cos-faq-list">
+        <details class="cos-faq-item">
+          <summary class="cos-faq-q">Dùng được cho máy giặt cửa trên và cửa trước không?</summary>
+          <div class="cos-faq-a">Sản phẩm dùng được cho cả máy giặt cửa trên (lồng đứng) và cửa trước (lồng ngang). Với máy cửa trước, bạn nên ưu tiên chế độ vệ sinh lồng của hãng máy nếu có, và làm theo hướng dẫn của hãng.</div>
+        </details>
+        <details class="cos-faq-item">
+          <summary class="cos-faq-q">Một chai 500ml dùng được mấy lần?</summary>
+          <div class="cos-faq-a">Liều dùng trên nhãn là ½ – 1 chai (250ml – 500ml) mỗi lần, nên 1 chai dùng được khoảng 1 – 2 lần tùy dung tích lồng và mức độ bám bẩn. Mua combo 2 – 3 chai sẽ tiết kiệm hơn và đủ dùng cho nhiều lần vệ sinh.</div>
+        </details>
+        <details class="cos-faq-item">
+          <summary class="cos-faq-q">Bao lâu nên vệ sinh lồng máy giặt một lần?</summary>
+          <div class="cos-faq-a">Thông thường nên vệ sinh lồng giặt khoảng 1 – 2 tháng/lần. Máy dùng nhiều hoặc đặt nơi ẩm ướt có thể vệ sinh thường xuyên hơn.</div>
+        </details>
+        <details class="cos-faq-item">
+          <summary class="cos-faq-q">Có làm hỏng máy giặt không?</summary>
+          <div class="cos-faq-a">Nhà sản xuất công bố sản phẩm không ăn mòn, bảo vệ lồng máy. Để an toàn, bạn hãy dùng đúng liều lượng, đúng hướng dẫn trên nhãn và không trộn với hóa chất khác.</div>
+        </details>
+        <details class="cos-faq-item">
+          <summary class="cos-faq-q">Có cần cho quần áo vào khi tẩy lồng không?</summary>
+          <div class="cos-faq-a">Không. Bạn nên để lồng trống, đổ chất tẩy vào rồi chạy chương trình giặt như hướng dẫn.</div>
+        </details>
+        <details class="cos-faq-item">
+          <summary class="cos-faq-q">Sản phẩm có an toàn cho trẻ nhỏ không?</summary>
+          <div class="cos-faq-a">Đây là hóa phẩm tẩy rửa, cần để xa tầm tay trẻ em, tránh tiếp xúc với mắt và da, không uống. Nếu nuốt phải, uống nhiều nước và đến cơ sở y tế gần nhất.</div>
+        </details>
+        <details class="cos-faq-item">
+          <summary class="cos-faq-q">Giao hàng thế nào? Thanh toán ra sao?</summary>
+          <div class="cos-faq-a">Đơn hàng được xác nhận qua điện thoại, giao toàn quốc, miễn phí vận chuyển cho cả 3 gói (1, 2, 3 chai). Bạn thanh toán khi nhận hàng (COD). Đổi trả trong 7 ngày nếu sản phẩm lỗi hoặc giao sai.</div>
+        </details>
+        <details class="cos-faq-item">
+          <summary class="cos-faq-q">Tôi cần hỗ trợ thêm thì liên hệ ở đâu?</summary>
+          <div class="cos-faq-a">Gọi hotline <a href="tel:0868468832" style="color:var(--tt-pink);font-weight:700">0868 468 832</a> để được tư vấn miễn phí.</div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Closing CTA -->
+    <div class="cos-cta-block" style="background: linear-gradient(180deg, var(--cos-soft-pink) 0%, var(--tt-bg) 100%);">
+      <div class="cos-cta-headline">🧺 Làm Sạch Lồng Máy Giặt Ngay Hôm Nay — <b>từ 199.000đ</b></div>
+      <div class="cos-cta-sub">1 chai 199k · 2 chai 299k · 3 chai 399k · Freeship · COD</div>
+      <button class="cos-cta-btn" type="button" onclick="onBuyClick()">
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21 4.96 19.27 4H5.21l-.94-2H1z"/></svg>
+        Đặt Hàng Ngay
+      </button>
+    </div>
+
+    <!-- Brand Footer -->
+    <div class="cos-brand-footer">
+      <div class="cos-brand-name">GIUOWOW</div>
+      <div class="cos-brand-tag">Tẩy lồng máy giặt · Sạch sâu · Khử mùi · Diệt khuẩn</div>
+      <div class="cos-brand-text">
+        Sản phẩm sản xuất và phân phối bởi Công ty TNHH Global Lifecare Việt Nam (theo nhãn sản phẩm). Tư vấn miễn phí qua hotline 0868 468 832.
+      </div>
+      <div class="cos-brand-certs">
+        <span class="cos-brand-cert">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+          Sản xuất tại VN
+        </span>
+        <span class="cos-brand-cert">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+          Không ăn mòn
+        </span>
+        <span class="cos-brand-cert">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          Đổi trả 7 ngày
+        </span>
+      </div>
+    </div>
+
+    <!-- Legal Footer -->
+    <div class="cos-legal-footer">
+      <div class="cos-legal-distrib">
+        <div class="cos-legal-label">Liên hệ</div>
+        <div class="cos-legal-company">Hotline 0868 468 832</div>
+        <div class="cos-legal-label" style="margin-top:4px">643 Phạm Văn Đồng, Nam Từ Liêm, Hà Nội</div>
+      </div>
+      <div class="cos-legal-links">
+        <a class="cos-legal-link" href="chinh-sach-doi-tra.html">Chính sách đổi trả</a>
+        <span class="cos-legal-sep">·</span>
+        <a class="cos-legal-link" href="chinh-sach-bao-mat.html">Bảo mật</a>
+        <span class="cos-legal-sep">·</span>
+        <a class="cos-legal-link" href="dieu-khoan.html">Điều khoản</a>
+      </div>
+      <div class="cos-legal-copy">© 2026 GiuoWow · Đọc kỹ hướng dẫn sử dụng trước khi dùng</div>
+    </div>
+
   </section>
 
-  <!-- CTA CUỐI -->
-  <section class="bg-red final" id="chot-don">
-    <span class="eyebrow">Đừng chờ lồng giặt bẩn thêm</span>
-    <h2>Làm sạch lồng máy giặt ngay hôm nay</h2>
-    <p class="sub">1 chai 199.000đ · 2 chai 299.000đ · 3 chai 399.000đ · Freeship · COD</p>
-    <button class="btn btn-gold btn-pulse" type="button" data-order>ĐẶT HÀNG NGAY</button>
-  </section>
-
-  <footer>
-    <b>GiuoWow - Tẩy lồng máy giặt</b>
-    <div>Hotline: <a href="tel:0868468832" style="color:#fff">0868 468 832</a></div>
-    <div>Địa chỉ: 643 Phạm Văn Đồng, Nam Từ Liêm, Hà Nội</div>
-    <div class="links">
-      <a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a>
-      <a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a>
-      <a href="dieu-khoan.html">Điều khoản sử dụng</a>
-    </div>
-    <div class="legal">Sản xuất và phân phối bởi Công ty TNHH Global Lifecare Việt Nam (theo nhãn sản phẩm).<br>Đọc kỹ hướng dẫn sử dụng trước khi dùng. Hiệu quả có thể khác nhau tùy tình trạng máy giặt.</div>
-  </footer>
 </div>
 
-<!-- STICKY BAR -->
-<div class="sticky">
-  <div class="sticky-in">
-    <a class="call" href="tel:0868468832" data-call>
+<!-- ========== STICKY CTA ========== -->
+<div class="tts-sticky-cta">
+  <div class="tts-cta-sidegroup">
+    <a class="tts-cta-side" href="tel:0868468832" data-call>
       <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
-      Gọi ngay
+      Gọi
     </a>
-    <button class="btn btn-red" type="button" data-order>ĐẶT HÀNG · 199.000đ</button>
+    <a class="tts-cta-side" href="#faq">
+      <svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+      Hỏi đáp
+    </a>
   </div>
-</div>
-
-<!-- ORDER MODAL -->
-<div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
-  <div class="sheet">
-    <div id="orderFormWrap">
-      <div class="sheet-head">
-        <h3 id="orderTitle">Đặt hàng - Thanh toán khi nhận</h3>
-        <button class="x" type="button" id="orderClose" aria-label="Đóng">×</button>
-      </div>
-      <div class="sum">
-        <img src="assets/product-front.webp" width="48" height="119" alt="">
-        <div class="t"><b id="sumName">GiuoWow - Tẩy lồng máy giặt 500ml</b>Miễn phí vận chuyển toàn quốc</div>
-        <div class="p" id="sumPrice">199.000đ</div>
-      </div>
-      <form id="orderForm" novalidate autocomplete="on">
-        <div class="field" data-f="name">
-          <label for="f-name">Họ và tên *</label>
-          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Nguyễn Văn A" required>
-          <div class="err">Vui lòng nhập họ tên.</div>
-        </div>
-        <div class="field" data-f="phone">
-          <label for="f-phone">Số điện thoại *</label>
-          <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="0912345678" required>
-          <div class="err">Số điện thoại chưa đúng (10 số, bắt đầu bằng 0).</div>
-        </div>
-        <div class="field" data-f="address">
-          <label for="f-address">Địa chỉ nhận hàng *</label>
-          <textarea id="f-address" name="address" autocomplete="street-address" placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành phố" required></textarea>
-          <div class="err">Vui lòng nhập địa chỉ nhận hàng.</div>
-        </div>
-        <div class="field">
-          <label for="f-qty">Chọn gói</label>
-          <select id="f-qty" name="qty">
-            <option value="1">1 chai - 199.000đ</option>
-            <option value="2">Combo 2 chai - 299.000đ (tiết kiệm 99k)</option>
-            <option value="3">Combo 3 chai - 399.000đ (tiết kiệm 198k)</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="f-note">Ghi chú (không bắt buộc)</label>
-          <input id="f-note" name="note" type="text" placeholder="Loại máy giặt, giờ nhận hàng...">
-        </div>
-        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <div class="total"><span>Tổng thanh toán (đã gồm freeship)</span><span id="totalPrice">199.000đ</span></div>
-        <button class="btn btn-red" type="submit" id="submitBtn">XÁC NHẬN ĐẶT HÀNG</button>
-        <div class="form-msg" id="formMsg"></div>
-        <p class="form-note">Chúng tôi sẽ gọi xác nhận đơn hàng trước khi giao. Thông tin của bạn được bảo mật.</p>
-      </form>
-    </div>
-    <div class="thanks" id="thanks">
-      <div class="ok"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-      <h3>Đặt hàng thành công!</h3>
-      <p>Cảm ơn bạn. Chúng tôi sẽ gọi điện xác nhận đơn hàng trong thời gian sớm nhất.</p>
-      <button class="btn btn-red" type="button" id="thanksClose">ĐÓNG</button>
-    </div>
+  <div class="tts-cta-buy">
+    <button class="tts-btn-cart" type="button" onclick="onBuyClick()">Chọn gói</button>
+    <button class="tts-btn-buy" type="button" onclick="onBuyClick()">Mua ngay</button>
   </div>
 </div>
 
 <script>
-(function(){
-  /* ---------- Tracking (chỉ chạy khi có ID) ---------- */
-  if (CONFIG.fbPixelId) {
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', CONFIG.fbPixelId);
-    fbq('track', 'PageView');
-    fbq('track', 'ViewContent', {content_name: CONFIG.productName, content_type: 'product', value: CONFIG.prices[1], currency: 'VND'});
+/* ============================================================
+ * CẤU HÌNH — dán URL Google Apps Script (xem README.md) vào webhookUrl
+ * ============================================================ */
+var CONFIG = {
+  webhookUrl: '',
+  hotline: '0868468832',
+  productName: 'GiuoWow - Tẩy lồng máy giặt 500ml',
+  sku: 'GIUOWOW-500ML'
+};
+var SESSION_START = Date.now();
+
+function getUTMParams(){
+  var p = new URLSearchParams(window.location.search);
+  return {
+    utm_source:   p.get('utm_source')   || '',
+    utm_campaign: p.get('utm_campaign') || '',
+    utm_medium:   p.get('utm_medium')   || '',
+    utm_term:     p.get('utm_term')     || '',
+    utm_content:  p.get('utm_content')  || ''
+  };
+}
+</script>
+<script>
+/* ============================================================
+ * Tab Nav with Scrollspy
+ * ============================================================ */
+(function (global) {
+  'use strict';
+  var TikTokTabNav = {
+    init: function (options) {
+      options = options || {};
+      var nav = document.querySelector(options.navSelector || '.tts-tabnav');
+      if (!nav) return;
+      var tabs = Array.prototype.slice.call(nav.querySelectorAll(options.tabSelector || '.tts-tab'));
+      var sections = tabs.map(function (tab) {
+        var hash = tab.getAttribute('href');
+        if (!hash || hash.charAt(0) !== '#') return null;
+        return document.getElementById(hash.slice(1));
+      }).filter(Boolean);
+      if (!sections.length) return;
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function (e) {
+          var hash = tab.getAttribute('href');
+          if (!hash || hash.charAt(0) !== '#') return;
+          var target = document.getElementById(hash.slice(1));
+          if (!target) return;
+          e.preventDefault();
+          var navHeight = nav.offsetHeight;
+          var top = target.getBoundingClientRect().top + window.scrollY - navHeight - 8;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+          setActiveTab(tab);
+        });
+      });
+      function setActiveTab(activeTab) {
+        tabs.forEach(function (t) { t.classList.remove('active'); });
+        activeTab.classList.add('active');
+      }
+      if (!('IntersectionObserver' in window)) return;
+      var navHeight = nav.offsetHeight;
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var idx = sections.indexOf(entry.target);
+            if (idx >= 0 && tabs[idx]) setActiveTab(tabs[idx]);
+          }
+        });
+      }, { rootMargin: '-' + (navHeight + 8) + 'px 0px -60% 0px', threshold: 0 });
+      sections.forEach(function (section) { observer.observe(section); });
+    }
+  };
+  global.TikTokTabNav = TikTokTabNav;
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () { TikTokTabNav.init(); });
+  } else { TikTokTabNav.init(); }
+})(window);
+
+/* ============================================================
+ * Hero Gallery
+ * ============================================================ */
+(function (global) {
+  'use strict';
+  function bind(gallery) {
+    var track = gallery.querySelector('.tts-hero-track');
+    var dots = gallery.querySelectorAll('.tts-hero-dot');
+    var counter = gallery.querySelector('.tts-hero-counter');
+    var prevBtn = gallery.querySelector('.tts-hero-arrow.prev');
+    var nextBtn = gallery.querySelector('.tts-hero-arrow.next');
+    if (!track) return;
+    var slides = track.querySelectorAll('.tts-hero-slide');
+    var total = slides.length;
+    if (!total) return;
+    function update() {
+      var idx = Math.round(track.scrollLeft / track.clientWidth);
+      if (idx < 0) idx = 0;
+      if (idx >= total) idx = total - 1;
+      if (dots && dots.length) {
+        Array.prototype.forEach.call(dots, function (d, i) {
+          d.classList.toggle('active', i === idx);
+        });
+      }
+      if (counter) counter.textContent = (idx + 1) + '/' + total;
+    }
+    if (dots && dots.length) {
+      Array.prototype.forEach.call(dots, function (dot, i) {
+        dot.addEventListener('click', function () {
+          track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
+        });
+      });
+    }
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
+      });
+    }
+    var ticking = false;
+    track.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(function () { update(); ticking = false; });
+        ticking = true;
+      }
+    }, { passive: true });
+    update();
   }
-  if (CONFIG.ttPixelId) {
-    !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
-    ttq.load(CONFIG.ttPixelId);ttq.page();}(window,document,'ttq');
+  function init() {
+    var galleries = document.querySelectorAll('.tts-hero');
+    Array.prototype.forEach.call(galleries, function (g) { bind(g); });
   }
-  function track(fbEvent, ttEvent, data, eventId){
-    try { if (window.fbq) fbq('track', fbEvent, data, eventId ? {eventID: eventId} : undefined); } catch(e){}
-    try { if (window.ttq) ttq.track(ttEvent, data); } catch(e){}
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})(window);
+
+/* ============================================================
+ * TikTok Shop Buy Popup — modified to produce 24-field payload
+ * ============================================================ */
+(function (global) {
+  'use strict';
+  var settings = { webhookUrl: null, currency: 'VND', onSuccess: null, onError: null };
+  var _current = null;
+  var _selected = {};
+  var _qty = 1;
+  var _submitting = false;
+
+  function fmt(n) {
+    var v = parseInt(n, 10);
+    if (isNaN(v)) return '0đ';
+    return v.toLocaleString('vi-VN').replace(/,/g, '.') + 'đ';
+  }
+  function genOrderCode() {
+    var chars = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+    var s = '';
+    if (window.crypto && window.crypto.getRandomValues) {
+      var arr = new Uint32Array(8);
+      window.crypto.getRandomValues(arr);
+      for (var i = 0; i < 8; i++) s += chars.charAt(arr[i] % chars.length);
+    } else {
+      for (var j = 0; j < 8; j++) s += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return s;
+  }
+  function el(tag, cls, html) {
+    var d = document.createElement(tag);
+    if (cls) d.className = cls;
+    if (html != null) d.innerHTML = html;
+    return d;
+  }
+  function calcUnitPrice() {
+    if (!_current) return 0;
+    /* For this product the "qty_pack" option carries total price + qty.
+       unitPrice = total / qty for that option */
+    var packKey = 'qty_pack';
+    if (_selected[packKey] && _current.options) {
+      var opt = _current.options.find(function (o) { return o.label === packKey; });
+      if (opt) {
+        var v = (opt.values || []).find(function (v) { return v.label === _selected[packKey]; });
+        if (v && v.qty) return Math.round(v.price / v.qty);
+      }
+    }
+    return _current.basePrice || 0;
+  }
+  function calcTotal() {
+    var packKey = 'qty_pack';
+    if (_selected[packKey] && _current && _current.options) {
+      var opt = _current.options.find(function (o) { return o.label === packKey; });
+      if (opt) {
+        var v = (opt.values || []).find(function (v) { return v.label === _selected[packKey]; });
+        if (v && v.price) return v.price;
+      }
+    }
+    return calcUnitPrice() * _qty;
+  }
+  function getQty() {
+    var packKey = 'qty_pack';
+    if (_selected[packKey] && _current && _current.options) {
+      var opt = _current.options.find(function (o) { return o.label === packKey; });
+      if (opt) {
+        var v = (opt.values || []).find(function (v) { return v.label === _selected[packKey]; });
+        if (v && v.qty) return v.qty;
+      }
+    }
+    return _qty;
   }
 
-  /* ---------- UTM ---------- */
-  var qs = new URLSearchParams(location.search);
-  var utm = {};
-  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','ttclid'].forEach(function(k){ utm[k] = qs.get(k) || ''; });
-  function cookie(n){ var m = document.cookie.match('(?:^|; )' + n + '=([^;]*)'); return m ? decodeURIComponent(m[1]) : ''; }
+  function render() {
+    var overlay = document.getElementById('tts-buy-popup-overlay');
+    if (overlay) overlay.remove();
+    overlay = el('div', 'tts-popup-overlay');
+    overlay.id = 'tts-buy-popup-overlay';
+    var popup = el('div', 'tts-popup');
+    overlay.appendChild(popup);
 
-  /* ---------- Modal ---------- */
-  var modal = document.getElementById('orderModal');
-  var form = document.getElementById('orderForm');
-  var formWrap = document.getElementById('orderFormWrap');
-  var thanks = document.getElementById('thanks');
-  var qty = document.getElementById('f-qty');
-  var totalEl = document.getElementById('totalPrice');
-  var msg = document.getElementById('formMsg');
-  var btn = document.getElementById('submitBtn');
-  var sending = false;
+    var p = _current;
+    var closeBtn = el('button', 'tts-popup-close',
+      '<svg viewBox="0 0 24 24"><path d="M18.3 5.71L12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.17 12 2.88 5.71l1.41-1.42L10.59 10.6l6.3-6.31z"/></svg>');
+    closeBtn.onclick = close;
+    popup.appendChild(closeBtn);
 
-  function money(n){ return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') + 'đ'; }
-  var sumPrice = document.getElementById('sumPrice');
-  var sumName = document.getElementById('sumName');
-  var pkgNames = {1: 'GiuoWow 500ml - 1 chai', 2: 'GiuoWow 500ml - Combo 2 chai', 3: 'GiuoWow 500ml - Combo 3 chai'};
-  function updateTotal(){
-    var q = parseInt(qty.value, 10);
-    totalEl.textContent = money(CONFIG.prices[q]);
-    sumPrice.textContent = money(CONFIG.prices[q]);
-    sumName.textContent = pkgNames[q];
-  }
-  qty.addEventListener('change', updateTotal);
+    var header = el('div', 'tts-popup-header');
+    var img = el('img', 'tts-popup-img');
+    img.src = p.image || ''; img.alt = p.name || '';
+    header.appendChild(img);
+    var info = el('div', 'tts-popup-info');
+    info.appendChild(el('div', 'tts-popup-price', fmt(calcTotal())));
+    info.appendChild(el('div', 'tts-popup-stock', 'Miễn phí vận chuyển · Thanh toán khi nhận hàng'));
+    header.appendChild(info);
+    popup.appendChild(header);
 
-  function openModal(pkg){
-    if (pkg && CONFIG.prices[pkg]) { qty.value = String(pkg); updateTotal(); }
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    track('InitiateCheckout', 'InitiateCheckout', {content_name: CONFIG.productName, value: CONFIG.prices[parseInt(qty.value, 10)], currency: 'VND'});
-    setTimeout(function(){ var el = document.getElementById('f-name'); if (el) el.focus({preventScroll:true}); }, 250);
-  }
-  function closeModal(){
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-  document.querySelectorAll('[data-order]').forEach(function(b){ b.addEventListener('click', function(){ openModal(parseInt(b.getAttribute('data-pkg'), 10) || 0); }); });
-  document.getElementById('orderClose').addEventListener('click', closeModal);
-  document.getElementById('thanksClose').addEventListener('click', function(){
-    closeModal(); thanks.style.display = 'none'; formWrap.style.display = ''; form.reset(); updateTotal();
-  });
-  modal.addEventListener('click', function(e){ if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
-  document.querySelectorAll('[data-call]').forEach(function(a){ a.addEventListener('click', function(){ track('Contact', 'Contact', {}); }); });
+    var body = el('div', 'tts-popup-body');
 
-  /* ---------- Validate ---------- */
-  function normPhone(p){ return p.replace(/[\s.\-()]/g, '').replace(/^\+84/, '0').replace(/^84/, '0'); }
-  function setBad(name, bad){ form.querySelector('[data-f="' + name + '"]').classList.toggle('bad', bad); }
-
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    if (sending) return;
-    msg.className = 'form-msg'; msg.textContent = '';
-
-    var name = form.name.value.trim();
-    var phone = normPhone(form.phone.value.trim());
-    var address = form.address.value.trim();
-    var okName = name.length >= 2;
-    var okPhone = /^0\d{9}$/.test(phone);
-    var okAddr = address.length >= 8;
-    setBad('name', !okName); setBad('phone', !okPhone); setBad('address', !okAddr);
-    if (!(okName && okPhone && okAddr)) return;
-    if (form.website.value) return; /* honeypot: bot */
-
-    var q = parseInt(qty.value, 10);
-    var total = CONFIG.prices[q];
-    var eventId = 'lead_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
-    var payload = {
-      time: new Date().toISOString(),
-      product: CONFIG.productName,
-      name: name, phone: phone, address: address,
-      qty: q, package: pkgNames[q], unitPrice: Math.round(total / q), total: total,
-      note: form.note.value.trim(),
-      payment: 'COD', shipping: 'Miễn phí',
-      page: location.origin + location.pathname,
-      referrer: document.referrer || '',
-      event_id: eventId,
-      fbp: cookie('_fbp'), fbc: cookie('_fbc'),
-      user_agent: navigator.userAgent,
-      utm_source: utm.utm_source, utm_medium: utm.utm_medium, utm_campaign: utm.utm_campaign,
-      utm_content: utm.utm_content, utm_term: utm.utm_term, fbclid: utm.fbclid, ttclid: utm.ttclid
-    };
-
-    if (!CONFIG.webhookUrl) {
-      msg.className = 'form-msg err';
-      msg.innerHTML = 'Hệ thống nhận đơn chưa sẵn sàng. Vui lòng gọi <a href="tel:' + CONFIG.hotline + '"><b>' + CONFIG.hotline + '</b></a> để đặt hàng.';
-      return;
+    if (p.options && p.options.length) {
+      p.options.forEach(function (opt) {
+        var sec = el('div', 'tts-popup-section');
+        sec.appendChild(el('div', 'tts-popup-label', 'Chọn gói <span class="req">*</span>'));
+        var optsWrap = el('div', 'tts-popup-options');
+        (opt.values || []).forEach(function (v) {
+          var btn = el('button', 'tts-popup-option', v.label);
+          btn.type = 'button';
+          if (_selected[opt.label] === v.label) btn.classList.add('selected');
+          btn.onclick = function () { _selected[opt.label] = v.label; render(); };
+          optsWrap.appendChild(btn);
+        });
+        sec.appendChild(optsWrap);
+        body.appendChild(sec);
+      });
     }
 
-    sending = true; btn.disabled = true; btn.textContent = 'ĐANG GỬI...';
-    fetch(CONFIG.webhookUrl, {
-      method: 'POST', mode: 'no-cors',
-      headers: {'Content-Type': 'text/plain;charset=utf-8'},
-      body: JSON.stringify(payload)
-    }).then(function(){
-      track('Lead', 'SubmitForm', {content_name: CONFIG.productName, value: total, currency: 'VND'}, eventId);
-      formWrap.style.display = 'none';
-      thanks.style.display = 'block';
-    }).catch(function(){
-      msg.className = 'form-msg err';
-      msg.innerHTML = 'Chưa gửi được đơn hàng. Vui lòng thử lại hoặc gọi <a href="tel:' + CONFIG.hotline + '"><b>' + CONFIG.hotline + '</b></a>.';
-    }).then(function(){
-      sending = false; btn.disabled = false; btn.textContent = 'XÁC NHẬN ĐẶT HÀNG';
+    var formFields = [
+      { key: 'fullname', label: 'Họ tên', required: true,  type: 'text',     placeholder: 'Nguyễn Văn A' },
+      { key: 'phone',    label: 'Số điện thoại', required: true,  type: 'tel',      placeholder: '0901234567 hoặc +84901234567' },
+      { key: 'address',  label: 'Địa chỉ giao hàng', required: true,  type: 'textarea', placeholder: 'Số nhà, đường, phường, quận, thành phố' },
+      { key: 'note',     label: 'Ghi chú', required: false, type: 'textarea', placeholder: 'Loại máy giặt, giờ nhận hàng... (tuỳ chọn)' }
+    ];
+    formFields.forEach(function (f) {
+      var sec = el('div', 'tts-popup-section');
+      var labelHtml = f.label + (f.required ? ' <span class="req">*</span>' : '');
+     
+      sec.appendChild(el('div', 'tts-popup-label', labelHtml));
+      var input;
+      if (f.type === 'textarea') {
+        input = el('textarea', 'tts-popup-textarea');
+      } else {
+        input = el('input', 'tts-popup-input');
+        input.type = f.type;
+      }
+      input.placeholder = f.placeholder;
+      input.name = f.key;
+      input.dataset.field = f.key;
+      sec.appendChild(input);
+      sec.appendChild(el('div', 'tts-popup-error-msg'));
+      body.appendChild(sec);
     });
+
+    var hpWrap = el('div', 'tts-honeypot');
+    hpWrap.setAttribute('aria-hidden', 'true');
+    var hpLbl = el('label', null, 'Website (không điền)');
+    hpLbl.setAttribute('for', 'tts-hp-website');
+    var hp = el('input');
+    hp.type = 'text'; hp.name = 'website'; hp.id = 'tts-hp-website';
+    hp.tabIndex = -1; hp.autocomplete = 'off';
+    hpWrap.appendChild(hpLbl);
+    hpWrap.appendChild(hp);
+    body.appendChild(hpWrap);
+
+    popup.appendChild(body);
+
+    var footer = el('div', 'tts-popup-footer');
+    var total = el('div', 'tts-popup-total');
+    total.appendChild(el('span', 'tts-popup-total-label', 'Tổng cộng'));
+    total.appendChild(el('span', 'tts-popup-total-value', fmt(calcTotal())));
+    footer.appendChild(total);
+    var submit = el('button', 'tts-popup-submit', 'Đặt hàng');
+    submit.type = 'button';
+    submit.onclick = function () { handleSubmit(popup); };
+    if (_submitting) { submit.disabled = true; submit.textContent = 'Đang gửi...'; }
+    footer.appendChild(submit);
+    popup.appendChild(footer);
+
+    document.body.appendChild(overlay);
+    requestAnimationFrame(function () { overlay.classList.add('open'); });
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+  }
+
+  function close() {
+    var overlay = document.getElementById('tts-buy-popup-overlay');
+    if (!overlay) return;
+    overlay.classList.remove('open');
+    setTimeout(function () { overlay.remove(); }, 300);
+  }
+
+  function getField(name) {
+    var overlay = document.getElementById('tts-buy-popup-overlay');
+    if (!overlay) return '';
+    var el = overlay.querySelector('[data-field="' + name + '"]');
+    return el ? (el.value || '').trim() : '';
+  }
+
+  function handleSubmit(popup) {
+    if (_submitting) return;
+    var p = _current;
+
+    if (p.options) {
+      for (var i = 0; i < p.options.length; i++) {
+        var opt = p.options[i];
+        if (!_selected[opt.label]) {
+          alert('Vui lòng chọn gói trước khi đặt hàng');
+          return;
+        }
+      }
+    }
+    var hp = popup.querySelector('.tts-honeypot input');
+    if (hp && hp.value && hp.value.trim()) { console.warn('[TikTokShopBuyPopup] Honeypot triggered — bot suspected'); return; }
+
+    var fullname = popup.querySelector('[data-field="fullname"]');
+    var phone    = popup.querySelector('[data-field="phone"]');
+    var address  = popup.querySelector('[data-field="address"]');
+    var noteEl   = popup.querySelector('[data-field="note"]');
+    var valid = true;
+    [fullname, phone, address].forEach(function (e) {
+      e.classList.remove('error');
+      var em = e.parentNode.querySelector('.tts-popup-error-msg');
+      if (em) em.textContent = '';
+    });
+    if (!fullname.value.trim()) {
+      fullname.classList.add('error');
+      var em1 = fullname.parentNode.querySelector('.tts-popup-error-msg');
+      if (em1) em1.textContent = 'Vui lòng nhập họ tên';
+      valid = false;
+    }
+    var phoneRaw = phone.value.replace(/[\s.\-()]/g, '');
+    if (!/^(0\d{9}|\+84\d{9})$/.test(phoneRaw)) {
+      phone.classList.add('error');
+      var em2 = phone.parentNode.querySelector('.tts-popup-error-msg');
+      if (em2) em2.textContent = 'SĐT không hợp lệ. Bắt đầu bằng 0 hoặc +84, theo sau 9 số';
+      valid = false;
+    } else {
+      phone.value = phoneRaw.replace(/^\+84/, '0');
+    }
+    if (!address.value.trim()) {
+      address.classList.add('error');
+      var em3 = address.parentNode.querySelector('.tts-popup-error-msg');
+      if (em3) em3.textContent = 'Vui lòng nhập địa chỉ';
+      valid = false;
+    }
+    if (!valid) return;
+
+    var orderCode = genOrderCode();
+    var unitPrice = calcUnitPrice();
+    var totalPrice = calcTotal();
+    var quantity = getQty();
+    var utm = getUTMParams();
+
+    var payload = {
+      order_code:         orderCode,
+      timestamp:          new Date().toISOString(),
+      fullname:           getField('fullname'),
+      phone:              getField('phone'),
+      address:            getField('address'),
+      note:               getField('note'),
+      product_name:       _current.name || CONFIG.productName,
+      product_sku:        _current.sku  || CONFIG.sku,
+      unit_price:         unitPrice,
+      quantity:           quantity,
+      total_value:        totalPrice,
+      currency:           'VND',
+      options:            Object.assign({}, _selected),
+      option_labels:      Object.keys(_selected).map(function(k){ return k + ':' + _selected[k]; }).join(' | '),
+      utm_source:         utm.utm_source,
+      utm_campaign:       utm.utm_campaign,
+      utm_medium:         utm.utm_medium,
+      utm_term:           utm.utm_term,
+      utm_content:        utm.utm_content,
+      page_url:           window.location.href,
+      referrer:           document.referrer,
+      session_duration:   Math.floor((Date.now() - SESSION_START) / 1000),
+      client_user_agent:  navigator.userAgent || ''
+    };
+
+    var submitBtn = popup.querySelector('.tts-popup-submit');
+    function failed() {
+      _submitting = false;
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Đặt hàng'; }
+      alert('Chưa gửi được đơn hàng. Vui lòng thử lại hoặc gọi hotline ' + CONFIG.hotline + ' để đặt hàng.');
+    }
+    if (!settings.webhookUrl) { failed(); return; }
+    _submitting = true;
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Đang gửi...'; }
+    /* Google Apps Script không nhận JSON content-type do CORS preflight.
+       Dùng text/plain + no-cors để gửi dữ liệu không bị chặn.
+       Dữ liệu vẫn được gửi đầy đủ, Apps Script parse JSON từ body text. */
+    fetch(settings.webhookUrl, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify(payload)
+    }).then(function () {
+      showSuccess(orderCode, payload);
+    }).catch(function (err) {
+      console.error('[BuyPopup] Submit failed:', err);
+      failed();
+    });
+  }
+
+  function showSuccess(orderCode, payload) {
+    _submitting = false;
+    var overlay = document.getElementById('tts-buy-popup-overlay');
+    if (!overlay) return;
+    var popup = overlay.querySelector('.tts-popup');
+    popup.innerHTML = '';
+    var closeBtn = el('button', 'tts-popup-close',
+      '<svg viewBox="0 0 24 24"><path d="M18.3 5.71L12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.17 12 2.88 5.71l1.41-1.42L10.59 10.6l6.3-6.31z"/></svg>');
+    closeBtn.onclick = close;
+    popup.appendChild(closeBtn);
+    var success = el('div', 'tts-popup-success');
+    success.innerHTML =
+      '<div class="tts-popup-success-icon">&#10003;</div>' +
+      '<div class="tts-popup-success-title">Đặt hàng thành công!</div>' +
+      '<div class="tts-popup-success-msg">Cảm ơn bạn. GiuoWow sẽ gọi điện xác nhận đơn hàng trong thời gian sớm nhất.</div>' +
+      '<div class="tts-popup-order-code">#' + orderCode + '</div>';
+    popup.appendChild(success);
+
+    if (typeof settings.onSuccess === 'function') {
+      settings.onSuccess(orderCode, payload);
+    }
+  }
+
+  global.TikTokShopBuyPopup = {
+    config: function (opts) { Object.assign(settings, opts || {}); },
+    open: function (product, preIdx) {
+      _current = product;
+      _selected = {};
+      _qty = 1;
+      _submitting = false;
+      /* Auto-select option (mặc định gói đầu tiên) */
+      if (product.options && product.options[0] && product.options[0].values && product.options[0].values.length) {
+        var vals = product.options[0].values;
+        _selected[product.options[0].label] = (vals[preIdx || 0] || vals[0]).label;
+      }
+      render();
+    },
+    close: close
+  };
+})(window);
+
+/* ============================================================
+ * Buy Popup config + Buy CTA handler
+ * ============================================================ */
+TikTokShopBuyPopup.config({
+  webhookUrl: CONFIG.webhookUrl,
+  currency:   'VND'
+});
+
+function onBuyClick(preIdx) {
+  TikTokShopBuyPopup.open({
+    name:      CONFIG.productName,
+    image:     'assets/product-front-sq.webp',
+    basePrice: 199000,
+    sku:       CONFIG.sku,
+    options: [
+      { label: 'qty_pack', values: [
+        { label: '1 chai GiuoWow 500ml · 199.000đ',                        price: 199000, qty: 1 },
+        { label: 'Combo 2 chai · 299.000đ (tiết kiệm 99.000đ)',            price: 299000, qty: 2 },
+        { label: 'Combo 3 chai · 399.000đ (tiết kiệm 198.000đ)',           price: 399000, qty: 3 }
+      ]}
+    ]
+  }, typeof preIdx === 'number' ? preIdx : 0);
+}
+</script>
+
+<!-- Lightbox -->
+<div id="cos-lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh lớn">
+  <button id="cos-lightbox-close" aria-label="Đóng">×</button>
+  <img id="cos-lightbox-img" src="" alt="">
+</div>
+<script>
+(function(){
+  var lb   = document.getElementById('cos-lightbox');
+  var lbImg = document.getElementById('cos-lightbox-img');
+  function openLb(src, alt){ lbImg.src = src; lbImg.alt = alt || ''; lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeLb(){ lb.classList.remove('open'); lbImg.src = ''; document.body.style.overflow = ''; }
+  document.querySelectorAll('.cos-img-wrap img').forEach(function(img){
+    img.addEventListener('click', function(e){ e.stopPropagation(); openLb(this.src, this.alt); });
   });
+  lb.addEventListener('click', closeLb);
+  document.getElementById('cos-lightbox-close').addEventListener('click', function(e){ e.stopPropagation(); closeLb(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLb(); });
 })();
 </script>
 </body>
