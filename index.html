@@ -1685,9 +1685,9 @@ a { color: inherit; text-decoration: none; }
         </div>
       </div>
       <div class="tts-deal-right">
-        <div class="tts-deal-right-title">Ưu đãi đặt online</div>
-        <div class="tts-deal-right-sub">Phí vận chuyển</div>
-        <div class="tts-promo-countdown"><b>0đ</b></div>
+        <div class="tts-deal-right-title">Ưu đãi giờ vàng</div>
+        <div class="tts-deal-right-sub">Kết thúc sau</div>
+        <div class="tts-promo-countdown" data-end-of-day><b>23:59:59</b></div>
       </div>
     </div>
 
@@ -2389,6 +2389,25 @@ function getUTMParams(){
     document.addEventListener('DOMContentLoaded', init);
   } else { init(); }
 })(window);
+
+/* ============================================================
+ * Promo Countdown — đếm ngược đến hết ngày hôm nay (0h), tự lặp ngày mới
+ * ============================================================ */
+(function () {
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function tick() {
+    var now = new Date();
+    var end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
+    var sec = Math.max(0, Math.floor((end - now) / 1000));
+    var txt = pad(Math.floor(sec / 3600)) + ':' + pad(Math.floor((sec % 3600) / 60)) + ':' + pad(sec % 60);
+    Array.prototype.forEach.call(document.querySelectorAll('.tts-promo-countdown[data-end-of-day]'), function (el) {
+      var b = el.querySelector('b') || el;
+      b.textContent = txt;
+    });
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
 
 /* ============================================================
  * TikTok Shop Buy Popup — modified to produce 24-field payload
