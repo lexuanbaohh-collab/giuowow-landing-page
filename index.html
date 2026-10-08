@@ -2,10 +2,10 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GiuoWow - Tẩy lồng máy giặt 500ml | Sạch sâu, khử mùi, diệt khuẩn</title>
 <meta name="description" content="GiuoWow tẩy lồng máy giặt 500ml: loại bỏ cặn bẩn, cặn vôi, nấm mốc bám lâu ngày, khử mùi, diệt khuẩn. Dùng cho máy giặt cửa trên và cửa trước. Miễn phí vận chuyển, thanh toán khi nhận hàng.">
-<meta name="theme-color" content="#D10A11">
+<meta name="theme-color" content="#FE2C55">
 <meta property="og:title" content="GiuoWow - Tẩy lồng máy giặt 500ml">
 <meta property="og:description" content="Sạch sâu - Khử mùi - Diệt khuẩn. Miễn phí vận chuyển, thanh toán khi nhận hàng.">
 <meta property="og:type" content="website">
@@ -17,17 +17,17 @@
    TikTok Shop — Design Tokens
    ========================================================================== */
 :root {
-  --tt-pink:           #D10A11;
-  --tt-pink-dark:      #B9080E;
-  --tt-rose:           #E21219;
-  --tt-pink-soft:      #F4A6AC;
-  --tt-pastel:         #FFE3E8;
+  --tt-pink:           #FE2C55;
+  --tt-pink-dark:      #E5142E;
+  --tt-rose:           #FF3B5C;
+  --tt-pink-soft:      #FFB3C1;
+  --tt-pastel:         #FFE5EC;
   --tt-peach:          #FFD8C2;
   --tt-cream:          #FFF4E6;
   --tt-mint:           #E8F8F0;
   --tt-promo-yellow:   #FFB800;
   --tt-promo-orange:   #FF7A00;
-  --tt-flash-red:      #B9080E;
+  --tt-flash-red:      #E5142E;
   --tt-bg:             #FFFFFF;
   --tt-bg-soft:        #F8F8F8;
   --tt-bg-border:      #F0F0F0;
@@ -41,10 +41,10 @@
   --tt-cyan:           #25F4EE;
   --tt-star-active:    #FFB800;
   --tt-star-inactive:  #DDDDDD;
-  --tt-grad-pink:      linear-gradient(90deg, #E21219 0%, #D10A11 100%);
+  --tt-grad-pink:      linear-gradient(90deg, #FF3B5C 0%, #FE2C55 100%);
   --tt-grad-promo:     linear-gradient(90deg, #FFB800 0%, #FF7A00 100%);
-  --tt-grad-xtra:      linear-gradient(135deg, #FFB800 0%, #D10A11 100%);
-  --tt-grad-pastel:    linear-gradient(180deg, #FFE3E8 0%, #FFD8C2 100%);
+  --tt-grad-xtra:      linear-gradient(135deg, #FFB800 0%, #FE2C55 100%);
+  --tt-grad-pastel:    linear-gradient(180deg, #FFE5EC 0%, #FFD8C2 100%);
   --tt-grad-mint:      linear-gradient(180deg, #E8F8F0 0%, #FFFFFF 100%);
   --tt-r-sm:           4px;
   --tt-r-md:           8px;
@@ -61,11 +61,11 @@
   --tt-shadow-md:      0 2px 8px rgba(22, 24, 35, 0.08);
   --tt-shadow-tab:     0 1px 0 rgba(22, 24, 35, 0.04);
   --tt-shadow-modal:   0 8px 24px rgba(22, 24, 35, 0.16);
-  --tt-shadow-cta:     0 4px 12px rgba(209,10,17, 0.32);
+  --tt-shadow-cta:     0 4px 12px rgba(254, 44, 85, 0.32);
   --tt-container:      480px;
   --tt-tabnav-height:  44px;
   /* Cosmetic accents */
-  --cos-soft-pink:     #FFF4F6;
+  --cos-soft-pink:     #FFF0F5;
   --cos-soft-peach:    #FFF5EE;
   --cos-soft-mint:     #F0F9F4;
 }
@@ -249,13 +249,13 @@ a { color: inherit; text-decoration: none; }
   margin: -24px var(--tt-gap-lg) 0;
   border-radius: var(--tt-r-md);
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(209,10,17,0.2);
+  box-shadow: 0 3px 10px rgba(254,44,85,0.2);
   position: relative; z-index: 4;
   min-height: 64px;
 }
 .tts-deal-left {
   flex: 0 0 60%;
-  background: linear-gradient(135deg, #D10A11 0%, #B9080E 100%);
+  background: linear-gradient(135deg, #FE2C55 0%, #E5142E 100%);
   padding: 8px 12px 8px;
   position: relative;
   color: #FFFFFF;
@@ -371,7 +371,7 @@ a { color: inherit; text-decoration: none; }
 .tts-tag-mall {
   display: inline-flex; align-items: center;
   padding: 2px 7px;
-  background: #D10A11;
+  background: #FE2C55;
   color: #FFFFFF;
   font-size: 12.5px; font-weight: 800;
   letter-spacing: 0.3px;
@@ -455,14 +455,14 @@ a { color: inherit; text-decoration: none; }
 .tts-feat-chip {
   display: inline-flex; align-items: center; gap: 4px;
   padding: 5px 10px;
-  background: #FFF4F6;
-  color: #D10A11;
-  border: 1px solid #FFD9DE;
+  background: #FFF5F8;
+  color: #FE2C55;
+  border: 1px solid #FFD8E0;
   border-radius: var(--tt-r-pill);
   font-size: 12.5px; font-weight: 600;
   line-height: 1.2;
 }
-.tts-feat-chip svg { width: 12px; height: 12px; fill: #D10A11; flex-shrink: 0; }
+.tts-feat-chip svg { width: 12px; height: 12px; fill: #FE2C55; flex-shrink: 0; }
 
 /* Info Rows */
 .tts-info-rows {
@@ -501,8 +501,8 @@ a { color: inherit; text-decoration: none; }
 .tts-cod-tag {
   display: inline-block;
   padding: 1px 6px;
-  background: #FFF4F6;
-  color: #D10A11;
+  background: #FFF0F4;
+  color: #FE2C55;
   font-size: 11px; font-weight: 800;
   border-radius: var(--tt-r-sm);
   letter-spacing: 0.3px;
@@ -655,7 +655,7 @@ a { color: inherit; text-decoration: none; }
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   flex-shrink: 0; line-height: 1.1;
-  box-shadow: 0 2px 6px rgba(209,10,17, 0.24);
+  box-shadow: 0 2px 6px rgba(254, 44, 85, 0.24);
   text-align: center;
 }
 .cos-ing-circle b { font-size: 18px; }
@@ -728,8 +728,8 @@ a { color: inherit; text-decoration: none; }
 .cos-saf-callout {
   margin-top: 14px;
   padding: 12px 14px;
-  background: linear-gradient(90deg, #FFF4F6 0%, #FFFFFF 100%);
-  border: 1px solid #FFD9DE;
+  background: linear-gradient(90deg, #FFF0F4 0%, #FFFFFF 100%);
+  border: 1px solid #FFE0E8;
   border-radius: var(--tt-r-md);
   display: flex; gap: 10px; align-items: flex-start;
 }
@@ -744,7 +744,7 @@ a { color: inherit; text-decoration: none; }
 
 /* License / Authenticity section */
 .cos-license {
-  background: linear-gradient(180deg, #FFF4F6 0%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #FFF5F8 0%, #FFFFFF 100%);
   padding: 28px 16px 28px;
   text-align: center;
   border-top: 1px dashed #FFD0DC;
@@ -770,7 +770,7 @@ a { color: inherit; text-decoration: none; }
 }
 .cos-lic-title em {
   font-style: normal;
-  background: linear-gradient(90deg, #D10A11, #FF7A00);
+  background: linear-gradient(90deg, #FE2C55, #FF7A00);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -786,7 +786,7 @@ a { color: inherit; text-decoration: none; }
   display: inline-block;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 12px 32px rgba(22,24,35,0.2), 0 4px 12px rgba(209,10,17,0.15);
+  box-shadow: 0 12px 32px rgba(22,24,35,0.2), 0 4px 12px rgba(254,44,85,0.15);
   border: 5px solid #FFFFFF;
   background: #FFFFFF;
   max-width: 100%;
@@ -827,11 +827,11 @@ a { color: inherit; text-decoration: none; }
 }
 .cos-lic-feat {
   background: #FFFFFF;
-  border: 1px solid #FFD9DE;
+  border: 1px solid #FFE0E8;
   border-radius: var(--tt-r-md);
   padding: 12px 6px;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(209,10,17,0.06);
+  box-shadow: 0 1px 4px rgba(254,44,85,0.06);
 }
 .cos-lic-feat-num {
   font-size: 20px; font-weight: 800;
@@ -1066,7 +1066,7 @@ a { color: inherit; text-decoration: none; }
   border-radius: var(--tt-r-md);
 }
 .cos-rt-step.cos-rt-highlight {
-  background: linear-gradient(90deg, #FFF4F6 0%, #FFFFFF 100%);
+  background: linear-gradient(90deg, #FFF0F4 0%, #FFFFFF 100%);
   border: 1px solid var(--tt-pink-soft);
 }
 .cos-rt-num {
@@ -1517,8 +1517,8 @@ a { color: inherit; text-decoration: none; }
   position: relative;
 }
 @keyframes badge-blink {
-  0%, 100% { opacity: 1;    transform: translateY(-50%) scale(1);    box-shadow: 0 0 0 0 rgba(209,10,17,0.5); }
-  50%       { opacity: 0.7; transform: translateY(-50%) scale(0.96); box-shadow: 0 0 0 4px rgba(209,10,17,0); }
+  0%, 100% { opacity: 1;    transform: translateY(-50%) scale(1);    box-shadow: 0 0 0 0 rgba(254,44,85,0.5); }
+  50%       { opacity: 0.7; transform: translateY(-50%) scale(0.96); box-shadow: 0 0 0 4px rgba(254,44,85,0); }
 }
 .tts-popup-option-badge {
   position: absolute;
@@ -1535,7 +1535,7 @@ a { color: inherit; text-decoration: none; }
   animation: badge-blink 1.2s ease-in-out infinite;
 }
 .tts-popup-option.selected {
-  background: #FFF4F6;
+  background: #FFF0F4;
   border-color: var(--tt-pink);
   color: var(--tt-pink);
   font-weight: 600;
@@ -1700,84 +1700,17 @@ h1,h2,h3,
 .tts-hero-img{object-fit:contain}
 /* Ảnh chai trong popup mua hàng: hiện đủ chai, không cắt */
 .tts-popup-img{width:84px;height:104px;object-fit:contain;background:#fff;border:1px solid var(--tt-bg-border)}
-
-/* =====================================================================
-   v2 — hệ màu GiuoWow, H2/khoảng cách chuẩn hoá, sticky CTA, desktop
-   Nền: trắng xen hồng rất nhạt · CTA/điểm nhấn: đỏ GiuoWow · tiêu đề: navy
-   (không đụng tới ảnh)
-   ===================================================================== */
-:root{
-  --gw-red:#D10A11; --gw-navy:#05225A; --gw-ink:#3B4660; --gw-muted:#5F6A80; --gw-rose:#FFF4F6;
-  --tt-pink:#D10A11; --tt-pink-dark:#B9080E; --tt-rose:#E21219; --tt-flash-red:#B9080E;
-  --tt-grad-pink:linear-gradient(180deg,#E21219 0%,#D10A11 55%,#B9080E 100%);
-  --tt-shadow-cta:0 4px 12px rgba(209,10,17,.32);
-  --tt-black:#05225A; --tt-text-primary:#26324D; --tt-text-secondary:#3B4660; --tt-text-muted:#5F6A80;
-  --tt-grad-pastel:linear-gradient(180deg,#FFF4F6 0%,#FFE3E8 100%);
-  --cos-soft-pink:#FFF4F6;
-  --h2:21px; --pad:24px;
-}
-body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-gradient(180deg,#FFF4F6,#FFFFFF 40%)}
-
-/* ---- Nhịp section: trắng / hồng rất nhạt xen kẽ ---- */
-.gw-sec{padding:var(--pad) 16px !important}
-.gw-w{background:#FFFFFF !important}
-.gw-p{background:var(--gw-rose) !important}
-.gw-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;margin:0}
-.gw-h2,
-.cos-pain-title,.cos-saf-title,.cos-lic-title,.cos-ben-title,.cos-tex-title,.cos-ba-title,.cos-rt-title,.cos-rev-title,.cos-faq-title{
-  font-size:var(--h2) !important;line-height:1.3 !important;font-weight:800 !important;color:var(--gw-navy) !important;text-align:center !important;margin:0 0 8px !important}
-.cos-lic-title em{color:var(--gw-red)}
-.cos-pain-sub,.cos-tex-sub,.cos-rt-sub,.gw-sub{font-size:15px !important;line-height:1.55;color:var(--gw-ink) !important;text-align:center;margin:0 auto 16px !important;max-width:60ch}
-.gw-sub b{color:var(--gw-navy)}
-.gw-note,.cos-ba-note{font-size:13.5px;line-height:1.5;color:var(--gw-muted) !important;text-align:center;margin-left:auto;margin-right:auto;max-width:60ch}
-.gw-fn{font-size:13px;line-height:1.5;color:var(--gw-muted);text-align:center;margin:10px 16px 0}
-.gw-ticks{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
-.gw-ticks li{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.5;color:var(--gw-ink)}
-.gw-ticks li svg{flex:0 0 20px;width:20px;height:20px;fill:var(--gw-red);margin-top:2px}
-.gw-ticks li b{color:var(--gw-navy)}
-.gw-photo{margin-bottom:20px !important}
-.cos-pain-item,.cos-ba-note{background:#fff}
-.cos-pain-cta{margin-top:16px}
-.cos-faq{padding-left:16px !important;padding-right:16px !important}
-.cos-cta-block.gw-close{background:#FFFFFF !important}
-.gw-close .cos-cta-btn{width:100%;max-width:420px}
-.cos-lic-badge{margin-bottom:16px;background:var(--gw-navy) !important;box-shadow:none !important}
-.tts-section-divider{display:none}
-
-/* ---- Chân trang: dải navy duy nhất ---- */
-.cos-brand-footer{background:var(--gw-navy) !important;border:0 !important}
-.cos-legal-footer{background:#041A47 !important;border:0 !important}
-.cos-brand-name,.cos-legal-company,.cos-legal-link{color:#fff !important}
-.cos-brand-tag,.cos-brand-text,.cos-legal-label,.cos-legal-copy,.cos-legal-sep{color:#C9D3EA !important}
-.cos-brand-cert{background:rgba(255,255,255,.1) !important;color:#fff !important;border-color:rgba(255,255,255,.25) !important}
-.cos-brand-cert svg{fill:#fff}
-
-/* ---- Thanh cố định: Gọi + một CTA chính ---- */
-.tts-sticky-cta{padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
-.tts-cta-buy{flex:1;display:flex}
-.tts-btn-buy{flex:1;width:100%;padding:14px 16px;font-size:17px;border-radius:999px;background:var(--tt-grad-pink);box-shadow:var(--tt-shadow-cta)}
-@media (max-width:360px){.tts-btn-buy{font-size:15.5px;padding:13px 10px}}
-
-/* ---- Desktop (phương án A): một cột rộng hơn, ảnh giữ nguyên tỉ lệ ---- */
-@media (min-width:768px){
-  :root{--tt-container:640px;--pad:32px}
-  .gw-photo{margin-bottom:28px !important}
-  .gw-sec{padding-left:28px !important;padding-right:28px !important}
-  .tts-popup{max-width:480px}
-}
-@media (min-width:1200px){:root{--tt-container:680px}}
 </style>
-
 </head>
 <body>
 <div class="tts-page">
 
   <!-- ========== HEADER ZONE ========== -->
-  <nav class="tts-tabnav" aria-label="Điều hướng nội dung">
+  <nav class="tts-tabnav" aria-label="Section navigation">
     <a class="tts-tab active" href="#tongquan">Tổng&nbsp;quan</a>
-    <a class="tts-tab" href="#congdung">Công&nbsp;dụng</a>
-    <a class="tts-tab" href="#cachdung">Cách&nbsp;dùng</a>
-    <a class="tts-tab" href="#phanhoi">Phản&nbsp;hồi</a>
+    <a class="tts-tab" href="#dacdiem">Đặc&nbsp;điểm</a>
+    <a class="tts-tab" href="#mota">Mô tả</a>
+    <a class="tts-tab" href="#dexuat">Đề xuất</a>
   </nav>
 
   <section id="tongquan">
@@ -1787,7 +1720,7 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-g
       <div class="tts-brand-textgroup">
         <div class="tts-brand-row1">
           <span class="tts-brand-name">GiuoWow</span>
-          <svg class="tts-verified-icon" viewBox="0 0 24 24"><path fill="#D10A11" d="M12 2l2.39 2.21 3.18-.42 1.31 2.94 2.94 1.31-.42 3.18L23.5 12l-2.1 2.39.42 3.18-2.94 1.31-1.31 2.94-3.18-.42L12 22l-2.39-2.1-3.18.42-1.31-2.94L2.18 16.07l.42-3.18L.5 12l2.1-2.39-.42-3.18 2.94-1.31L6.43 2.18l3.18.42L12 2z"/><path fill="#FFFFFF" d="M9.5 16.2L5.3 12l1.4-1.4 2.8 2.8 7.8-7.8 1.4 1.4z"/></svg>
+          <svg class="tts-verified-icon" viewBox="0 0 24 24"><path fill="#FE2C55" d="M12 2l2.39 2.21 3.18-.42 1.31 2.94 2.94 1.31-.42 3.18L23.5 12l-2.1 2.39.42 3.18-2.94 1.31-1.31 2.94-3.18-.42L12 22l-2.39-2.1-3.18.42-1.31-2.94L2.18 16.07l.42-3.18L.5 12l2.1-2.39-.42-3.18 2.94-1.31L6.43 2.18l3.18.42L12 2z"/><path fill="#FFFFFF" d="M9.5 16.2L5.3 12l1.4-1.4 2.8 2.8 7.8-7.8 1.4 1.4z"/></svg>
           <span class="tts-official-badge">Official&nbsp;Store</span>
         </div>
         <span class="tts-brand-sub">Sản xuất tại Việt Nam&nbsp;🇻🇳</span>
@@ -1854,6 +1787,32 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-g
       </span>
     </div>
 
+    <!-- Hot Category Strip -->
+    <div class="tts-hot-strip">
+      <svg class="trophy" viewBox="0 0 24 24"><path fill="#C44900" d="M19 5h-2V3H7v2H5a2 2 0 0 0-2 2v2c0 2.21 1.79 4 4 4 .14 0 .27-.02.4-.05A6.01 6.01 0 0 0 11 14.92V17H8v2h8v-2h-3v-2.08a6.01 6.01 0 0 0 3.6-3.97c.13.03.26.05.4.05 2.21 0 4-1.79 4-4V7a2 2 0 0 0-2-2zM5 9V7h2v3.82A2 2 0 0 1 5 9zm14 0a2 2 0 0 1-2 1.82V7h2v2z"/></svg>
+      <div class="tts-hot-strip-text">
+        <span class="tts-hot-strip-bold">Công thức mới vượt&nbsp;trội</span>
+        Làm sạch lồng giặt, khử mùi, bảo vệ máy&nbsp;giặt
+      </div>
+      <svg class="chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6V6z"/></svg>
+    </div>
+
+    <!-- Feature Chips -->
+    <div class="tts-feature-chips">
+      <span class="tts-feat-chip">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        Máy cửa trên &amp; cửa&nbsp;trước
+      </span>
+      <span class="tts-feat-chip">
+        <svg viewBox="0 0 24 24"><path d="M17.65 6.35A8 8 0 1 0 19.73 14h-2.08a6 6 0 1 1-1.42-6.22L13 11h7V4z"/></svg>
+        Đổi trả 7&nbsp;ngày
+      </span>
+      <span class="tts-feat-chip">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+        Tư vấn miễn&nbsp;phí
+      </span>
+    </div>
+
     <!-- Info Rows List -->
     <div class="tts-info-rows">
       <div class="tts-info-row" onclick="onBuyClick()" style="cursor:pointer">
@@ -1863,7 +1822,20 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-g
       </div>
       <div class="tts-info-row">
         <div class="tts-info-label">Thanh&nbsp;toán</div>
-        <div class="tts-info-value"><span class="tts-cod-tag">COD</span> Nhận hàng rồi trả tiền&nbsp;· <span class="tts-ship-free">Freeship</span></div>
+        <div class="tts-info-value">
+          <span class="tts-cod-tag">COD</span>
+          Thanh toán khi nhận&nbsp;hàng
+        </div>
+      </div>
+      <div class="tts-info-row">
+        <div class="tts-info-label">Vận&nbsp;chuyển</div>
+        <div class="tts-info-value">
+          <span class="tts-ship-free">Miễn&nbsp;phí</span> toàn quốc, cả 3&nbsp;gói
+        </div>
+      </div>
+      <div class="tts-info-row">
+        <div class="tts-info-label">Làm&nbsp;sạch</div>
+        <div class="tts-info-value">Cặn bẩn · Cặn vôi · Nấm mốc · Vi khuẩn gây&nbsp;mùi</div>
       </div>
       <div class="tts-info-row">
         <div class="tts-info-label">Dùng&nbsp;cho</div>
@@ -1872,13 +1844,13 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-g
       <div class="tts-info-row">
         <div class="tts-info-label">Đổi trả</div>
         <div class="tts-info-value">7 ngày · Hỗ trợ nếu lỗi hoặc giao&nbsp;sai</div>
+        <svg class="tts-info-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6V6z"/></svg>
       </div>
       <div class="tts-info-row">
         <div class="tts-info-label">Lưu ý</div>
         <div class="tts-info-value">Để xa trẻ em · Tránh mắt và da · Không trộn hóa&nbsp;chất</div>
       </div>
     </div>
-    <p class="gw-fn">* Diệt khuẩn 99,9% theo công bố và kết quả kiểm nghiệm của nhà sản xuất. Hiệu quả thực tế tùy tình trạng máy&nbsp;giặt.</p>
 
     <!-- Inline CTA buttons -->
     <div class="tts-inline-cta">
@@ -1893,70 +1865,255 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-g
     </div>
   </section>
 
+  <div class="tts-section-divider"></div>
+
   <!-- ========== ĐẶC ĐIỂM ========== -->
-  <section id="congdung">
+  <section id="dacdiem">
 
     <!-- Pain Strip -->
-    <div class="cos-pain-strip gw-sec gw-p">
+    <div class="cos-pain-strip">
       <h2 class="cos-pain-title">Lồng máy giặt của bạn đang bẩn hơn bạn&nbsp;nghĩ?</h2>
-      <p class="cos-pain-sub">Nếu bạn gật đầu với 2 trong 3 điều này, đã đến lúc vệ sinh lồng máy&nbsp;giặt.</p>
+      <p class="cos-pain-sub">Nếu bạn gật đầu với 2 trong số này, đã đến lúc vệ sinh lồng máy&nbsp;giặt.</p>
       <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
         <img class="cos-pain-image" src="assets/gw-02-long-ban.webp" width="1254" height="1254" alt="Lồng máy giặt bám cặn đen, mùi khó chịu, quần áo còn mùi hôi — đã đến lúc vệ sinh lồng máy" loading="lazy">
       </div>
       <div class="cos-pain-list">
-        <div class="cos-pain-item"><span class="cos-pain-num">1</span><span class="cos-pain-text"><b>Quần áo có mùi hôi, ẩm&nbsp;mốc</b> — dù đã giặt bằng nước giặt thơm và phơi&nbsp;nắng.</span></div>
-        <div class="cos-pain-item"><span class="cos-pain-num">2</span><span class="cos-pain-text"><b>Lồng giặt có cặn đen, mùi khó&nbsp;chịu</b> — mỗi lần mở nắp hoặc mở cửa&nbsp;máy.</span></div>
-        <div class="cos-pain-item"><span class="cos-pain-num">3</span><span class="cos-pain-text"><b>Ngại tháo máy, gọi thợ tốn&nbsp;kém</b> — mất thời gian chờ đợi, lại phát sinh chi&nbsp;phí.</span></div>
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">1</span>
+          <span class="cos-pain-text"><b>Quần áo có mùi hôi, ẩm&nbsp;mốc</b> — dù đã giặt bằng nước giặt thơm và phơi&nbsp;nắng.</span>
+        </div>
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">2</span>
+          <span class="cos-pain-text"><b>Nước giặt có cặn đen, xơ&nbsp;nổi</b> — vụn bẩn dính trên áo quần sau khi&nbsp;giặt.</span>
+        </div>
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">3</span>
+          <span class="cos-pain-text"><b>Lồng giặt có mùi khó&nbsp;chịu</b> — mỗi lần mở nắp hoặc mở cửa&nbsp;máy.</span>
+        </div>
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">4</span>
+          <span class="cos-pain-text"><b>Dùng máy lâu ngày chưa từng vệ&nbsp;sinh</b> — ngại tháo lắp hoặc gọi&nbsp;thợ.</span>
+        </div>
+        <div class="cos-pain-item">
+          <span class="cos-pain-num">5</span>
+          <span class="cos-pain-text"><b>Gọi thợ vệ sinh tốn&nbsp;kém</b> — mất thời gian chờ đợi, hẹn lịch, lại phát sinh chi&nbsp;phí.</span>
+        </div>
+      </div>
+      <div class="cos-pain-cta">↓ GiuoWow giải quyết cả 5 vấn đề&nbsp;↓<br>Đổ vào, chạy máy, không cần tháo&nbsp;máy</div>
+    </div>
+
+    <!-- Ingredient Spotlight: công dụng -->
+    <div class="cos-ingredient">
+      <h2 class="cos-ing-title">GiuoWow: Sạch Sâu · Khử Mùi · Diệt&nbsp;Khuẩn</h2>
+      <p class="cos-ing-sub">Bảo vệ máy giặt cho quần áo thơm mát. Hiệu quả sau 1 lần sử&nbsp;dụng.</p>
+      <div class="cos-ing-list">
+        <div class="cos-ing-item">
+          <div class="cos-ing-circle"><b>Sạch</b><b>sâu</b></div>
+          <div class="cos-ing-body">
+            <div class="cos-ing-name">Sạch sâu cặn&nbsp;bẩn<br><span class="cos-ing-cert" style="margin-left:0">Cặn · cặn vôi · nấm&nbsp;mốc</span></div>
+            <div class="cos-ing-desc">Loại bỏ cặn bẩn, cặn vôi, nấm mốc bám lâu ngày trong lồng máy&nbsp;giặt.</div>
+          </div>
+        </div>
+        <div class="cos-ing-item">
+          <div class="cos-ing-circle"><b class="sm">99,9%</b></div>
+          <div class="cos-ing-body">
+            <div class="cos-ing-name">Diệt khuẩn&nbsp;99,9%*<br><span class="cos-ing-cert" style="margin-left:0">Khử mùi&nbsp;hôi</span></div>
+            <div class="cos-ing-desc">Loại bỏ vi khuẩn, nấm mốc gây mùi hôi, giúp lồng giặt sạch&nbsp;sẽ.</div>
+          </div>
+        </div>
+        <div class="cos-ing-item">
+          <div class="cos-ing-circle"><b>Khử</b><b>mùi</b></div>
+          <div class="cos-ing-body">
+            <div class="cos-ing-name">Khử mùi, thơm&nbsp;mát<br><span class="cos-ing-cert" style="margin-left:0">Hương dịu&nbsp;nhẹ</span></div>
+            <div class="cos-ing-desc">Lồng máy thơm mát, sạch sẽ; hương thơm dịu nhẹ cho quần áo thơm&nbsp;mát.</div>
+          </div>
+        </div>
+        <div class="cos-ing-item">
+          <div class="cos-ing-circle"><b>Bảo</b><b>vệ</b></div>
+          <div class="cos-ing-body">
+            <div class="cos-ing-name">Bảo vệ lồng&nbsp;máy<br><span class="cos-ing-cert" style="margin-left:0">Không ăn&nbsp;mòn</span></div>
+            <div class="cos-ing-desc">Không ăn mòn, bảo vệ lồng máy giặt luôn bền&nbsp;đẹp.</div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:12.5px;color:var(--tt-text-muted);margin-top:12px;line-height:1.5;text-align:center">* Theo công bố và kết quả kiểm nghiệm của nhà sản xuất. Hiệu quả thực tế có thể khác nhau tùy tình trạng máy giặt và mức độ bám&nbsp;bẩn.</p>
+    </div>
+
+    <!-- Safety -->
+    <div class="cos-safety">
+      <h2 class="cos-saf-title">Hướng Dẫn An Toàn Khi&nbsp;Dùng</h2>
+      <p class="cos-saf-sub">Đây là hóa phẩm tẩy rửa — làm theo các lưu ý in trên nhãn để dùng an toàn cho người và máy&nbsp;giặt.</p>
+      <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
+        <img src="assets/gw-04-an-toan.webp" width="1254" height="1254" alt="Hướng dẫn an toàn khi dùng: tránh mắt và da, không uống, để xa trẻ em, không pha trộn, bảo quản khô thoáng, đọc hướng dẫn" loading="lazy">
+      </div>
+      <div class="cos-saf-callout">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        <div class="cos-saf-callout-text">
+          <b style="color:var(--tt-pink)">Để xa tầm tay trẻ em, tránh tiếp xúc với mắt và&nbsp;da.</b> Không uống — nếu nuốt phải, uống nhiều nước và đến cơ sở y tế. Không trộn với thuốc tẩy hoặc hóa chất khác. Cần tư vấn, gọi 0776 210&nbsp;408.
+        </div>
+      </div>
+    </div>
+
+    <!-- Product info -->
+    <div class="cos-license">
+      <div class="cos-lic-badge">
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        Công nghệ Nhật Bản · Sản xuất tại nhà máy ở Việt&nbsp;Nam
+      </div>
+      <h2 class="cos-lic-title">Thông Tin Rõ&nbsp;Ràng —&nbsp;<em>Trên&nbsp;Nhãn</em></h2>
+      <p class="cos-lic-sub">Thành phần, hướng dẫn sử dụng và cảnh báo được in đầy đủ trên nhãn sản phẩm. Gọi 0776 210 408 để được tư vấn cách dùng cho từng loại máy&nbsp;giặt.</p>
+
+      <div class="cos-img-wrap cos-lic-image-wrap">
+        <img class="cos-lic-image" src="assets/gw-05-thong-tin-nhan.webp" width="1254" height="1254" alt="Mặt trước và mặt sau nhãn GiuoWow: công dụng, thành phần, hướng dẫn sử dụng, cảnh báo" loading="lazy">
+      </div>
+      <div class="cos-lic-zoom-hint">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        Bấm vào ảnh để xem kích thước&nbsp;lớn
       </div>
 
+      <div class="cos-lic-features">
+        <div class="cos-lic-feat">
+          <div class="cos-lic-feat-num">500ml</div>
+          <div class="cos-lic-feat-text">Thể tích&nbsp;thực</div>
+        </div>
+        <div class="cos-lic-feat">
+          <div class="cos-lic-feat-num">1–2</div>
+          <div class="cos-lic-feat-text">Lần dùng /&nbsp;chai</div>
+        </div>
+        <div class="cos-lic-feat">
+          <div class="cos-lic-feat-num">1 lần</div>
+          <div class="cos-lic-feat-text">Thấy hiệu&nbsp;quả</div>
+        </div>
+      </div>
     </div>
 
-    <!-- Công dụng (ảnh 03 nằm ở carousel đầu trang) -->
-    <div class="gw-congdung gw-sec gw-w">
-      <h2 class="gw-h2">GiuoWow: Sạch Sâu · Khử Mùi · Diệt&nbsp;Khuẩn</h2>
-      <ul class="gw-ticks">
-        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span><b>Sạch sâu cặn&nbsp;bẩn</b> — loại bỏ cặn bẩn, cặn vôi, nấm mốc bám lâu&nbsp;ngày.</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span><b>Diệt khuẩn&nbsp;99,9%*</b> — loại bỏ vi khuẩn, nấm mốc gây mùi&nbsp;hôi.</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span><b>Khử mùi, thơm&nbsp;mát</b> — hương dịu nhẹ cho lồng máy và quần&nbsp;áo.</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span><b>Bảo vệ lồng&nbsp;máy</b> — không ăn mòn, giữ máy giặt bền&nbsp;đẹp.</span></li>
-      </ul>
+  </section>
 
-    </div>
+  <div class="tts-section-divider"></div>
+
+  <!-- ========== MÔ TẢ ========== -->
+  <section id="mota">
 
     <!-- 4 công dụng -->
-    <div class="cos-benefit-grid gw-sec gw-p">
+    <div class="cos-benefit-grid">
       <h2 class="cos-ben-title">GiuoWow Làm Được Gì Cho Máy&nbsp;Giặt?</h2>
+      <p class="cos-ben-sub">4 công dụng chính — theo công bố của nhà sản&nbsp;xuất</p>
       <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
         <img class="cos-ben-banner" src="assets/gw-06-truoc-sau.webp" width="1254" height="1254" alt="Lồng giặt thay đổi ra sao: trước và sau khi vệ sinh bằng GiuoWow (hình ảnh minh họa do AI tạo)" loading="lazy">
       </div>
       <p class="gw-note" style="margin:-8px 0 18px">Hình ảnh minh họa do AI tạo; hiệu quả thực tế tùy tình trạng máy&nbsp;giặt.</p>
+      <div class="cos-ben-row">
+        <div class="cos-ben-card">
+          <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+          <div class="cos-ben-name">Sạch&nbsp;sâu</div>
+          <div class="cos-ben-desc">Cặn bẩn, cặn vôi, nấm mốc bám lâu&nbsp;ngày</div>
+        </div>
+        <div class="cos-ben-card">
+          <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 3l1.45 4.55L18 9l-4.55 1.45L12 15l-1.45-4.55L6 9l4.55-1.45z"/></svg></div>
+          <div class="cos-ben-name">Diệt khuẩn&nbsp;99,9%*</div>
+          <div class="cos-ben-desc">Vi khuẩn, nấm mốc gây mùi&nbsp;hôi</div>
+        </div>
+      </div>
+      <div class="cos-ben-row">
+        <div class="cos-ben-card">
+          <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 22a8 8 0 0 0 8-8c0-3.5-2-6.5-5-8.5L12 2 9 5.5C6 7.5 4 10.5 4 14a8 8 0 0 0 8 8z"/></svg></div>
+          <div class="cos-ben-name">Khử mùi hiệu&nbsp;quả</div>
+          <div class="cos-ben-desc">Lồng máy thơm mát, sạch&nbsp;sẽ</div>
+        </div>
+        <div class="cos-ben-card">
+          <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+          <div class="cos-ben-name">Bảo vệ lồng&nbsp;máy</div>
+          <div class="cos-ben-desc">Không ăn mòn, giữ máy giặt bền&nbsp;đẹp</div>
+        </div>
+      </div>
     </div>
 
     <!-- 3 tác động -->
-    <div class="gw-impact gw-sec gw-w">
+    <div class="gw-impact">
       <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
         <img src="assets/gw-08-ba-tac-dong.webp" width="1254" height="1254" alt="3 tác động trong một lần vệ sinh: làm sạch sâu lồng giặt, khử mùi khó chịu, bảo vệ lồng máy" loading="lazy">
       </div>
-      <p class="gw-sub" style="margin:0">Hỗ trợ loại bỏ cặn bẩn và cặn vôi · giúp lồng máy sạch thoáng · không ăn mòn lồng máy (theo công bố của nhà sản&nbsp;xuất).</p>
     </div>
 
     <!-- Dùng cho mọi loại máy -->
-    <div class="gw-multi gw-sec gw-p">
-      <h2 class="gw-sr">Dùng Cho Mọi Loại Máy&nbsp;Giặt</h2>
+    <div class="gw-multi">
+      <h2 class="cos-tex-title">Dùng Cho Mọi Loại Máy&nbsp;Giặt</h2>
+      <p class="cos-tex-sub">Máy cửa trên (lồng đứng) và máy cửa trước (lồng ngang) — một chai lo cả&nbsp;hai.</p>
       <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
         <img class="cos-tex-img" src="assets/gw-07-tuong-thich-may.webp" width="1254" height="1254" alt="GiuoWow dùng cho cả hai loại máy giặt: máy cửa trước và máy cửa trên" loading="lazy">
+      </div>
+      <div class="cos-lic-features">
+        <div class="cos-lic-feat">
+          <div class="cos-lic-feat-num">2 loại</div>
+          <div class="cos-lic-feat-text">Cửa trên &amp; cửa&nbsp;trước</div>
+        </div>
+        <div class="cos-lic-feat">
+          <div class="cos-lic-feat-num">1–2</div>
+          <div class="cos-lic-feat-text">Tháng vệ sinh 1&nbsp;lần</div>
+        </div>
+        <div class="cos-lic-feat">
+          <div class="cos-lic-feat-num">Không</div>
+          <div class="cos-lic-feat-text">Cần tháo&nbsp;máy</div>
+        </div>
       </div>
       <p class="gw-note">Đổ chất tẩy vào lồng trống, chạy chế độ giặt thường với mức nước cao nhất. Máy cửa trước: ưu tiên chế độ vệ sinh lồng của hãng máy nếu&nbsp;có.</p>
     </div>
 
-    </section>
+    <!-- Thành phần -->
+    <div class="cos-ba">
+      <h2 class="cos-ba-title">Thành Phần &amp; Thông&nbsp;Số</h2>
+      <p class="cos-ba-sub">Thông tin in trên nhãn sản&nbsp;phẩm</p>
+      <div class="cos-ba-img-wrap gw-photo">
+        <img src="assets/gw-09-thanh-phan.webp" width="1254" height="1254" alt="Thành phần và thông số GiuoWow: nước, acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu; 500ml, dùng được 1–2 lần/chai" loading="lazy">
+      </div>
+      <div class="cos-ba-stats">
+        <div class="cos-ba-stat">
+          <div class="cos-ba-stat-num" style="font-size:15.5px;">Acid hữu&nbsp;cơ</div>
+          <div class="cos-ba-stat-label">Làm sạch cặn vôi, cặn&nbsp;bám</div>
+        </div>
+        <div class="cos-ba-stat">
+          <div class="cos-ba-stat-num" style="font-size:15.5px;">Chất tẩy&nbsp;rửa</div>
+          <div class="cos-ba-stat-label">Chất hoạt động bề&nbsp;mặt</div>
+        </div>
+        <div class="cos-ba-stat">
+          <div class="cos-ba-stat-num" style="font-size:15.5px;">Hương&nbsp;dịu</div>
+          <div class="cos-ba-stat-label">Hương liệu vừa đủ, thơm&nbsp;mát</div>
+        </div>
+      </div>
+      <div class="cos-ba-note">Thành phần: Nước, Acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu vừa&nbsp;đủ.</div>
+    </div>
 
-  <section id="cachdung">
+    <!-- Vì sao nên mua 2-3 chai -->
+    <div class="cos-texture">
+      <h2 class="cos-tex-title">Vì Sao Nên Mua 2–3 Chai Một&nbsp;Lần?</h2>
+      <p class="cos-tex-sub">Mua 1 chai: 199.000đ — dùng được 1–2&nbsp;lần.<br>Mua 2 chai chỉ 299.000đ, mua 3 chai chỉ 399.000đ&nbsp;— <b>FREESHIP</b> cả 3&nbsp;gói.</p>
+      <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
+        <img class="cos-tex-img" src="assets/gw-10-gia-combo.webp" width="1254" height="1254" alt="Bảng giá GiuoWow: 1 chai 199.000đ, 2 chai 299.000đ, 3 chai 399.000đ, freeship cả 3 gói" loading="lazy">
+      </div>
+      <div class="cos-tex-attrs">
+        <div class="cos-tex-attr">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+          Đủ dùng nhiều&nbsp;lần
+        </div>
+        <div class="cos-tex-attr">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Tiết kiệm&nbsp;hơn
+        </div>
+        <div class="cos-tex-attr">
+          <svg viewBox="0 0 24 24"><path d="M12 3l1.45 4.55L18 9l-4.55 1.45L12 15l-1.45-4.55L6 9l4.55-1.45z"/></svg>
+          Freeship cả 3&nbsp;gói
+        </div>
+        <div class="cos-tex-attr">
+          <svg viewBox="0 0 24 24"><path d="M12 22a8 8 0 0 0 8-8c0-3.5-2-6.5-5-8.5L12 2 9 5.5C6 7.5 4 10.5 4 14a8 8 0 0 0 8 8z"/></svg>
+          Không lo hết giữa&nbsp;chừng
+        </div>
+      </div>
+    </div>
 
     <!-- Cách dùng -->
-    <div class="cos-routine gw-sec gw-w">
-      <h2 class="gw-sr">Cách Dùng — Chỉ 5 Bước Đơn&nbsp;Giản</h2>
-      <p class="cos-rt-sub">Nên vệ sinh lồng khoảng 1 - 2&nbsp;tháng/lần.</p>
+    <div class="cos-routine">
+      <h2 class="cos-rt-title">Cách Dùng — Chỉ 5 Bước Đơn&nbsp;Giản</h2>
+      <p class="cos-rt-sub">Làm theo hướng dẫn in trên nhãn sản&nbsp;phẩm.<br>Nên vệ sinh lồng khoảng 1 - 2&nbsp;tháng/lần.</p>
       <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
         <img class="cos-rt-img" src="assets/gw-11-cach-dung-5-buoc.webp" width="1254" height="1254" alt="Cách dùng 5 bước đơn giản: để lồng giặt trống, đổ ½–1 chai, chọn chế độ giặt, chạy hết chương trình, mở cửa để khô" loading="lazy">
       </div>
@@ -2002,76 +2159,48 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-g
       </div>
     </div>
 
-    <!-- Vì sao nên mua 2-3 chai -->
-    <div class="cos-texture gw-sec gw-p">
-      <h2 class="cos-tex-title">Vì Sao Nên Mua 2–3 Chai Một&nbsp;Lần?</h2>
-      <p class="cos-tex-sub">Mua 1 chai: 199.000đ — dùng được 1–2&nbsp;lần.<br>Mua 2 chai chỉ 299.000đ, mua 3 chai chỉ 399.000đ&nbsp;— <b>FREESHIP</b> cả 3&nbsp;gói.</p>
-      <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
-        <img class="cos-tex-img" src="assets/gw-10-gia-combo.webp" width="1254" height="1254" alt="Bảng giá GiuoWow: 1 chai 199.000đ, 2 chai 299.000đ, 3 chai 399.000đ, freeship cả 3 gói" loading="lazy">
-      </div>
-    </div>
-
     <!-- Inline CTA -->
-    <div class="cos-cta-block gw-sec gw-w">
+    <div class="cos-cta-block">
       <div class="cos-cta-headline">Đổ vào, chạy máy&nbsp;— <b>lồng sạch, quần áo thơm&nbsp;mát</b></div>
-      
+      <div class="cos-cta-sub">Từ 199.000đ · Combo 2 chai 299.000đ · Combo 3 chai 399.000đ · Freeship ·&nbsp;COD</div>
       <button class="cos-cta-btn" type="button" onclick="onBuyClick()">
         <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21 4.96 19.27 4H5.21l-.94-2H1z"/></svg>
         Mua Ngay — từ&nbsp;199.000đ
       </button>
     </div>
 
-  
-    <!-- Thành phần -->
-    <div class="cos-ba gw-sec gw-p">
-      <h2 class="gw-sr">Thành Phần &amp; Thông&nbsp;Số</h2>
-      <div class="cos-ba-img-wrap gw-photo">
-        <img src="assets/gw-09-thanh-phan.webp" width="1254" height="1254" alt="Thành phần và thông số GiuoWow: nước, acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu; 500ml, dùng được 1–2 lần/chai" loading="lazy">
-      </div>
-      <div class="cos-ba-note">Thành phần: Nước, Acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu vừa&nbsp;đủ.</div>
-    </div>
-
-    <!-- Safety -->
-    <div class="cos-safety gw-sec gw-w">
-      <h2 class="gw-sr">Hướng Dẫn An Toàn Khi&nbsp;Dùng</h2>
-      <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
-        <img src="assets/gw-04-an-toan.webp" width="1254" height="1254" alt="Hướng dẫn an toàn khi dùng: tránh mắt và da, không uống, để xa trẻ em, không pha trộn, bảo quản khô thoáng, đọc hướng dẫn" loading="lazy">
-      </div>
-      <div class="cos-saf-callout">
-        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-        <div class="cos-saf-callout-text">
-          <b style="color:var(--tt-pink)">Để xa tầm tay trẻ em, tránh tiếp xúc với mắt và&nbsp;da.</b> Không uống — nếu nuốt phải, uống nhiều nước và đến cơ sở y tế. Không trộn với thuốc tẩy hoặc hóa chất khác. Cần tư vấn, gọi 0776 210&nbsp;408.
+    <!-- Quick facts -->
+    <div class="cos-stats">
+      <h2 class="cos-stat-title">Thông Tin&nbsp;Nhanh</h2>
+      <div class="cos-stat-grid">
+        <div class="cos-stat-item">
+          <div class="cos-stat-num">500<span>ml</span></div>
+          <div class="cos-stat-label">Thể tích&nbsp;thực</div>
+        </div>
+        <div class="cos-stat-item">
+          <div class="cos-stat-num">1–2<span>lần</span></div>
+          <div class="cos-stat-label">Dùng được /&nbsp;chai</div>
+        </div>
+        <div class="cos-stat-item">
+          <div class="cos-stat-num">1–2<span>tháng</span></div>
+          <div class="cos-stat-label">Vệ sinh 1&nbsp;lần</div>
+        </div>
+        <div class="cos-stat-item">
+          <div class="cos-stat-num">2<span>loại</span></div>
+          <div class="cos-stat-label">Máy cửa trên &amp;&nbsp;trước</div>
         </div>
       </div>
     </div>
 
-    <!-- Product info -->
-    <div class="cos-license gw-sec gw-p">
-      <div class="cos-lic-badge">
-        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-        Công nghệ Nhật Bản · Sản xuất tại nhà máy ở Việt&nbsp;Nam
-      </div>
-      <h2 class="gw-sr">Thông Tin Rõ&nbsp;Ràng —&nbsp;Trên&nbsp;Nhãn</h2>
-
-      <p class="gw-note" style="margin:12px 0 14px">Gọi 0776 210 408 để được tư vấn cách dùng cho từng loại máy&nbsp;giặt.</p>
-
-      <div class="cos-img-wrap cos-lic-image-wrap">
-        <img class="cos-lic-image" src="assets/gw-05-thong-tin-nhan.webp" width="1254" height="1254" alt="Mặt trước và mặt sau nhãn GiuoWow: công dụng, thành phần, hướng dẫn sử dụng, cảnh báo" loading="lazy">
-      </div>
-      <div class="cos-lic-zoom-hint">
-        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-        Bấm vào ảnh để xem kích thước&nbsp;lớn
-      </div>
-
-    </div>
-
   </section>
 
+  <div class="tts-section-divider"></div>
+
   <!-- ========== ĐỀ XUẤT ========== -->
-  <section id="phanhoi">
+  <section id="dexuat">
 
     <!-- Phản hồi khách hàng (ảnh thật sẽ thay sau) -->
-    <div class="cos-review gw-sec gw-w">
+    <div class="cos-review">
       <h2 class="cos-rev-title">Phản Hồi Từ Khách&nbsp;Hàng</h2>
       <div class="gw-cus" tabindex="0" aria-label="Tình huống minh họa — vuốt ngang để xem">
         <div class="gw-slide cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/gw-12-phan-hoi-cua-truoc.webp" width="1254" height="1254" alt="Minh họa: máy cửa trước dùng lâu ngày có mùi khó chịu, sau khi vệ sinh lồng sạch thoáng (hình ảnh minh họa do AI tạo)" loading="lazy"></div>
@@ -2082,7 +2211,7 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-g
     </div>
 
     <!-- FAQ -->
-    <div class="cos-faq gw-sec gw-p" id="faq">
+    <div class="cos-faq" id="faq">
       <h2 class="cos-faq-title">Câu Hỏi Thường&nbsp;Gặp</h2>
       <div class="cos-faq-list">
         <details class="cos-faq-item">
@@ -2113,7 +2242,7 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-g
     </div>
 
     <!-- Closing CTA -->
-    <div class="cos-cta-block gw-close gw-sec gw-w" style="background: linear-gradient(180deg, var(--cos-soft-pink) 0%, var(--tt-bg) 100%);">
+    <div class="cos-cta-block gw-close" style="background: linear-gradient(180deg, var(--cos-soft-pink) 0%, var(--tt-bg) 100%);">
       <h2 class="gw-sr">Vệ sinh lồng máy ngay hôm nay — từ 199.000đ, freeship, thanh toán khi nhận&nbsp;hàng</h2>
       <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
         <img src="assets/gw-15-chot-don.webp" width="1254" height="1254" alt="Vệ sinh lồng máy ngay hôm nay: từ 199.000đ, 2 chai 299.000đ, 3 chai 399.000đ, freeship, thanh toán khi nhận hàng" loading="lazy">
@@ -2175,13 +2304,18 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom));background:linear-g
 <!-- ========== STICKY CTA ========== -->
 <div class="tts-sticky-cta">
   <div class="tts-cta-sidegroup">
-    <a class="tts-cta-side" href="tel:0776210408" data-call aria-label="Gọi 0776 210 408">
+    <a class="tts-cta-side" href="tel:0776210408" data-call>
       <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
       Gọi
     </a>
+    <a class="tts-cta-side" href="#faq">
+      <svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+      Hỏi đáp
+    </a>
   </div>
   <div class="tts-cta-buy">
-    <button class="tts-btn-buy" type="button" onclick="onBuyClick()">Mua ngay – Chọn&nbsp;gói</button>
+    <button class="tts-btn-cart" type="button" onclick="onBuyClick()">Chọn&nbsp;gói</button>
+    <button class="tts-btn-buy" type="button" onclick="onBuyClick()">Mua&nbsp;ngay</button>
   </div>
 </div>
 
@@ -2261,18 +2395,6 @@ function getUTMParams(){
     document.addEventListener('DOMContentLoaded', function () { TikTokTabNav.init(); });
   } else { TikTokTabNav.init(); }
 })(window);
-
-/* Scrollspy bổ sung: chạm đáy trang thì sáng tab cuối */
-(function(){
-  var tabs=document.querySelectorAll('.tts-tab');
-  if(!tabs.length) return;
-  window.addEventListener('scroll',function(){
-    if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-8){
-      tabs.forEach(function(t){t.classList.remove('active')});
-      tabs[tabs.length-1].classList.add('active');
-    }
-  },{passive:true});
-})();
 
 /* ============================================================
  * Hero Gallery
