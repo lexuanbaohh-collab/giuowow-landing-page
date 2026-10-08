@@ -1737,6 +1737,35 @@ h1,h2,h3,
 .cos-pain-strip + .cos-ingredient{padding-top:8px !important}
 .gw-multi + .cos-ba{padding-top:8px !important}
 @media (max-width:380px){.cos-pain-cta{font-size:13.5px !important;letter-spacing:0}}
+/* =====================================================================
+   Hiệu ứng chuyển động (nhẹ, có kiểm soát; tắt khi khách chọn giảm chuyển động)
+   ===================================================================== */
+@keyframes gwPush{
+  0%,100%{transform:scale(1);box-shadow:var(--tt-shadow-cta)}
+  50%{transform:scale(1.045);box-shadow:0 6px 18px rgba(209,10,17,.45)}
+}
+@keyframes gwShine{0%,70%{transform:translateX(-120%) skewX(-18deg)}100%{transform:translateX(320%) skewX(-18deg)}}
+@keyframes gwRing{0%,82%,100%{transform:rotate(0)}86%{transform:rotate(-14deg)}90%{transform:rotate(12deg)}94%{transform:rotate(-8deg)}98%{transform:rotate(5deg)}}
+
+/* nút chính: push đều ~2,4s/chu kỳ */
+.tts-inline-btn.buy,.cos-cta-btn:not(.gw-call),.tts-btn-buy,.tts-popup-submit{animation:gwPush 2.4s ease-in-out infinite;will-change:transform}
+.cos-cta-btn:active,.tts-btn-buy:active,.tts-inline-btn.buy:active,.tts-popup-submit:active{animation:none;transform:scale(.97)}
+.tts-popup-submit:disabled{animation:none}
+
+/* banner giá: ánh sáng quét qua mỗi ~4,5s */
+.tts-deal-left{overflow:hidden;isolation:isolate}
+.tts-deal-left::after{content:"";position:absolute;top:0;bottom:0;left:0;width:34%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);animation:gwShine 4.5s ease-in-out infinite;pointer-events:none;z-index:1}
+/* biểu tượng Gọi: lắc nhẹ thỉnh thoảng */
+.tts-cta-side svg{transform-origin:50% 60%;animation:gwRing 5s ease-in-out infinite}
+
+/* nội dung hiện dần khi cuộn tới */
+.js-motion .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1);transition-delay:var(--rv-delay,0ms)}
+.js-motion .rv.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  .tts-inline-btn.buy,.cos-cta-btn,.tts-btn-buy,.tts-popup-submit,.tts-cta-side svg,.tts-deal-left::after{animation:none !important}
+  .js-motion .rv{opacity:1 !important;transform:none !important;transition:none !important}
+}
 </style>
 </head>
 <body>
@@ -2486,6 +2515,46 @@ function getUTMParams(){
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(run);
   window.addEventListener('resize', later);
   window.addEventListener('orientationchange', later);
+})();
+
+/* ============================================================
+ * Chuyển động: hiện dần khi cuộn + carousel tự chuyển ảnh
+ * ============================================================ */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('js-motion');
+
+  // 1) Hiện dần: ảnh, tiêu đề, từng dòng danh sách (so le nhẹ)
+  var sel = '.gw-photo,.cos-pain-title,.cos-pain-sub,.cos-pain-item,.cos-ing-title,.cos-ing-item,.cos-saf-callout,.cos-ben-title,.cos-tex-title,.cos-ba-title,.cos-rt-title,.cos-rt-step,.cos-rt-pm-note,.cos-faq-title,.cos-faq-item,.cos-cta-headline,.cos-lic-badge,.cos-lic-title';
+  var els = Array.prototype.slice.call(document.querySelectorAll(sel)).filter(function (e) { return !e.closest('.tts-hero,.tts-popup,.tts-tabnav'); });
+  var groups = new Map();
+  els.forEach(function (e) {
+    e.classList.add('rv');
+    var g = e.parentElement, n = groups.get(g) || 0;
+    if (/item|step/.test(e.className)) e.style.setProperty('--rv-delay', Math.min(n, 4) * 90 + 'ms');
+    groups.set(g, n + 1);
+  });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+  els.forEach(function (e) { io.observe(e); });
+
+  // 2) Carousel đầu trang tự chuyển ảnh mỗi 4,5s; dừng hẳn khi khách chạm/vuốt
+  var hero = document.querySelector('.tts-hero'), track = hero && hero.querySelector('.tts-hero-track');
+  if (!track) return;
+  var stopped = false, visible = true, idx = 0, total = track.children.length;
+  function stop() { stopped = true; }
+  ['pointerdown', 'touchstart', 'wheel', 'keydown'].forEach(function (ev) { hero.addEventListener(ev, stop, { passive: true }); });
+  new IntersectionObserver(function (en) { visible = en[0].isIntersecting; }, { threshold: 0.5 }).observe(hero);
+  setInterval(function () {
+    if (stopped || !visible || document.hidden || total < 2) return;
+    idx = Math.round(track.scrollLeft / track.clientWidth);
+    idx = (idx + 1) % total;
+    track.scrollTo({ left: idx * track.clientWidth, behavior: 'smooth' });
+  }, 4500);
 })();
 
 /* ============================================================
