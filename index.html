@@ -1613,7 +1613,7 @@ a { color: inherit; text-decoration: none; }
 /* ===== GiuoWow additions (same TikTok-pink design tokens) ===== */
 .gw-cus{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 /* ===== Typography: no lonely last word, no ugly breaks ===== */
-body{text-wrap:pretty}
+body{text-wrap:wrap}
 h1,h2,h3,
 .tts-title,.cos-pain-title,.cos-ing-title,.cos-saf-title,.cos-lic-title,.cos-ben-title,.cos-ba-title,.cos-tex-title,.cos-rt-title,.cos-stat-title,.cos-rev-title,.cos-faq-title,
 .cos-pain-sub,.cos-ing-sub,.cos-saf-sub,.cos-lic-sub,.cos-ben-sub,.cos-ba-sub,.cos-tex-sub,.cos-rt-sub,.cos-cta-headline,.cos-cta-sub,.cos-pain-cta,
@@ -1637,6 +1637,28 @@ h1,h2,h3,
   .tts-deal-price{font-size:22px}
   .tts-deal-pct{font-size:10px;padding:1px 5px}
   .tts-deal-left{padding-left:10px;padding-right:6px}
+}
+/* Khối canh trái: xuống dòng tự nhiên (balance làm dòng ngắn, chừa trống bên phải) */
+.tts-title,.tts-hot-strip-text,.tts-feat-chip,.tts-info-value,.cos-ing-name,.cos-ing-desc,.cos-saf-callout-text,.cos-tex-attr,.cos-rt-name,.cos-rt-desc,.cos-rev-title,.cos-faq-q{text-wrap:wrap}
+.cos-ing-circle b.sm{font-size:16px}
+.tts-feature-chips{gap:6px}
+.tts-feat-chip{padding-left:8px;padding-right:9px;gap:4px}
+@media (max-width:380px){
+  .tts-sticky-cta{padding:8px 10px;gap:8px}
+  .tts-cta-sidegroup{gap:8px;padding-right:6px}
+  .tts-cta-side{min-width:34px;font-size:10.5px}
+  .tts-cta-buy{gap:6px}
+  .tts-btn-cart{padding:12px 6px;font-size:13.5px}
+  .tts-btn-buy{padding:12px 8px;font-size:14.5px;letter-spacing:0}
+}
+@media (max-width:340px){
+  .tts-brand-name{font-size:14.5px}
+  .tts-verified-icon{display:none}
+  .tts-official-badge{font-size:9px;padding:2px 4px;letter-spacing:0}
+  .tts-follow-btn{padding:5px 8px;font-size:12px}
+  .tts-brand-sub{font-size:10px}
+  .tts-deal-old{font-size:11.5px}
+  .tts-deal-price{font-size:20px}
 }
 </style>
 </head>
@@ -1703,7 +1725,7 @@ h1,h2,h3,
     <!-- Title Block -->
     <div class="tts-title-block">
       <span class="tts-tag-mall">Mới</span>
-      <h1 class="tts-title">GiuoWow - Tẩy lồng máy giặt 500ml | Sạch sâu, khử mùi, diệt khuẩn | Dùng cho máy cửa trên &amp; cửa&nbsp;trước</h1>
+      <h1 class="tts-title">GiuoWow - Tẩy lồng máy giặt 500ml&nbsp;| Sạch sâu, khử mùi, diệt khuẩn&nbsp;| Dùng cho máy cửa trên &amp; cửa&nbsp;trước</h1>
       <button class="tts-bookmark-btn" type="button" aria-label="Lưu sản phẩm">
         <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4v17l7-4 7 4V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1z"/></svg>
       </button>
@@ -1852,7 +1874,7 @@ h1,h2,h3,
           </div>
         </div>
         <div class="cos-ing-item">
-          <div class="cos-ing-circle"><b>99,9%</b></div>
+          <div class="cos-ing-circle"><b class="sm">99,9%</b></div>
           <div class="cos-ing-body">
             <div class="cos-ing-name">Diệt khuẩn&nbsp;99,9%*</div>
             <div class="cos-ing-desc">Loại bỏ vi khuẩn, nấm mốc gây mùi hôi, giúp lồng giặt sạch&nbsp;sẽ.</div>
