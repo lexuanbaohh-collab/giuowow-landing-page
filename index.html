@@ -1685,6 +1685,15 @@ h1,h2,h3,
 @media (max-width:380px){
   .cos-cta-btn{padding:14px 16px;font-size:15.5px;max-width:100%}
 }
+/* ===== Bộ ảnh GiuoWow: hiển thị đủ, không cắt, bo góc 16–20px, cách nội dung 20px ===== */
+.gw-photo{margin-bottom:20px !important;border-radius:18px}
+.gw-photo img,.cos-img-wrap.gw-photo > img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block}
+.cos-ba-img-wrap.gw-photo{border-radius:18px;overflow:hidden}
+.cos-ba-img-wrap.gw-photo img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block}
+.gw-cus{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 2px 8px}
+.gw-cus::-webkit-scrollbar{display:none}
+.gw-cus .gw-slide{flex:0 0 88%;scroll-snap-align:center;border-radius:18px;margin:0}
+.gw-cus .gw-slide img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block}
 </style>
 </head>
 <body>
@@ -1859,8 +1868,8 @@ h1,h2,h3,
     <div class="cos-pain-strip">
       <h2 class="cos-pain-title">Lồng máy giặt của bạn đang bẩn hơn bạn&nbsp;nghĩ?</h2>
       <p class="cos-pain-sub">Nếu bạn gật đầu với 2 trong số này, đã đến lúc vệ sinh lồng máy&nbsp;giặt.</p>
-      <div class="cos-img-wrap" style="margin-bottom:14px;aspect-ratio:4/3">
-        <img class="cos-pain-image" src="assets/long-ban-thuc-te.svg" alt="Lồng máy giặt bám cặn bẩn lâu ngày" loading="lazy">
+      <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
+        <img class="cos-pain-image" src="assets/gw-02-long-ban.webp" width="1254" height="1254" alt="Lồng máy giặt bám cặn đen, mùi khó chịu, quần áo còn mùi hôi — đã đến lúc vệ sinh lồng máy" loading="lazy">
       </div>
       <div class="cos-pain-list">
         <div class="cos-pain-item">
@@ -1891,8 +1900,8 @@ h1,h2,h3,
     <div class="cos-ingredient">
       <h2 class="cos-ing-title">GiuoWow: Sạch Sâu · Khử Mùi · Diệt&nbsp;Khuẩn</h2>
       <p class="cos-ing-sub">Bảo vệ máy giặt cho quần áo thơm mát. Hiệu quả sau 1 lần sử&nbsp;dụng.</p>
-      <div class="cos-img-wrap" style="margin-bottom:16px;aspect-ratio:1/1">
-        <img class="cos-ing-hero" src="assets/product-infographic.webp" alt="GiuoWow tẩy lồng máy giặt - công dụng" loading="lazy">
+      <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
+        <img class="cos-ing-hero" src="assets/gw-03-bon-tac-dong.webp" width="1254" height="1254" alt="4 tác động chăm sóc lồng máy: sạch sâu cặn bẩn, diệt khuẩn 99,9%, khử mùi khó chịu, bảo vệ lồng máy" loading="lazy">
       </div>
       <div class="cos-ing-list">
         <div class="cos-ing-item">
@@ -1981,8 +1990,7 @@ h1,h2,h3,
       <p class="cos-lic-sub">Thành phần, hướng dẫn sử dụng và cảnh báo được in đầy đủ trên nhãn sản phẩm. Gọi 0776 210 408 để được tư vấn cách dùng cho từng loại máy&nbsp;giặt.</p>
 
       <div class="cos-img-wrap cos-lic-image-wrap">
-        <img class="cos-lic-image" src="assets/product-back-sq.webp" alt="Mặt sau chai GiuoWow: công dụng, thành phần, hướng dẫn sử dụng" loading="lazy">
-        <span class="cos-lic-corner-stamp">GIUOWOW</span>
+        <img class="cos-lic-image" src="assets/gw-05-thong-tin-nhan.webp" width="1254" height="1254" alt="Mặt trước và mặt sau nhãn GiuoWow: công dụng, thành phần, hướng dẫn sử dụng, cảnh báo" loading="lazy">
       </div>
       <div class="cos-lic-zoom-hint">
         <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -2073,10 +2081,8 @@ h1,h2,h3,
     <div class="cos-ba">
       <h2 class="cos-ba-title">Thành Phần &amp; Thông&nbsp;Số</h2>
       <p class="cos-ba-sub">Thông tin in trên nhãn sản&nbsp;phẩm</p>
-      <div class="cos-ba-img-wrap">
-        <img src="assets/product-infographic.webp" alt="GiuoWow tẩy lồng máy giặt 500ml" loading="lazy">
-        <span class="cos-ba-label cos-ba-label-before">GiuoWow</span>
-        <span class="cos-ba-label cos-ba-label-after">500ml</span>
+      <div class="cos-ba-img-wrap gw-photo">
+        <img src="assets/gw-09-thanh-phan.webp" width="1254" height="1254" alt="Thành phần và thông số GiuoWow: nước, acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu; 500ml, dùng được 1–2 lần/chai" loading="lazy">
       </div>
       <div class="cos-ba-stats">
         <div class="cos-ba-stat">
@@ -2214,11 +2220,12 @@ h1,h2,h3,
     <!-- Phản hồi khách hàng (ảnh thật sẽ thay sau) -->
     <div class="cos-review">
       <h2 class="cos-rev-title">Phản Hồi Từ Khách&nbsp;Hàng</h2>
-      <div class="gw-cus">
-        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-1.svg" alt="Phản hồi khách hàng 1" loading="lazy"></div>
-        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-2.svg" alt="Phản hồi khách hàng 2" loading="lazy"></div>
-        <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-3.svg" alt="Phản hồi khách hàng 3" loading="lazy"></div>
+      <div class="gw-cus" tabindex="0" aria-label="Tình huống minh họa — vuốt ngang để xem">
+        <div class="gw-slide cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-1.svg" alt="Minh họa: máy cửa trước có mùi khó chịu" loading="lazy"></div>
+        <div class="gw-slide cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/gw-13-phan-hoi-may-cua-tren.webp" width="1254" height="1254" alt="Minh họa: máy cửa trên dùng lâu ngày chưa vệ sinh (hình ảnh minh họa do AI tạo)" loading="lazy"></div>
+        <div class="gw-slide cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-3.svg" alt="Minh họa: tự vệ sinh tại nhà" loading="lazy"></div>
       </div>
+      <p class="gw-note" style="margin-top:10px">Hình ảnh minh họa do AI tạo, không phải khách hàng thật. Vuốt ngang để xem&nbsp;thêm.</p>
     </div>
 
     <!-- FAQ -->
