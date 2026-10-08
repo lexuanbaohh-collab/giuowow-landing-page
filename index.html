@@ -74,7 +74,7 @@ html { -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px; line-height: 1.5;
+  font-size: 15.5px; line-height: 1.5;
   color: var(--tt-text-primary);
   background: var(--tt-bg-soft);
   -webkit-font-smoothing: antialiased;
@@ -87,7 +87,7 @@ a { color: inherit; text-decoration: none; }
 
 /* iOS auto-zoom fix */
 @media (max-width: 767px) {
-  input, select, textarea { font-size: 16px !important; }
+  input, select, textarea { font-size: 18px !important; }
 }
 
 .tts-page {
@@ -118,7 +118,7 @@ a { color: inherit; text-decoration: none; }
 }
 .tts-tab {
   flex: 1; display: flex; align-items: center; justify-content: center;
-  font-size: 14px; font-weight: 500;
+  font-size: 15.5px; font-weight: 500;
   color: var(--tt-text-muted);
   position: relative; cursor: pointer;
   transition: color 0.15s ease;
@@ -133,7 +133,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--tt-black);
   border-radius: 2px 2px 0 0;
 }
-@media (max-width: 480px) { .tts-tab { font-size: 14px; } }
+@media (max-width: 480px) { .tts-tab { font-size: 15.5px; } }
 
 /* Brand Strip */
 .tts-brand-strip {
@@ -152,7 +152,7 @@ a { color: inherit; text-decoration: none; }
 }
 .tts-brand-info { display: flex; align-items: center; gap: 6px; flex: 1; min-width: 0; }
 .tts-brand-name {
-  font-size: 14px; font-weight: 600;
+  font-size: 15.5px; font-weight: 600;
   color: var(--tt-black);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
@@ -162,7 +162,7 @@ a { color: inherit; text-decoration: none; }
   padding: 3px 8px;
   background: var(--tt-rose);
   color: #FFFFFF;
-  font-size: 10px; font-weight: 700;
+  font-size: 11px; font-weight: 700;
   letter-spacing: 0.5px;
   border-radius: var(--tt-r-sm);
   text-transform: uppercase;
@@ -173,7 +173,7 @@ a { color: inherit; text-decoration: none; }
   background: transparent;
   border: 1px solid var(--tt-pink);
   color: var(--tt-pink);
-  font-size: 12px; font-weight: 600;
+  font-size: 13.5px; font-weight: 600;
   border-radius: var(--tt-r-pill);
   flex-shrink: 0;
   transition: all 0.15s ease;
@@ -182,7 +182,7 @@ a { color: inherit; text-decoration: none; }
 
 /* Brand Strip subtitle */
 .tts-brand-sub {
-  font-size: 9px; font-weight: 700;
+  font-size: 10px; font-weight: 700;
   color: var(--tt-text-muted);
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -236,7 +236,7 @@ a { color: inherit; text-decoration: none; }
   padding: 3px 10px;
   background: rgba(0,0,0,0.55);
   color: #FFFFFF;
-  font-size: 12px; font-weight: 600;
+  font-size: 13.5px; font-weight: 600;
   border-radius: var(--tt-r-pill);
   backdrop-filter: blur(4px);
   z-index: 2;
@@ -280,12 +280,12 @@ a { color: inherit; text-decoration: none; }
   animation: deal-badge-pulse 1.4s ease-in-out infinite;
 }
 .tts-deal-save-num {
-  font-size: 15px; font-weight: 900;
+  font-size: 17px; font-weight: 900;
   color: #C8000E; line-height: 1.1;
   letter-spacing: -0.5px;
 }
 .tts-deal-save-lbl {
-  font-size: 8px; font-weight: 800;
+  font-size: 9px; font-weight: 800;
   color: #C8000E; line-height: 1;
   text-transform: uppercase; letter-spacing: 0.5px;
 }
@@ -294,12 +294,12 @@ a { color: inherit; text-decoration: none; }
   gap: 6px; flex-wrap: wrap;
 }
 .tts-deal-price {
-  font-size: 22px; font-weight: 800;
+  font-size: 24px; font-weight: 800;
   color: #FFFFFF;
   line-height: 1; letter-spacing: -0.5px;
 }
 .tts-deal-price-sym {
-  font-size: 12px; font-weight: 700;
+  font-size: 13.5px; font-weight: 700;
   vertical-align: super;
 }
 .tts-deal-pct {
@@ -307,18 +307,18 @@ a { color: inherit; text-decoration: none; }
   padding: 1px 6px;
   background: rgba(0,0,0,0.28);
   color: #FFFFFF;
-  font-size: 10px; font-weight: 800;
+  font-size: 11px; font-weight: 800;
   border-radius: var(--tt-r-sm);
   letter-spacing: 0.3px;
 }
 .tts-deal-old {
-  font-size: 11px; font-weight: 500;
+  font-size: 12.5px; font-weight: 500;
   color: rgba(255,255,255,0.78);
   text-decoration: line-through;
   letter-spacing: 0.2px;
 }
 .tts-deal-stock {
-  font-size: 10px; font-weight: 600;
+  font-size: 11px; font-weight: 600;
   color: rgba(255,255,255,0.9);
   letter-spacing: 0.2px;
 }
@@ -334,7 +334,7 @@ a { color: inherit; text-decoration: none; }
   border-left: 1px solid rgba(255,200,100,0.45);
 }
 .tts-deal-right-title {
-  font-size: 9px; font-weight: 800;
+  font-size: 10px; font-weight: 800;
   color: #8A4A00;
   text-transform: uppercase;
   letter-spacing: 0.4px;
@@ -342,7 +342,7 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.1;
 }
 .tts-deal-right-sub {
-  font-size: 8px; font-weight: 600;
+  font-size: 9px; font-weight: 600;
   color: #A06016;
   letter-spacing: 0.2px;
 }
@@ -354,7 +354,7 @@ a { color: inherit; text-decoration: none; }
   padding: 2px 7px;
   background: #161823;
   border-radius: 3px;
-  font-size: 12px; font-weight: 800;
+  font-size: 13.5px; font-weight: 800;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.8px;
   color: #FFD24A;
@@ -373,7 +373,7 @@ a { color: inherit; text-decoration: none; }
   padding: 2px 7px;
   background: #FE2C55;
   color: #FFFFFF;
-  font-size: 11px; font-weight: 800;
+  font-size: 12.5px; font-weight: 800;
   letter-spacing: 0.3px;
   border-radius: var(--tt-r-sm);
   flex-shrink: 0;
@@ -381,7 +381,7 @@ a { color: inherit; text-decoration: none; }
   margin-top: 2px;
 }
 .tts-title {
-  font-size: 15px; font-weight: 600;
+  font-size: 17px; font-weight: 600;
   color: var(--tt-black);
   line-height: 1.4;
   flex: 1; min-width: 0;
@@ -407,7 +407,7 @@ a { color: inherit; text-decoration: none; }
   display: flex; flex-wrap: wrap;
   align-items: center; gap: 6px;
   padding: 4px var(--tt-gap-lg) var(--tt-gap-md);
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--tt-text-muted);
 }
 .tts-meta-rating {
@@ -417,7 +417,7 @@ a { color: inherit; text-decoration: none; }
 }
 .tts-meta-rating svg { width: 14px; height: 14px; fill: var(--tt-star-active); }
 .tts-meta-rating .tts-rating-count { color: var(--tt-text-muted); font-weight: 400; }
-.tts-meta-divider { color: var(--tt-text-disabled); font-size: 10px; }
+.tts-meta-divider { color: var(--tt-text-disabled); font-size: 11px; }
 .tts-meta-item { display: inline-flex; align-items: center; gap: 3px; }
 .tts-meta-item-ship {
   display: inline-flex; align-items: center; gap: 3px;
@@ -433,7 +433,7 @@ a { color: inherit; text-decoration: none; }
   background: linear-gradient(90deg, #FFF5E6 0%, #FFE9C2 100%);
   border: 1px solid #FFD898;
   border-radius: var(--tt-r-md);
-  font-size: 12px;
+  font-size: 13.5px;
   color: #8A4A00;
   line-height: 1.3;
 }
@@ -459,7 +459,7 @@ a { color: inherit; text-decoration: none; }
   color: #FE2C55;
   border: 1px solid #FFD8E0;
   border-radius: var(--tt-r-pill);
-  font-size: 11px; font-weight: 600;
+  font-size: 12.5px; font-weight: 600;
   line-height: 1.2;
 }
 .tts-feat-chip svg { width: 12px; height: 12px; fill: #FE2C55; flex-shrink: 0; }
@@ -477,7 +477,7 @@ a { color: inherit; text-decoration: none; }
   gap: 10px;
   padding: 10px 12px;
   border-bottom: 1px solid var(--tt-bg-border);
-  font-size: 12.5px;
+  font-size: 14px;
   min-height: 38px;
 }
 .tts-info-row:last-child { border-bottom: 0; }
@@ -485,7 +485,7 @@ a { color: inherit; text-decoration: none; }
   flex: 0 0 96px;
   font-weight: 700;
   color: var(--tt-black);
-  font-size: 12.5px;
+  font-size: 14px;
 }
 .tts-info-value {
   flex: 1; min-width: 0;
@@ -503,21 +503,21 @@ a { color: inherit; text-decoration: none; }
   padding: 1px 6px;
   background: #FFF0F4;
   color: #FE2C55;
-  font-size: 10px; font-weight: 800;
+  font-size: 11px; font-weight: 800;
   border-radius: var(--tt-r-sm);
   letter-spacing: 0.3px;
 }
 .tts-ship-old {
   text-decoration: line-through;
   color: var(--tt-strike-price);
-  font-size: 12px;
+  font-size: 13.5px;
 }
 .tts-ship-free {
   display: inline-block;
   padding: 1px 8px;
   background: #E8F8F0;
   color: #00875A;
-  font-size: 11px; font-weight: 700;
+  font-size: 12.5px; font-weight: 700;
   border-radius: var(--tt-r-pill);
 }
 
@@ -530,7 +530,7 @@ a { color: inherit; text-decoration: none; }
   flex: 1; display: inline-flex;
   align-items: center; justify-content: center; gap: 6px;
   padding: 12px 8px;
-  font-size: 13px; font-weight: 800;
+  font-size: 14.5px; font-weight: 800;
   border-radius: var(--tt-r-pill);
   cursor: pointer;
   border: none;
@@ -567,13 +567,13 @@ a { color: inherit; text-decoration: none; }
 /* Pain Strip */
 .cos-pain-strip { background: var(--cos-soft-pink); padding: 24px 16px; }
 .cos-pain-title {
-  font-size: 18px; font-weight: 700;
+  font-size: 20px; font-weight: 700;
   color: var(--tt-black);
   text-align: center;
   margin-bottom: 8px; line-height: 1.4;
 }
 .cos-pain-sub {
-  font-size: 13px; color: var(--tt-text-secondary);
+  font-size: 14.5px; color: var(--tt-text-secondary);
   text-align: center; margin-bottom: 16px; line-height: 1.5;
 }
 .cos-pain-image {
@@ -596,19 +596,19 @@ a { color: inherit; text-decoration: none; }
   border-radius: 50%;
   background: var(--tt-grad-pink);
   color: #FFFFFF;
-  font-size: 12px; font-weight: 800;
+  font-size: 13.5px; font-weight: 800;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
 .cos-pain-text {
-  font-size: 13px;
+  font-size: 14.5px;
   color: var(--tt-text-primary);
   line-height: 1.5;
 }
 .cos-pain-text b { color: var(--tt-pink); }
 .cos-pain-cta {
   text-align: center;
-  font-size: 14px;
+  font-size: 15.5px;
   color: var(--tt-pink);
   font-weight: 700;
   margin-top: 14px;
@@ -621,13 +621,13 @@ a { color: inherit; text-decoration: none; }
   padding: 24px 16px;
 }
 .cos-ing-title {
-  font-size: 18px; font-weight: 700;
+  font-size: 20px; font-weight: 700;
   color: var(--tt-black);
   text-align: center;
   margin-bottom: 6px;
 }
 .cos-ing-sub {
-  font-size: 13px; color: var(--tt-text-secondary);
+  font-size: 14.5px; color: var(--tt-text-secondary);
   text-align: center; margin-bottom: 14px;
 }
 .cos-ing-hero {
@@ -647,28 +647,28 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid #E0F0E5;
 }
 .cos-ing-circle {
-  width: 64px; height: 64px;
+  width: 72px; height: 72px;
   border-radius: 50%;
   background: var(--tt-grad-pink);
   color: #FFFFFF;
-  font-size: 13px; font-weight: 800;
+  font-size: 14.5px; font-weight: 800;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   flex-shrink: 0; line-height: 1.1;
   box-shadow: 0 2px 6px rgba(254, 44, 85, 0.24);
   text-align: center;
 }
-.cos-ing-circle b { font-size: 16px; }
-.cos-ing-circle span { font-size: 9px; opacity: 0.95; margin-top: 2px; }
+.cos-ing-circle b { font-size: 18px; }
+.cos-ing-circle span { font-size: 10px; opacity: 0.95; margin-top: 2px; }
 .cos-ing-body { flex: 1; min-width: 0; }
 .cos-ing-name {
-  font-size: 14px; font-weight: 700;
+  font-size: 15.5px; font-weight: 700;
   color: var(--tt-black);
   margin-bottom: 4px;
 }
 .cos-ing-name .cos-ing-cert {
   display: inline-block;
-  font-size: 10px; font-weight: 700;
+  font-size: 11px; font-weight: 700;
   background: var(--cos-soft-mint);
   color: #2E7D32;
   padding: 1px 6px;
@@ -677,20 +677,20 @@ a { color: inherit; text-decoration: none; }
   vertical-align: middle;
 }
 .cos-ing-desc {
-  font-size: 12px; line-height: 1.5;
+  font-size: 13.5px; line-height: 1.5;
   color: var(--tt-text-secondary);
 }
 
 /* Safety Cert */
 .cos-safety { background: var(--tt-bg); padding: 24px 16px; }
 .cos-saf-title {
-  font-size: 17px; font-weight: 700;
+  font-size: 19px; font-weight: 700;
   color: var(--tt-black);
   text-align: center;
   margin-bottom: 6px; line-height: 1.4;
 }
 .cos-saf-sub {
-  font-size: 13px; color: var(--tt-text-secondary);
+  font-size: 14.5px; color: var(--tt-text-secondary);
   text-align: center; margin-bottom: 16px; line-height: 1.5;
 }
 .cos-saf-grid {
@@ -716,12 +716,12 @@ a { color: inherit; text-decoration: none; }
 }
 .cos-saf-icon svg { width: 20px; height: 20px; fill: var(--tt-pink); }
 .cos-saf-name {
-  font-size: 11px; font-weight: 700;
+  font-size: 12.5px; font-weight: 700;
   color: var(--tt-black);
   margin-bottom: 2px; line-height: 1.3;
 }
 .cos-saf-desc {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--tt-text-muted);
   line-height: 1.3;
 }
@@ -738,7 +738,7 @@ a { color: inherit; text-decoration: none; }
   margin-top: 2px;
 }
 .cos-saf-callout-text {
-  font-size: 13px; color: var(--tt-text-primary); line-height: 1.5;
+  font-size: 14.5px; color: var(--tt-text-primary); line-height: 1.5;
 }
 .cos-saf-callout-text b { color: var(--tt-pink); }
 
@@ -754,7 +754,7 @@ a { color: inherit; text-decoration: none; }
   padding: 5px 12px;
   background: linear-gradient(90deg, #00A86B 0%, #008f5a 100%);
   color: #FFFFFF;
-  font-size: 11px; font-weight: 800;
+  font-size: 12.5px; font-weight: 800;
   text-transform: uppercase; letter-spacing: 0.5px;
   border-radius: var(--tt-r-pill);
   margin-bottom: 12px;
@@ -762,7 +762,7 @@ a { color: inherit; text-decoration: none; }
 }
 .cos-lic-badge svg { width: 14px; height: 14px; fill: #FFFFFF; }
 .cos-lic-title {
-  font-size: 20px; font-weight: 800;
+  font-size: 22px; font-weight: 800;
   color: var(--tt-black);
   line-height: 1.3;
   margin-bottom: 8px;
@@ -776,7 +776,7 @@ a { color: inherit; text-decoration: none; }
   color: transparent;
 }
 .cos-lic-sub {
-  font-size: 13px; color: var(--tt-text-secondary);
+  font-size: 14.5px; color: var(--tt-text-secondary);
   line-height: 1.55;
   margin-bottom: 18px;
   padding: 0 4px;
@@ -806,7 +806,7 @@ a { color: inherit; text-decoration: none; }
   top: 14px; right: -32px;
   background: var(--tt-pink);
   color: #FFFFFF;
-  font-size: 10px; font-weight: 800;
+  font-size: 11px; font-weight: 800;
   letter-spacing: 1px;
   padding: 4px 36px;
   transform: rotate(35deg);
@@ -815,7 +815,7 @@ a { color: inherit; text-decoration: none; }
 }
 .cos-lic-zoom-hint {
   display: inline-flex; align-items: center; gap: 4px;
-  font-size: 11px; color: var(--tt-text-muted);
+  font-size: 12.5px; color: var(--tt-text-muted);
   margin-bottom: 16px;
 }
 .cos-lic-zoom-hint svg { width: 12px; height: 12px; fill: var(--tt-text-muted); }
@@ -834,14 +834,14 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 1px 4px rgba(254,44,85,0.06);
 }
 .cos-lic-feat-num {
-  font-size: 18px; font-weight: 800;
+  font-size: 20px; font-weight: 800;
   color: var(--tt-pink);
   line-height: 1.1;
   margin-bottom: 4px;
   letter-spacing: -0.3px;
 }
 .cos-lic-feat-text {
-  font-size: 10.5px; color: var(--tt-text-secondary);
+  font-size: 12px; color: var(--tt-text-secondary);
   line-height: 1.3;
   font-weight: 600;
 }
@@ -849,13 +849,13 @@ a { color: inherit; text-decoration: none; }
 /* Benefit Grid */
 .cos-benefit-grid { background: var(--tt-bg); padding: 24px 16px; }
 .cos-ben-title {
-  font-size: 18px; font-weight: 700;
+  font-size: 20px; font-weight: 700;
   color: var(--tt-black);
   text-align: center;
   margin-bottom: 6px;
 }
 .cos-ben-sub {
-  font-size: 13px; color: var(--tt-text-secondary);
+  font-size: 14.5px; color: var(--tt-text-secondary);
   text-align: center; margin-bottom: 14px;
 }
 .cos-ben-banner {
@@ -888,12 +888,12 @@ a { color: inherit; text-decoration: none; }
 }
 .cos-ben-icon { width: 22px; height: 22px; fill: var(--tt-pink); }
 .cos-ben-name {
-  font-size: 13px; font-weight: 700;
+  font-size: 14.5px; font-weight: 700;
   color: var(--tt-black);
   margin-bottom: 4px;
 }
 .cos-ben-desc {
-  font-size: 11px;
+  font-size: 12.5px;
   color: var(--tt-text-muted);
   line-height: 1.4;
 }
@@ -901,13 +901,13 @@ a { color: inherit; text-decoration: none; }
 /* Before/After */
 .cos-ba { background: var(--cos-soft-pink); padding: 24px 16px; }
 .cos-ba-title {
-  font-size: 18px; font-weight: 700;
+  font-size: 20px; font-weight: 700;
   color: var(--tt-black);
   text-align: center;
   margin-bottom: 6px;
 }
 .cos-ba-sub {
-  font-size: 13px; color: var(--tt-text-secondary);
+  font-size: 14.5px; color: var(--tt-text-secondary);
   text-align: center; margin-bottom: 14px;
 }
 .cos-ba-img-wrap {
@@ -924,7 +924,7 @@ a { color: inherit; text-decoration: none; }
 .cos-ba-label {
   position: absolute; top: 12px;
   padding: 4px 10px;
-  font-size: 11px; font-weight: 700;
+  font-size: 12.5px; font-weight: 700;
   border-radius: var(--tt-r-pill);
   background: rgba(0,0,0,0.55);
   color: #FFFFFF;
@@ -944,19 +944,19 @@ a { color: inherit; text-decoration: none; }
   padding: 10px 6px;
 }
 .cos-ba-stat-num {
-  font-size: 24px; font-weight: 800;
+  font-size: 26px; font-weight: 800;
   color: var(--tt-pink);
   line-height: 1;
 }
-.cos-ba-stat-num span { font-size: 12px; }
+.cos-ba-stat-num span { font-size: 13.5px; }
 .cos-ba-stat-label {
-  font-size: 11px;
+  font-size: 12.5px;
   color: var(--tt-text-muted);
   margin-top: 4px;
   line-height: 1.3;
 }
 .cos-ba-note {
-  font-size: 11px;
+  font-size: 12.5px;
   color: var(--tt-text-muted);
   text-align: center;
   margin-top: 10px;
@@ -966,14 +966,14 @@ a { color: inherit; text-decoration: none; }
 /* Texture Showcase */
 .cos-texture { background: var(--tt-bg); padding: 24px 16px; }
 .cos-tex-title {
-  font-size: 18px; font-weight: 700;
+  font-size: 20px; font-weight: 700;
   color: var(--tt-black);
   text-align: center;
   margin-bottom: 6px;
   line-height: 1.4;
 }
 .cos-tex-sub {
-  font-size: 13px; color: var(--tt-text-secondary);
+  font-size: 14.5px; color: var(--tt-text-secondary);
   text-align: center; margin-bottom: 14px;
   text-wrap: balance;
 }
@@ -993,7 +993,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--tt-bg-soft);
   border-radius: var(--tt-r-md);
   padding: 10px 12px;
-  font-size: 13px;
+  font-size: 14.5px;
   color: var(--tt-text-primary);
   display: flex; align-items: center; gap: 8px;
   border: 1px solid var(--tt-bg-border);
@@ -1005,13 +1005,13 @@ a { color: inherit; text-decoration: none; }
 /* Routine AM */
 .cos-routine { background: var(--cos-soft-peach); padding: 24px 16px; }
 .cos-rt-title {
-  font-size: 18px; font-weight: 700;
+  font-size: 20px; font-weight: 700;
   color: var(--tt-black);
   text-align: center;
   margin-bottom: 6px;
 }
 .cos-rt-sub {
-  font-size: 13px; color: var(--tt-text-secondary);
+  font-size: 14.5px; color: var(--tt-text-secondary);
   text-align: center; margin-bottom: 14px;
   text-wrap: balance;
 }
@@ -1055,7 +1055,7 @@ a { color: inherit; text-decoration: none; }
   position: absolute; top: 14px; right: 14px;
   width: 36px; height: 36px;
   background: rgba(255,255,255,0.18); border-radius: 50%;
-  border: none; color: #fff; font-size: 24px; line-height: 1;
+  border: none; color: #fff; font-size: 26px; line-height: 1;
   cursor: pointer; display: flex; align-items: center; justify-content: center;
 }
 .cos-rt-steps { display: flex; flex-direction: column; gap: 8px; }
@@ -1074,7 +1074,7 @@ a { color: inherit; text-decoration: none; }
   border-radius: 50%;
   background: var(--tt-bg-soft);
   color: var(--tt-text-primary);
-  font-size: 14px; font-weight: 800;
+  font-size: 15.5px; font-weight: 800;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
@@ -1084,11 +1084,11 @@ a { color: inherit; text-decoration: none; }
 }
 .cos-rt-content { flex: 1; min-width: 0; }
 .cos-rt-name {
-  font-size: 14px; font-weight: 700;
+  font-size: 15.5px; font-weight: 700;
   color: var(--tt-text-primary);
 }
 .cos-rt-desc {
-  font-size: 12px; color: var(--tt-text-muted);
+  font-size: 13.5px; color: var(--tt-text-muted);
   margin-top: 2px;
 }
 .cos-rt-pm-note {
@@ -1096,7 +1096,7 @@ a { color: inherit; text-decoration: none; }
   padding: 10px 12px;
   background: var(--tt-bg);
   border-radius: var(--tt-r-md);
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--tt-text-secondary);
   text-align: center;
   border: 1px dashed var(--tt-pink-soft);
@@ -1110,13 +1110,13 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
 }
 .cos-cta-headline {
-  font-size: 16px; font-weight: 700;
+  font-size: 18px; font-weight: 700;
   color: var(--tt-black);
   margin-bottom: 6px; line-height: 1.4;
 }
 .cos-cta-headline b { color: var(--tt-pink); }
 .cos-cta-sub {
-  font-size: 12px; color: var(--tt-text-muted);
+  font-size: 13.5px; color: var(--tt-text-muted);
   margin-bottom: 14px;
 }
 .cos-cta-btn {
@@ -1124,7 +1124,7 @@ a { color: inherit; text-decoration: none; }
   padding: 14px 32px;
   background: var(--tt-grad-pink);
   color: #FFFFFF;
-  font-size: 15px; font-weight: 700;
+  font-size: 17px; font-weight: 700;
   border-radius: var(--tt-r-pill);
   border: none;
   cursor: pointer;
@@ -1142,7 +1142,7 @@ a { color: inherit; text-decoration: none; }
   color: #FFFFFF;
 }
 .cos-stat-title {
-  font-size: 14px; font-weight: 700;
+  font-size: 15.5px; font-weight: 700;
   text-align: center;
   margin-bottom: 16px;
   text-transform: uppercase;
@@ -1155,16 +1155,16 @@ a { color: inherit; text-decoration: none; }
 }
 .cos-stat-item { text-align: center; }
 .cos-stat-num {
-  font-size: 32px; font-weight: 800;
+  font-size: 34px; font-weight: 800;
   line-height: 1;
   letter-spacing: -1px;
 }
 .cos-stat-num span {
-  font-size: 16px; font-weight: 700;
+  font-size: 18px; font-weight: 700;
   margin-left: 2px;
 }
 .cos-stat-label {
-  font-size: 12px;
+  font-size: 13.5px;
   margin-top: 6px;
   opacity: 0.95;
   line-height: 1.4;
@@ -1173,7 +1173,7 @@ a { color: inherit; text-decoration: none; }
 /* Review Carousel */
 .cos-review { background: var(--tt-bg); padding: 24px 16px; }
 .cos-rev-title {
-  font-size: 16px; font-weight: 700;
+  font-size: 18px; font-weight: 700;
   color: var(--tt-black);
   margin-bottom: 8px;
 }
@@ -1183,15 +1183,15 @@ a { color: inherit; text-decoration: none; }
   flex-wrap: wrap;
 }
 .cos-rev-rating-big {
-  font-size: 24px; font-weight: 800;
+  font-size: 26px; font-weight: 800;
   color: var(--tt-pink);
 }
 .cos-rev-stars {
-  color: var(--tt-star-active); font-size: 14px;
+  color: var(--tt-star-active); font-size: 15.5px;
   letter-spacing: 1px;
 }
 .cos-rev-count {
-  font-size: 12px; color: var(--tt-text-muted);
+  font-size: 13.5px; color: var(--tt-text-muted);
 }
 .cos-rev-list { display: flex; flex-direction: column; gap: 12px; }
 .cos-rev-card {
@@ -1207,19 +1207,19 @@ a { color: inherit; text-decoration: none; }
   background: var(--tt-pastel);
   flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  font-weight: 700; color: var(--tt-pink); font-size: 14px;
+  font-weight: 700; color: var(--tt-pink); font-size: 15.5px;
 }
 .cos-rev-name {
-  font-size: 13px; font-weight: 600;
+  font-size: 14.5px; font-weight: 600;
   color: var(--tt-text-primary);
 }
 .cos-rev-stars-sm {
   color: var(--tt-star-active);
-  font-size: 11px; letter-spacing: 1px;
+  font-size: 12.5px; letter-spacing: 1px;
 }
 .cos-rev-skin-type {
   margin-left: auto;
-  font-size: 10px;
+  font-size: 11px;
   background: var(--tt-pink-soft);
   color: var(--tt-pink);
   padding: 2px 8px;
@@ -1227,13 +1227,13 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
 }
 .cos-rev-content {
-  font-size: 13px;
+  font-size: 14.5px;
   color: var(--tt-text-primary);
   line-height: 1.55;
   margin-top: 8px;
 }
 .cos-rev-meta {
-  font-size: 11px;
+  font-size: 12.5px;
   color: var(--tt-text-muted);
   margin-top: 8px;
 }
@@ -1241,7 +1241,7 @@ a { color: inherit; text-decoration: none; }
 /* FAQ */
 .cos-faq { background: var(--tt-bg); padding: 24px 16px; }
 .cos-faq-title {
-  font-size: 18px; font-weight: 700;
+  font-size: 20px; font-weight: 700;
   color: var(--tt-black);
   text-align: center;
   margin-bottom: 14px;
@@ -1260,7 +1260,7 @@ a { color: inherit; text-decoration: none; }
 }
 .cos-faq-q {
   padding: 14px 16px;
-  font-size: 14px; font-weight: 600;
+  font-size: 15.5px; font-weight: 600;
   color: var(--tt-text-primary);
   cursor: pointer;
   list-style: none;
@@ -1270,7 +1270,7 @@ a { color: inherit; text-decoration: none; }
 .cos-faq-q::-webkit-details-marker { display: none; }
 .cos-faq-q::after {
   content: '+';
-  font-size: 22px; font-weight: 700;
+  font-size: 24px; font-weight: 700;
   color: var(--tt-pink);
   transition: transform 0.2s;
   flex-shrink: 0;
@@ -1278,7 +1278,7 @@ a { color: inherit; text-decoration: none; }
 .cos-faq-item[open] .cos-faq-q::after { transform: rotate(45deg); }
 .cos-faq-a {
   padding: 0 16px 14px;
-  font-size: 13px;
+  font-size: 14.5px;
   color: var(--tt-text-secondary);
   line-height: 1.6;
 }
@@ -1290,20 +1290,20 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
 }
 .cos-brand-name {
-  font-size: 22px; font-weight: 800;
+  font-size: 24px; font-weight: 800;
   color: var(--tt-pink);
   letter-spacing: 1px;
   margin-bottom: 6px;
 }
 .cos-brand-tag {
-  font-size: 12px; font-weight: 600;
+  font-size: 13.5px; font-weight: 600;
   color: var(--tt-text-secondary);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 12px;
 }
 .cos-brand-text {
-  font-size: 13px;
+  font-size: 14.5px;
   color: var(--tt-text-secondary);
   line-height: 1.6;
   max-width: 380px;
@@ -1319,7 +1319,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--tt-bg);
   border: 1px solid var(--tt-bg-border);
   border-radius: var(--tt-r-pill);
-  font-size: 11px; font-weight: 600;
+  font-size: 12.5px; font-weight: 600;
   color: var(--tt-text-secondary);
 }
 .cos-brand-cert svg { width: 12px; height: 12px; fill: var(--tt-pink); }
@@ -1337,13 +1337,13 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px dashed #D8D8DC;
 }
 .cos-legal-label {
-  font-size: 11px;
+  font-size: 12.5px;
   color: var(--tt-text-muted);
   margin-bottom: 3px;
   font-weight: 500;
 }
 .cos-legal-company {
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 800;
   color: var(--tt-text-primary);
   letter-spacing: 0.3px;
@@ -1357,7 +1357,7 @@ a { color: inherit; text-decoration: none; }
   flex-wrap: wrap;
 }
 .cos-legal-link {
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--tt-pink);
   text-decoration: none;
   font-weight: 600;
@@ -1365,10 +1365,10 @@ a { color: inherit; text-decoration: none; }
 .cos-legal-link:hover { text-decoration: underline; }
 .cos-legal-sep {
   color: var(--tt-text-disabled);
-  font-size: 12px;
+  font-size: 13.5px;
 }
 .cos-legal-copy {
-  font-size: 10.5px;
+  font-size: 12px;
   color: var(--tt-text-muted);
   line-height: 1.4;
 }
@@ -1405,7 +1405,7 @@ a { color: inherit; text-decoration: none; }
   gap: 3px; min-width: 40px;
   cursor: pointer;
   color: var(--tt-text-secondary);
-  font-size: 10px; font-weight: 500;
+  font-size: 11px; font-weight: 500;
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -1418,7 +1418,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--tt-bg);
   border: 1.5px solid var(--tt-pink);
   color: var(--tt-pink);
-  font-size: 13px; font-weight: 700;
+  font-size: 14.5px; font-weight: 700;
   border-radius: var(--tt-r-pill);
   cursor: pointer;
   white-space: nowrap;
@@ -1427,7 +1427,7 @@ a { color: inherit; text-decoration: none; }
   flex: 1.3; padding: 12px 14px;
   background: var(--tt-grad-pink);
   color: #FFFFFF;
-  font-size: 14px; font-weight: 800;
+  font-size: 15.5px; font-weight: 800;
   border-radius: var(--tt-r-pill);
   cursor: pointer;
   box-shadow: var(--tt-shadow-cta);
@@ -1475,9 +1475,9 @@ a { color: inherit; text-decoration: none; }
   background: var(--tt-bg-soft);
 }
 .tts-popup-info { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
-.tts-popup-price { font-size: 22px; font-weight: 800; color: var(--tt-pink); line-height: 1.2; }
-.tts-popup-price-old { font-size: 12px; color: var(--tt-strike-price); text-decoration: line-through; margin-top: 2px; }
-.tts-popup-stock { font-size: 12px; color: var(--tt-text-muted); margin-top: 4px; }
+.tts-popup-price { font-size: 24px; font-weight: 800; color: var(--tt-pink); line-height: 1.2; }
+.tts-popup-price-old { font-size: 13.5px; color: var(--tt-strike-price); text-decoration: line-through; margin-top: 2px; }
+.tts-popup-stock { font-size: 13.5px; color: var(--tt-text-muted); margin-top: 4px; }
 .tts-popup-close {
   position: absolute; top: 8px; right: 8px;
   width: 32px; height: 32px;
@@ -1492,14 +1492,14 @@ a { color: inherit; text-decoration: none; }
 .tts-popup-section { margin-bottom: 16px; }
 .tts-popup-section:last-child { margin-bottom: 0; }
 .tts-popup-label {
-  font-size: 14px; font-weight: 600;
+  font-size: 15.5px; font-weight: 600;
   color: var(--tt-text-primary);
   margin-bottom: 8px;
   display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap;
 }
 .tts-popup-label .req { color: var(--tt-pink); }
 .tts-popup-label-note {
-  font-size: 11px; font-weight: 400;
+  font-size: 12.5px; font-weight: 400;
   color: var(--tt-pink);
   line-height: 1.4;
 }
@@ -1509,7 +1509,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--tt-bg-soft);
   border: 1px solid transparent;
   border-radius: var(--tt-r-md);
-  font-size: 13px;
+  font-size: 14.5px;
   cursor: pointer;
   color: var(--tt-text-primary);
   text-align: left;
@@ -1527,7 +1527,7 @@ a { color: inherit; text-decoration: none; }
   padding: 2px 8px;
   background: var(--tt-pink);
   color: #FFFFFF;
-  font-size: 10px; font-weight: 800;
+  font-size: 11px; font-weight: 800;
   border-radius: var(--tt-r-pill);
   letter-spacing: 0.3px;
   line-height: 1.5;
@@ -1544,7 +1544,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%; padding: 10px 12px;
   border: 1px solid var(--tt-bg-border);
   border-radius: var(--tt-r-md);
-  font-size: 14px;
+  font-size: 15.5px;
   font-family: inherit;
   color: var(--tt-text-primary);
   background: var(--tt-bg);
@@ -1554,7 +1554,7 @@ a { color: inherit; text-decoration: none; }
 .tts-popup-input.error, .tts-popup-textarea.error { border-color: var(--tt-flash-red); }
 .tts-popup-textarea { resize: vertical; min-height: 60px; }
 .tts-popup-error-msg {
-  font-size: 12px; color: var(--tt-flash-red);
+  font-size: 13.5px; color: var(--tt-flash-red);
   margin-top: 4px;
 }
 .tts-honeypot {
@@ -1570,13 +1570,13 @@ a { color: inherit; text-decoration: none; }
   display: flex; justify-content: space-between;
   align-items: baseline; margin-bottom: 10px;
 }
-.tts-popup-total-label { font-size: 13px; color: var(--tt-text-muted); }
-.tts-popup-total-value { font-size: 20px; font-weight: 800; color: var(--tt-pink); }
+.tts-popup-total-label { font-size: 14.5px; color: var(--tt-text-muted); }
+.tts-popup-total-value { font-size: 22px; font-weight: 800; color: var(--tt-pink); }
 .tts-popup-submit {
   width: 100%; padding: 14px;
   background: var(--tt-grad-pink);
   color: #FFFFFF;
-  font-size: 15px; font-weight: 700;
+  font-size: 17px; font-weight: 700;
   border-radius: var(--tt-r-pill);
   cursor: pointer; border: none;
   box-shadow: var(--tt-shadow-cta);
@@ -1595,23 +1595,49 @@ a { color: inherit; text-decoration: none; }
   color: #4CAF50;
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto 16px;
-  font-size: 32px; font-weight: 800;
+  font-size: 34px; font-weight: 800;
 }
-.tts-popup-success-title { font-size: 18px; font-weight: 700; color: var(--tt-text-primary); margin-bottom: 8px; }
-.tts-popup-success-msg { font-size: 13px; color: var(--tt-text-muted); margin-bottom: 16px; }
+.tts-popup-success-title { font-size: 20px; font-weight: 700; color: var(--tt-text-primary); margin-bottom: 8px; }
+.tts-popup-success-msg { font-size: 14.5px; color: var(--tt-text-muted); margin-bottom: 16px; }
 .tts-popup-order-code {
   display: inline-block;
   padding: 8px 16px;
   background: var(--tt-bg-soft);
   border-radius: var(--tt-r-md);
   font-family: 'SFMono-Regular', Consolas, monospace;
-  font-size: 14px; font-weight: 700;
+  font-size: 15.5px; font-weight: 700;
   color: var(--tt-pink);
   letter-spacing: 1px;
 }
 
 /* ===== GiuoWow additions (same TikTok-pink design tokens) ===== */
 .gw-cus{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+/* ===== Typography: no lonely last word, no ugly breaks ===== */
+body{text-wrap:pretty}
+h1,h2,h3,
+.tts-title,.cos-pain-title,.cos-ing-title,.cos-saf-title,.cos-lic-title,.cos-ben-title,.cos-ba-title,.cos-tex-title,.cos-rt-title,.cos-stat-title,.cos-rev-title,.cos-faq-title,
+.cos-pain-sub,.cos-ing-sub,.cos-saf-sub,.cos-lic-sub,.cos-ben-sub,.cos-ba-sub,.cos-tex-sub,.cos-rt-sub,.cos-cta-headline,.cos-cta-sub,.cos-pain-cta,
+.cos-ing-name,.cos-ing-desc,.cos-saf-name,.cos-saf-desc,.cos-ben-name,.cos-ben-desc,.cos-ba-stat-num,.cos-ba-stat-label,.cos-ba-note,
+.cos-tex-attr,.cos-rt-name,.cos-rt-desc,.cos-stat-label,.cos-lic-feat-text,.cos-faq-q,.tts-info-value,.tts-hot-strip-text,.tts-feat-chip,
+.cos-brand-tag,.cos-brand-text,.cos-saf-callout-text,.cos-rt-pm-note,.tts-popup-label,.tts-popup-option{text-wrap:balance}
+/* nút, nhãn, giá: không bẻ dòng giữa chừng */
+.tts-inline-btn,.tts-btn-buy,.tts-btn-cart,.tts-cta-side,.cos-cta-btn,.tts-popup-submit,.tts-follow-btn,.tts-official-badge,.tts-feat-chip,.tts-tab,.tts-cod-tag,.tts-ship-free,.tts-deal-pct,.tts-deal-price,.tts-meta-item-ship{white-space:nowrap}
+.tts-deal-old,.cos-lic-feat-num,.cos-stat-num,.cos-pain-num,.cos-rt-num{white-space:nowrap}
+.tts-brand-name{overflow:visible;text-overflow:clip;flex-shrink:0}
+.tts-brand-textgroup{min-width:0}
+@media (max-width:400px){
+  .tts-official-badge{font-size:10px;letter-spacing:.2px;padding:3px 6px}
+  .tts-follow-btn{padding:6px 10px;font-size:13px}
+  .tts-brand-strip{gap:6px;padding-left:12px;padding-right:12px}
+  .tts-inline-btn{font-size:14px;gap:4px;padding:12px 6px}
+  .tts-inline-btn svg{width:14px;height:14px}
+}
+.tts-deal-left,.tts-deal-right{min-width:0}
+@media (max-width:400px){
+  .tts-deal-price{font-size:22px}
+  .tts-deal-pct{font-size:10px;padding:1px 5px}
+  .tts-deal-left{padding-left:10px;padding-right:6px}
+}
 </style>
 </head>
 <body>
@@ -1619,8 +1645,8 @@ a { color: inherit; text-decoration: none; }
 
   <!-- ========== HEADER ZONE ========== -->
   <nav class="tts-tabnav" aria-label="Section navigation">
-    <a class="tts-tab active" href="#tongquan">Tổng quan</a>
-    <a class="tts-tab" href="#dacdiem">Đặc điểm</a>
+    <a class="tts-tab active" href="#tongquan">Tổng&nbsp;quan</a>
+    <a class="tts-tab" href="#dacdiem">Đặc&nbsp;điểm</a>
     <a class="tts-tab" href="#mota">Mô tả</a>
     <a class="tts-tab" href="#dexuat">Đề xuất</a>
   </nav>
@@ -1633,11 +1659,11 @@ a { color: inherit; text-decoration: none; }
         <div class="tts-brand-row1">
           <span class="tts-brand-name">GiuoWow</span>
           <svg class="tts-verified-icon" viewBox="0 0 24 24"><path fill="#FE2C55" d="M12 2l2.39 2.21 3.18-.42 1.31 2.94 2.94 1.31-.42 3.18L23.5 12l-2.1 2.39.42 3.18-2.94 1.31-1.31 2.94-3.18-.42L12 22l-2.39-2.1-3.18.42-1.31-2.94L2.18 16.07l.42-3.18L.5 12l2.1-2.39-.42-3.18 2.94-1.31L6.43 2.18l3.18.42L12 2z"/><path fill="#FFFFFF" d="M9.5 16.2L5.3 12l1.4-1.4 2.8 2.8 7.8-7.8 1.4 1.4z"/></svg>
-          <span class="tts-official-badge">Official Store</span>
+          <span class="tts-official-badge">Official&nbsp;Store</span>
         </div>
-        <span class="tts-brand-sub">Sản xuất tại Việt Nam 🇻🇳</span>
+        <span class="tts-brand-sub">Sản xuất tại Việt Nam&nbsp;🇻🇳</span>
       </div>
-      <button class="tts-follow-btn" type="button">+ Theo dõi</button>
+      <button class="tts-follow-btn" type="button">+ Theo&nbsp;dõi</button>
     </div>
 
     <!-- Hero Gallery -->
@@ -1664,12 +1690,12 @@ a { color: inherit; text-decoration: none; }
             <span class="tts-deal-price">199.000<span class="tts-deal-price-sym">đ</span></span>
             <span class="tts-deal-pct">FREESHIP</span>
           </div>
-          <span class="tts-deal-old" style="text-decoration:none">Mua 2: 299.000đ · Mua 3: 399.000đ</span>
+          <span class="tts-deal-old" style="text-decoration:none">Mua&nbsp;2:&nbsp;299k · Mua&nbsp;3:&nbsp;399k</span>
         </div>
       </div>
       <div class="tts-deal-right">
-        <div class="tts-deal-right-title">Ưu đãi giờ vàng</div>
-        <div class="tts-deal-right-sub">Kết thúc sau</div>
+        <div class="tts-deal-right-title">Ưu đãi giờ&nbsp;vàng</div>
+        <div class="tts-deal-right-sub">Kết thúc&nbsp;sau</div>
         <div class="tts-promo-countdown" data-end-of-day><b>23:59:59</b></div>
       </div>
     </div>
@@ -1677,7 +1703,7 @@ a { color: inherit; text-decoration: none; }
     <!-- Title Block -->
     <div class="tts-title-block">
       <span class="tts-tag-mall">Mới</span>
-      <h1 class="tts-title">GiuoWow - Tẩy lồng máy giặt 500ml | Sạch sâu, khử mùi, diệt khuẩn | Dùng cho máy cửa trên &amp; cửa trước</h1>
+      <h1 class="tts-title">GiuoWow - Tẩy lồng máy giặt 500ml | Sạch sâu, khử mùi, diệt khuẩn | Dùng cho máy cửa trên &amp; cửa&nbsp;trước</h1>
       <button class="tts-bookmark-btn" type="button" aria-label="Lưu sản phẩm">
         <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4v17l7-4 7 4V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1z"/></svg>
       </button>
@@ -1691,11 +1717,11 @@ a { color: inherit; text-decoration: none; }
         <span class="tts-rating-count">(500ml)</span>
       </span>
       <span class="tts-meta-divider">|</span>
-      <span class="tts-meta-item">Công nghệ Nhật Bản</span>
+      <span class="tts-meta-item">Công nghệ Nhật&nbsp;Bản</span>
       <span class="tts-meta-divider">|</span>
       <span class="tts-meta-item-ship">
         <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3a2 2 0 0 0-2 2v11h2a3 3 0 0 0 6 0h6a3 3 0 0 0 6 0h2v-5l-3-4zM6 18.5A1.5 1.5 0 1 1 7.5 17 1.5 1.5 0 0 1 6 18.5zm12 0A1.5 1.5 0 1 1 19.5 17 1.5 1.5 0 0 1 18 18.5zM17 12V9.5h2.5L21.46 12H17z"/></svg>
-        Miễn phí vận chuyển
+        Miễn phí vận&nbsp;chuyển
       </span>
     </div>
 
@@ -1703,8 +1729,8 @@ a { color: inherit; text-decoration: none; }
     <div class="tts-hot-strip">
       <svg class="trophy" viewBox="0 0 24 24"><path fill="#C44900" d="M19 5h-2V3H7v2H5a2 2 0 0 0-2 2v2c0 2.21 1.79 4 4 4 .14 0 .27-.02.4-.05A6.01 6.01 0 0 0 11 14.92V17H8v2h8v-2h-3v-2.08a6.01 6.01 0 0 0 3.6-3.97c.13.03.26.05.4.05 2.21 0 4-1.79 4-4V7a2 2 0 0 0-2-2zM5 9V7h2v3.82A2 2 0 0 1 5 9zm14 0a2 2 0 0 1-2 1.82V7h2v2z"/></svg>
       <div class="tts-hot-strip-text">
-        <span class="tts-hot-strip-bold">Công thức mới vượt trội</span>
-        Làm sạch lồng giặt, khử mùi, bảo vệ máy giặt
+        <span class="tts-hot-strip-bold">Công thức mới vượt&nbsp;trội</span>
+        Làm sạch lồng giặt, khử mùi, bảo vệ máy&nbsp;giặt
       </div>
       <svg class="chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6V6z"/></svg>
     </div>
@@ -1713,50 +1739,50 @@ a { color: inherit; text-decoration: none; }
     <div class="tts-feature-chips">
       <span class="tts-feat-chip">
         <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-        Máy cửa trên &amp; cửa trước
+        Máy cửa trên &amp; cửa&nbsp;trước
       </span>
       <span class="tts-feat-chip">
         <svg viewBox="0 0 24 24"><path d="M17.65 6.35A8 8 0 1 0 19.73 14h-2.08a6 6 0 1 1-1.42-6.22L13 11h7V4z"/></svg>
-        Đổi trả 7 ngày
+        Đổi trả 7&nbsp;ngày
       </span>
       <span class="tts-feat-chip">
         <svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
-        Tư vấn miễn phí
+        Tư vấn miễn&nbsp;phí
       </span>
     </div>
 
     <!-- Info Rows List -->
     <div class="tts-info-rows">
       <div class="tts-info-row" onclick="onBuyClick()" style="cursor:pointer">
-        <div class="tts-info-label">Phân loại</div>
-        <div class="tts-info-value">1 chai · Combo 2 chai · Combo 3 chai</div>
+        <div class="tts-info-label">Phân&nbsp;loại</div>
+        <div class="tts-info-value">1 chai · Combo 2 chai · Combo 3&nbsp;chai</div>
         <svg class="tts-info-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6V6z"/></svg>
       </div>
       <div class="tts-info-row">
-        <div class="tts-info-label">Thanh toán</div>
+        <div class="tts-info-label">Thanh&nbsp;toán</div>
         <div class="tts-info-value">
           <span class="tts-cod-tag">COD</span>
-          Thanh toán khi nhận hàng
+          Thanh toán khi nhận&nbsp;hàng
         </div>
       </div>
       <div class="tts-info-row">
-        <div class="tts-info-label">Vận chuyển</div>
+        <div class="tts-info-label">Vận&nbsp;chuyển</div>
         <div class="tts-info-value">
-          <span class="tts-ship-free">Miễn phí</span> toàn quốc
+          <span class="tts-ship-free">Miễn&nbsp;phí</span> toàn&nbsp;quốc
         </div>
       </div>
       <div class="tts-info-row">
         <div class="tts-info-label">Xuất xứ</div>
-        <div class="tts-info-value">Công nghệ Nhật Bản · Sản xuất tại Việt Nam</div>
+        <div class="tts-info-value">Công nghệ Nhật Bản · Sản xuất tại Việt&nbsp;Nam</div>
       </div>
       <div class="tts-info-row">
         <div class="tts-info-label">Đổi trả</div>
-        <div class="tts-info-value">7 ngày · Hỗ trợ nếu lỗi hoặc giao sai</div>
+        <div class="tts-info-value">7 ngày · Hỗ trợ nếu lỗi hoặc giao&nbsp;sai</div>
         <svg class="tts-info-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6V6z"/></svg>
       </div>
       <div class="tts-info-row">
-        <div class="tts-info-label">Kiểm chứng</div>
-        <div class="tts-info-value">Kiểm nghiệm NSX · Không ăn mòn · Hương dịu nhẹ</div>
+        <div class="tts-info-label">Kiểm&nbsp;chứng</div>
+        <div class="tts-info-value">Kiểm nghiệm NSX · Không ăn mòn · Hương dịu&nbsp;nhẹ</div>
       </div>
     </div>
 
@@ -1764,11 +1790,11 @@ a { color: inherit; text-decoration: none; }
     <div class="tts-inline-cta">
       <a class="tts-inline-btn cart" href="tel:0868468832" data-call style="text-decoration:none">
         <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
-        Gọi tư vấn
+        Gọi tư&nbsp;vấn
       </a>
       <button class="tts-inline-btn buy" type="button" onclick="onBuyClick()">
         <svg viewBox="0 0 24 24"><path fill="#fff" d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
-        Mua ngay · 199.000đ
+        Mua ngay ·&nbsp;199.000đ
       </button>
     </div>
   </section>
@@ -1780,40 +1806,40 @@ a { color: inherit; text-decoration: none; }
 
     <!-- Pain Strip -->
     <div class="cos-pain-strip">
-      <h2 class="cos-pain-title">Lồng máy giặt của bạn đang bẩn hơn bạn nghĩ?</h2>
-      <p class="cos-pain-sub">Nếu bạn gật đầu với 2 trong số này, đã đến lúc vệ sinh lồng máy giặt.</p>
+      <h2 class="cos-pain-title">Lồng máy giặt của bạn đang bẩn hơn bạn&nbsp;nghĩ?</h2>
+      <p class="cos-pain-sub">Nếu bạn gật đầu với 2 trong số này, đã đến lúc vệ sinh lồng máy&nbsp;giặt.</p>
       <div class="cos-img-wrap" style="margin-bottom:14px;aspect-ratio:4/3">
         <img class="cos-pain-image" src="assets/long-ban-thuc-te.svg" alt="Lồng máy giặt bám cặn bẩn lâu ngày" loading="lazy">
       </div>
       <div class="cos-pain-list">
         <div class="cos-pain-item">
           <span class="cos-pain-num">1</span>
-          <span class="cos-pain-text"><b>Quần áo có mùi hôi, ẩm mốc</b> — dù đã giặt bằng nước giặt thơm và phơi nắng.</span>
+          <span class="cos-pain-text"><b>Quần áo có mùi hôi, ẩm&nbsp;mốc</b> — dù đã giặt bằng nước giặt thơm và phơi&nbsp;nắng.</span>
         </div>
         <div class="cos-pain-item">
           <span class="cos-pain-num">2</span>
-          <span class="cos-pain-text"><b>Nước giặt có cặn đen, xơ nổi</b> — vụn bẩn dính trên áo quần sau khi giặt.</span>
+          <span class="cos-pain-text"><b>Nước giặt có cặn đen, xơ&nbsp;nổi</b> — vụn bẩn dính trên áo quần sau khi&nbsp;giặt.</span>
         </div>
         <div class="cos-pain-item">
           <span class="cos-pain-num">3</span>
-          <span class="cos-pain-text"><b>Lồng giặt có mùi khó chịu</b> — mỗi lần mở nắp hoặc mở cửa máy.</span>
+          <span class="cos-pain-text"><b>Lồng giặt có mùi khó&nbsp;chịu</b> — mỗi lần mở nắp hoặc mở cửa&nbsp;máy.</span>
         </div>
         <div class="cos-pain-item">
           <span class="cos-pain-num">4</span>
-          <span class="cos-pain-text"><b>Dùng máy lâu ngày chưa từng vệ sinh</b> — ngại tháo lắp hoặc gọi thợ.</span>
+          <span class="cos-pain-text"><b>Dùng máy lâu ngày chưa từng vệ&nbsp;sinh</b> — ngại tháo lắp hoặc gọi&nbsp;thợ.</span>
         </div>
         <div class="cos-pain-item">
           <span class="cos-pain-num">5</span>
-          <span class="cos-pain-text"><b>Gọi thợ vệ sinh tốn kém</b> — mất thời gian chờ đợi, hẹn lịch, lại phát sinh chi phí.</span>
+          <span class="cos-pain-text"><b>Gọi thợ vệ sinh tốn&nbsp;kém</b> — mất thời gian chờ đợi, hẹn lịch, lại phát sinh chi&nbsp;phí.</span>
         </div>
       </div>
-      <div class="cos-pain-cta">↓ GiuoWow giải quyết cả 5 vấn đề<br>— đổ vào, chạy máy, không cần tháo máy ↓</div>
+      <div class="cos-pain-cta">↓ GiuoWow giải quyết cả 5 vấn đề&nbsp;↓<br>Đổ vào, chạy máy, không cần tháo&nbsp;máy</div>
     </div>
 
     <!-- Ingredient Spotlight: công dụng -->
     <div class="cos-ingredient">
-      <h2 class="cos-ing-title">GiuoWow: Sạch Sâu · Khử Mùi · Diệt Khuẩn</h2>
-      <p class="cos-ing-sub">Bảo vệ máy giặt cho quần áo thơm mát. Hiệu quả sau 1 lần sử dụng.</p>
+      <h2 class="cos-ing-title">GiuoWow: Sạch Sâu · Khử Mùi · Diệt&nbsp;Khuẩn</h2>
+      <p class="cos-ing-sub">Bảo vệ máy giặt cho quần áo thơm mát. Hiệu quả sau 1 lần sử&nbsp;dụng.</p>
       <div class="cos-img-wrap" style="margin-bottom:16px;aspect-ratio:1/1">
         <img class="cos-ing-hero" src="assets/product-infographic.webp" alt="GiuoWow tẩy lồng máy giặt - công dụng" loading="lazy">
       </div>
@@ -1821,75 +1847,75 @@ a { color: inherit; text-decoration: none; }
         <div class="cos-ing-item">
           <div class="cos-ing-circle"><b>Sạch</b><b>sâu</b></div>
           <div class="cos-ing-body">
-            <div class="cos-ing-name">Sạch sâu cặn bẩn <span class="cos-ing-cert">GiuoWow</span></div>
-            <div class="cos-ing-desc">Loại bỏ cặn bẩn, cặn vôi, nấm mốc bám lâu ngày trong lồng máy giặt.</div>
+            <div class="cos-ing-name">Sạch sâu cặn&nbsp;bẩn</div>
+            <div class="cos-ing-desc">Loại bỏ cặn bẩn, cặn vôi, nấm mốc bám lâu ngày trong lồng máy&nbsp;giặt.</div>
           </div>
         </div>
         <div class="cos-ing-item">
           <div class="cos-ing-circle"><b>99,9%</b></div>
           <div class="cos-ing-body">
-            <div class="cos-ing-name">Diệt khuẩn 99,9%* <span class="cos-ing-cert">GiuoWow</span></div>
-            <div class="cos-ing-desc">Loại bỏ vi khuẩn, nấm mốc gây mùi hôi, giúp lồng giặt sạch sẽ.</div>
+            <div class="cos-ing-name">Diệt khuẩn&nbsp;99,9%*</div>
+            <div class="cos-ing-desc">Loại bỏ vi khuẩn, nấm mốc gây mùi hôi, giúp lồng giặt sạch&nbsp;sẽ.</div>
           </div>
         </div>
         <div class="cos-ing-item">
           <div class="cos-ing-circle"><b>Khử</b><b>mùi</b></div>
           <div class="cos-ing-body">
-            <div class="cos-ing-name">Khử mùi, thơm mát <span class="cos-ing-cert">GiuoWow</span></div>
-            <div class="cos-ing-desc">Lồng máy thơm mát, sạch sẽ; hương thơm dịu nhẹ cho quần áo thơm mát.</div>
+            <div class="cos-ing-name">Khử mùi, thơm&nbsp;mát</div>
+            <div class="cos-ing-desc">Lồng máy thơm mát, sạch sẽ; hương thơm dịu nhẹ cho quần áo thơm&nbsp;mát.</div>
           </div>
         </div>
         <div class="cos-ing-item">
           <div class="cos-ing-circle"><b>Bảo</b><b>vệ</b></div>
           <div class="cos-ing-body">
-            <div class="cos-ing-name">Bảo vệ lồng máy <span class="cos-ing-cert">GiuoWow</span></div>
-            <div class="cos-ing-desc">Không ăn mòn, bảo vệ lồng máy giặt luôn bền đẹp.</div>
+            <div class="cos-ing-name">Bảo vệ lồng&nbsp;máy</div>
+            <div class="cos-ing-desc">Không ăn mòn, bảo vệ lồng máy giặt luôn bền&nbsp;đẹp.</div>
           </div>
         </div>
       </div>
-      <p style="font-size:11px;color:var(--tt-text-muted);margin-top:12px;line-height:1.5;text-align:center">* Theo công bố và kết quả kiểm nghiệm của nhà sản xuất. Hiệu quả thực tế có thể khác nhau tùy tình trạng máy giặt và mức độ bám bẩn.</p>
+      <p style="font-size:12.5px;color:var(--tt-text-muted);margin-top:12px;line-height:1.5;text-align:center">* Theo công bố và kết quả kiểm nghiệm của nhà sản xuất. Hiệu quả thực tế có thể khác nhau tùy tình trạng máy giặt và mức độ bám&nbsp;bẩn.</p>
     </div>
 
     <!-- Safety -->
     <div class="cos-safety">
-      <h2 class="cos-saf-title">Dùng Cho Cả 2 Loại Máy Giặt</h2>
-      <p class="cos-saf-sub">Máy cửa trên (lồng đứng) và cửa trước (lồng ngang) — làm theo hướng dẫn in trên nhãn.</p>
+      <h2 class="cos-saf-title">Dùng Cho Cả 2 Loại Máy&nbsp;Giặt</h2>
+      <p class="cos-saf-sub">Máy cửa trên (lồng đứng) và cửa trước (lồng ngang) — làm theo hướng dẫn in trên&nbsp;nhãn.</p>
       <div class="cos-saf-grid">
         <div class="cos-saf-badge">
           <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
-          <div class="cos-saf-name">Không ăn mòn</div>
-          <div class="cos-saf-desc">Bảo vệ lồng máy</div>
+          <div class="cos-saf-name">Không ăn&nbsp;mòn</div>
+          <div class="cos-saf-desc">Bảo vệ lồng&nbsp;máy</div>
         </div>
         <div class="cos-saf-badge">
           <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg></div>
-          <div class="cos-saf-name">Cửa trên</div>
-          <div class="cos-saf-desc">Máy lồng đứng</div>
+          <div class="cos-saf-name">Cửa&nbsp;trên</div>
+          <div class="cos-saf-desc">Máy lồng&nbsp;đứng</div>
         </div>
         <div class="cos-saf-badge">
           <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
-          <div class="cos-saf-name">Cửa trước</div>
-          <div class="cos-saf-desc">Máy lồng ngang</div>
+          <div class="cos-saf-name">Cửa&nbsp;trước</div>
+          <div class="cos-saf-desc">Máy lồng&nbsp;ngang</div>
         </div>
         <div class="cos-saf-badge">
           <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M12 3l1.45 4.55L18 9l-4.55 1.45L12 15l-1.45-4.55L6 9l4.55-1.45z"/></svg></div>
-          <div class="cos-saf-name">Hương dịu nhẹ</div>
-          <div class="cos-saf-desc">Quần áo thơm mát</div>
+          <div class="cos-saf-name">Hương dịu&nbsp;nhẹ</div>
+          <div class="cos-saf-desc">Quần áo thơm&nbsp;mát</div>
         </div>
         <div class="cos-saf-badge">
           <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg></div>
-          <div class="cos-saf-name">Sản xuất VN</div>
-          <div class="cos-saf-desc">Công nghệ Nhật Bản</div>
+          <div class="cos-saf-name">Sản xuất&nbsp;VN</div>
+          <div class="cos-saf-desc">Công nghệ Nhật&nbsp;Bản</div>
         </div>
         <div class="cos-saf-badge">
           <div class="cos-saf-icon"><svg viewBox="0 0 24 24"><path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/></svg></div>
-          <div class="cos-saf-name">Đổi trả 7 ngày</div>
-          <div class="cos-saf-desc">Hỗ trợ tận tâm</div>
+          <div class="cos-saf-name">Đổi trả 7&nbsp;ngày</div>
+          <div class="cos-saf-desc">Hỗ trợ tận&nbsp;tâm</div>
         </div>
       </div>
       <div class="cos-saf-callout">
         <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
         <div class="cos-saf-callout-text">
-          <b>Lưu ý an toàn:</b> Để xa tầm tay trẻ em. Tránh tiếp xúc với mắt và da. Không uống — nếu nuốt phải, uống nhiều nước và đến cơ sở y tế. Không trộn với thuốc tẩy hoặc hóa chất khác. Bảo quản nơi khô ráo, thoáng mát.
+          <b>Lưu ý an&nbsp;toàn:</b> Để xa tầm tay trẻ em. Tránh tiếp xúc với mắt và da. Không uống — nếu nuốt phải, uống nhiều nước và đến cơ sở y tế. Không trộn với thuốc tẩy hoặc hóa chất khác. Bảo quản nơi khô ráo, thoáng&nbsp;mát.
         </div>
       </div>
     </div>
@@ -1898,10 +1924,10 @@ a { color: inherit; text-decoration: none; }
     <div class="cos-license">
       <div class="cos-lic-badge">
         <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-        Công nghệ Nhật Bản · Sản xuất tại nhà máy ở Việt Nam
+        Công nghệ Nhật Bản · Sản xuất tại nhà máy ở Việt&nbsp;Nam
       </div>
-      <h2 class="cos-lic-title">Thông Tin Rõ Ràng — <em>Trên Nhãn</em></h2>
-      <p class="cos-lic-sub">Thành phần, hướng dẫn sử dụng và cảnh báo được in đầy đủ trên nhãn sản phẩm. Gọi 0868 468 832 để được tư vấn cách dùng cho từng loại máy giặt.</p>
+      <h2 class="cos-lic-title">Thông Tin Rõ&nbsp;Ràng —&nbsp;<em>Trên&nbsp;Nhãn</em></h2>
+      <p class="cos-lic-sub">Thành phần, hướng dẫn sử dụng và cảnh báo được in đầy đủ trên nhãn sản phẩm. Gọi 0868 468 832 để được tư vấn cách dùng cho từng loại máy&nbsp;giặt.</p>
 
       <div class="cos-img-wrap cos-lic-image-wrap">
         <img class="cos-lic-image" src="assets/product-back-sq.webp" alt="Mặt sau chai GiuoWow: công dụng, thành phần, hướng dẫn sử dụng" loading="lazy">
@@ -1909,21 +1935,21 @@ a { color: inherit; text-decoration: none; }
       </div>
       <div class="cos-lic-zoom-hint">
         <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-        Bấm vào ảnh để xem kích thước lớn
+        Bấm vào ảnh để xem kích thước&nbsp;lớn
       </div>
 
       <div class="cos-lic-features">
         <div class="cos-lic-feat">
           <div class="cos-lic-feat-num">500ml</div>
-          <div class="cos-lic-feat-text">Thể tích thực</div>
+          <div class="cos-lic-feat-text">Thể tích&nbsp;thực</div>
         </div>
         <div class="cos-lic-feat">
           <div class="cos-lic-feat-num">1–2</div>
-          <div class="cos-lic-feat-text">Lần dùng / chai</div>
+          <div class="cos-lic-feat-text">Lần dùng /&nbsp;chai</div>
         </div>
         <div class="cos-lic-feat">
           <div class="cos-lic-feat-num">1 lần</div>
-          <div class="cos-lic-feat-text">Thấy hiệu quả</div>
+          <div class="cos-lic-feat-text">Thấy hiệu&nbsp;quả</div>
         </div>
       </div>
     </div>
@@ -1937,41 +1963,41 @@ a { color: inherit; text-decoration: none; }
 
     <!-- 4 công dụng -->
     <div class="cos-benefit-grid">
-      <h2 class="cos-ben-title">GiuoWow Làm Được Gì Cho Máy Giặt?</h2>
-      <p class="cos-ben-sub">4 công dụng chính — theo công bố của nhà sản xuất</p>
+      <h2 class="cos-ben-title">GiuoWow Làm Được Gì Cho Máy&nbsp;Giặt?</h2>
+      <p class="cos-ben-sub">4 công dụng chính — theo công bố của nhà sản&nbsp;xuất</p>
       <div class="cos-img-wrap" style="margin-bottom:14px;aspect-ratio:1/1">
         <img class="cos-ben-banner" src="assets/product-front-sq.webp" alt="Chai GiuoWow 500ml" loading="lazy">
       </div>
       <div class="cos-ben-row">
         <div class="cos-ben-card">
           <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
-          <div class="cos-ben-name">Sạch sâu</div>
-          <div class="cos-ben-desc">Cặn bẩn, cặn vôi, nấm mốc bám lâu ngày</div>
+          <div class="cos-ben-name">Sạch&nbsp;sâu</div>
+          <div class="cos-ben-desc">Cặn bẩn, cặn vôi, nấm mốc bám lâu&nbsp;ngày</div>
         </div>
         <div class="cos-ben-card">
           <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 3l1.45 4.55L18 9l-4.55 1.45L12 15l-1.45-4.55L6 9l4.55-1.45z"/></svg></div>
-          <div class="cos-ben-name">Diệt khuẩn 99,9%*</div>
-          <div class="cos-ben-desc">Vi khuẩn, nấm mốc gây mùi hôi</div>
+          <div class="cos-ben-name">Diệt khuẩn&nbsp;99,9%*</div>
+          <div class="cos-ben-desc">Vi khuẩn, nấm mốc gây mùi&nbsp;hôi</div>
         </div>
       </div>
       <div class="cos-ben-row">
         <div class="cos-ben-card">
           <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 22a8 8 0 0 0 8-8c0-3.5-2-6.5-5-8.5L12 2 9 5.5C6 7.5 4 10.5 4 14a8 8 0 0 0 8 8z"/></svg></div>
-          <div class="cos-ben-name">Khử mùi hiệu quả</div>
-          <div class="cos-ben-desc">Lồng máy thơm mát, sạch sẽ</div>
+          <div class="cos-ben-name">Khử mùi hiệu&nbsp;quả</div>
+          <div class="cos-ben-desc">Lồng máy thơm mát, sạch&nbsp;sẽ</div>
         </div>
         <div class="cos-ben-card">
           <div class="cos-ben-icon-wrap"><svg class="cos-ben-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
-          <div class="cos-ben-name">Bảo vệ lồng máy</div>
-          <div class="cos-ben-desc">Không ăn mòn, giữ máy giặt bền đẹp</div>
+          <div class="cos-ben-name">Bảo vệ lồng&nbsp;máy</div>
+          <div class="cos-ben-desc">Không ăn mòn, giữ máy giặt bền&nbsp;đẹp</div>
         </div>
       </div>
     </div>
 
     <!-- Thành phần -->
     <div class="cos-ba">
-      <h2 class="cos-ba-title">Thành Phần &amp; Thông Số</h2>
-      <p class="cos-ba-sub">Thông tin in trên nhãn sản phẩm</p>
+      <h2 class="cos-ba-title">Thành Phần &amp; Thông&nbsp;Số</h2>
+      <p class="cos-ba-sub">Thông tin in trên nhãn sản&nbsp;phẩm</p>
       <div class="cos-ba-img-wrap">
         <img src="assets/product-infographic.webp" alt="GiuoWow tẩy lồng máy giặt 500ml" loading="lazy">
         <span class="cos-ba-label cos-ba-label-before">GiuoWow</span>
@@ -1979,52 +2005,52 @@ a { color: inherit; text-decoration: none; }
       </div>
       <div class="cos-ba-stats">
         <div class="cos-ba-stat">
-          <div class="cos-ba-stat-num" style="font-size:14px;">Acid hữu cơ</div>
-          <div class="cos-ba-stat-label">Làm sạch cặn vôi, cặn bám</div>
+          <div class="cos-ba-stat-num" style="font-size:15.5px;">Acid hữu&nbsp;cơ</div>
+          <div class="cos-ba-stat-label">Làm sạch cặn vôi, cặn&nbsp;bám</div>
         </div>
         <div class="cos-ba-stat">
-          <div class="cos-ba-stat-num" style="font-size:14px;">Chất tẩy rửa</div>
-          <div class="cos-ba-stat-label">Chất hoạt động bề mặt</div>
+          <div class="cos-ba-stat-num" style="font-size:15.5px;">Chất tẩy&nbsp;rửa</div>
+          <div class="cos-ba-stat-label">Chất hoạt động bề&nbsp;mặt</div>
         </div>
         <div class="cos-ba-stat">
-          <div class="cos-ba-stat-num" style="font-size:14px;">Hương dịu</div>
-          <div class="cos-ba-stat-label">Hương liệu vừa đủ, thơm mát</div>
+          <div class="cos-ba-stat-num" style="font-size:15.5px;">Hương&nbsp;dịu</div>
+          <div class="cos-ba-stat-label">Hương liệu vừa đủ, thơm&nbsp;mát</div>
         </div>
       </div>
-      <div class="cos-ba-note">Thành phần: Nước, Acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu vừa đủ.</div>
+      <div class="cos-ba-note">Thành phần: Nước, Acid hữu cơ, chất hoạt động bề mặt, chất ổn định, hương liệu vừa&nbsp;đủ.</div>
     </div>
 
     <!-- Vì sao dùng chất tẩy chuyên dụng -->
     <div class="cos-texture">
-      <h2 class="cos-tex-title">Vì Sao Nên Dùng Chất Tẩy Lồng Chuyên Dụng?</h2>
-      <p class="cos-tex-sub">Không vệ sinh: cặn bẩn tích tụ, mùi dễ quay lại.<br>Dùng GiuoWow: đổ vào, chạy máy — không cần tháo máy.</p>
+      <h2 class="cos-tex-title">Vì Sao Nên Dùng Chất Tẩy Lồng Chuyên&nbsp;Dụng?</h2>
+      <p class="cos-tex-sub">Không vệ sinh: cặn bẩn tích tụ, mùi dễ quay&nbsp;lại.<br>Dùng GiuoWow: đổ vào, chạy máy — không cần tháo&nbsp;máy.</p>
       <div class="cos-img-wrap" style="margin-bottom:12px;aspect-ratio:1/1">
         <img class="cos-tex-img" src="assets/demo-truoc-sau.svg" alt="Lồng máy giặt trước và sau khi tẩy bằng GiuoWow" loading="lazy">
       </div>
       <div class="cos-tex-attrs">
         <div class="cos-tex-attr">
           <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-          Không cần tháo máy
+          Không cần tháo&nbsp;máy
         </div>
         <div class="cos-tex-attr">
           <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          Cửa trên &amp; cửa trước
+          Cửa trên &amp; cửa&nbsp;trước
         </div>
         <div class="cos-tex-attr">
           <svg viewBox="0 0 24 24"><path d="M12 3l1.45 4.55L18 9l-4.55 1.45L12 15l-1.45-4.55L6 9l4.55-1.45z"/></svg>
-          Hiệu quả sau 1 lần dùng
+          Hiệu quả sau 1 lần&nbsp;dùng
         </div>
         <div class="cos-tex-attr">
           <svg viewBox="0 0 24 24"><path d="M12 22a8 8 0 0 0 8-8c0-3.5-2-6.5-5-8.5L12 2 9 5.5C6 7.5 4 10.5 4 14a8 8 0 0 0 8 8z"/></svg>
-          Không ăn mòn lồng máy
+          Không ăn mòn lồng&nbsp;máy
         </div>
       </div>
     </div>
 
     <!-- Cách dùng -->
     <div class="cos-routine">
-      <h2 class="cos-rt-title">Cách Dùng — Chỉ 5 Bước Đơn Giản</h2>
-      <p class="cos-rt-sub">Làm theo hướng dẫn in trên nhãn sản phẩm.<br>Nên vệ sinh lồng khoảng 1 - 2 tháng/lần.</p>
+      <h2 class="cos-rt-title">Cách Dùng — Chỉ 5 Bước Đơn&nbsp;Giản</h2>
+      <p class="cos-rt-sub">Làm theo hướng dẫn in trên nhãn sản&nbsp;phẩm.<br>Nên vệ sinh lồng khoảng 1 - 2&nbsp;tháng/lần.</p>
       <div class="cos-img-wrap" style="margin-bottom:14px;aspect-ratio:1/1">
         <img class="cos-rt-img" src="assets/huong-dan.svg" alt="Đổ GiuoWow vào lồng máy giặt" loading="lazy">
       </div>
@@ -2032,73 +2058,73 @@ a { color: inherit; text-decoration: none; }
         <div class="cos-rt-step">
           <span class="cos-rt-num">1</span>
           <div class="cos-rt-content">
-            <div class="cos-rt-name">Để lồng giặt trống</div>
-            <div class="cos-rt-desc">Không cho quần áo vào lồng khi tẩy</div>
+            <div class="cos-rt-name">Để lồng giặt&nbsp;trống</div>
+            <div class="cos-rt-desc">Không cho quần áo vào lồng khi&nbsp;tẩy</div>
           </div>
         </div>
         <div class="cos-rt-step cos-rt-highlight">
           <span class="cos-rt-num">2</span>
           <div class="cos-rt-content">
-            <div class="cos-rt-name">✦ Đổ ½ - 1 chai GiuoWow</div>
-            <div class="cos-rt-desc">Tương đương 250ml - 500ml, đổ thẳng vào lồng máy giặt</div>
+            <div class="cos-rt-name">✦ Đổ ½ - 1 chai&nbsp;GiuoWow</div>
+            <div class="cos-rt-desc">Tương đương 250ml - 500ml, đổ thẳng vào lồng máy&nbsp;giặt</div>
           </div>
         </div>
         <div class="cos-rt-step cos-rt-highlight">
           <span class="cos-rt-num">3</span>
           <div class="cos-rt-content">
-            <div class="cos-rt-name">✦ Chọn chế độ giặt thường</div>
-            <div class="cos-rt-desc">Chọn mức nước cao nhất</div>
+            <div class="cos-rt-name">✦ Chọn chế độ giặt&nbsp;thường</div>
+            <div class="cos-rt-desc">Chọn mức nước cao&nbsp;nhất</div>
           </div>
         </div>
         <div class="cos-rt-step">
           <span class="cos-rt-num">4</span>
           <div class="cos-rt-content">
-            <div class="cos-rt-name">Chạy hết chương trình giặt</div>
-            <div class="cos-rt-desc">Không cần tháo máy, không cần ngâm thủ công</div>
+            <div class="cos-rt-name">Chạy hết chương trình&nbsp;giặt</div>
+            <div class="cos-rt-desc">Không cần tháo máy, không cần ngâm thủ&nbsp;công</div>
           </div>
         </div>
         <div class="cos-rt-step">
           <span class="cos-rt-num">5</span>
           <div class="cos-rt-content">
-            <div class="cos-rt-name">Để lồng khô tự nhiên</div>
-            <div class="cos-rt-desc">Mở nắp/cửa máy cho lồng khô thoáng, lồng sạch thơm mát</div>
+            <div class="cos-rt-name">Để lồng khô tự&nbsp;nhiên</div>
+            <div class="cos-rt-desc">Mở nắp/cửa máy cho lồng khô thoáng, lồng sạch thơm&nbsp;mát</div>
           </div>
         </div>
       </div>
       <div class="cos-rt-pm-note">
-        <b>⚠️ Lưu ý:</b> Với máy cửa trước, hãy làm theo hướng dẫn vệ sinh lồng của hãng máy nếu có. Không trộn với thuốc tẩy hoặc hóa chất khác.
+        <b>⚠️ Lưu&nbsp;ý:</b> Với máy cửa trước, hãy làm theo hướng dẫn vệ sinh lồng của hãng máy nếu có. Không trộn với thuốc tẩy hoặc hóa chất&nbsp;khác.
       </div>
     </div>
 
     <!-- Inline CTA -->
     <div class="cos-cta-block">
-      <div class="cos-cta-headline">Đổ vào, chạy máy — <b>lồng sạch, quần áo thơm mát</b></div>
-      <div class="cos-cta-sub">Từ 199.000đ · Combo 2 chai 299.000đ · Combo 3 chai 399.000đ · Freeship · COD</div>
+      <div class="cos-cta-headline">Đổ vào, chạy máy&nbsp;— <b>lồng sạch, quần áo thơm&nbsp;mát</b></div>
+      <div class="cos-cta-sub">Từ 199.000đ · Combo 2 chai 299.000đ · Combo 3 chai 399.000đ · Freeship ·&nbsp;COD</div>
       <button class="cos-cta-btn" type="button" onclick="onBuyClick()">
         <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21 4.96 19.27 4H5.21l-.94-2H1z"/></svg>
-        Mua Ngay — từ 199.000đ
+        Mua Ngay — từ&nbsp;199.000đ
       </button>
     </div>
 
     <!-- Quick facts -->
     <div class="cos-stats">
-      <h2 class="cos-stat-title">Thông Tin Nhanh</h2>
+      <h2 class="cos-stat-title">Thông Tin&nbsp;Nhanh</h2>
       <div class="cos-stat-grid">
         <div class="cos-stat-item">
           <div class="cos-stat-num">500<span>ml</span></div>
-          <div class="cos-stat-label">Thể tích thực</div>
+          <div class="cos-stat-label">Thể tích&nbsp;thực</div>
         </div>
         <div class="cos-stat-item">
           <div class="cos-stat-num">1–2<span>lần</span></div>
-          <div class="cos-stat-label">Dùng được / chai</div>
+          <div class="cos-stat-label">Dùng được /&nbsp;chai</div>
         </div>
         <div class="cos-stat-item">
           <div class="cos-stat-num">1–2<span>tháng</span></div>
-          <div class="cos-stat-label">Vệ sinh 1 lần</div>
+          <div class="cos-stat-label">Vệ sinh 1&nbsp;lần</div>
         </div>
         <div class="cos-stat-item">
           <div class="cos-stat-num">2<span>loại</span></div>
-          <div class="cos-stat-label">Máy cửa trên &amp; trước</div>
+          <div class="cos-stat-label">Máy cửa trên &amp;&nbsp;trước</div>
         </div>
       </div>
     </div>
@@ -2112,7 +2138,7 @@ a { color: inherit; text-decoration: none; }
 
     <!-- Phản hồi khách hàng (ảnh thật sẽ thay sau) -->
     <div class="cos-review">
-      <h2 class="cos-rev-title">Phản Hồi Từ Khách Hàng</h2>
+      <h2 class="cos-rev-title">Phản Hồi Từ Khách&nbsp;Hàng</h2>
       <div class="gw-cus">
         <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-1.svg" alt="Phản hồi khách hàng 1" loading="lazy"></div>
         <div class="cos-img-wrap" style="aspect-ratio:1/1"><img src="assets/khach-2.svg" alt="Phản hồi khách hàng 2" loading="lazy"></div>
@@ -2122,64 +2148,64 @@ a { color: inherit; text-decoration: none; }
 
     <!-- FAQ -->
     <div class="cos-faq" id="faq">
-      <h2 class="cos-faq-title">Câu Hỏi Thường Gặp</h2>
+      <h2 class="cos-faq-title">Câu Hỏi Thường&nbsp;Gặp</h2>
       <div class="cos-faq-list">
         <details class="cos-faq-item">
-          <summary class="cos-faq-q">Dùng được cho máy giặt cửa trên và cửa trước không?</summary>
-          <div class="cos-faq-a">Sản phẩm dùng được cho cả máy giặt cửa trên (lồng đứng) và cửa trước (lồng ngang). Với máy cửa trước, bạn nên ưu tiên chế độ vệ sinh lồng của hãng máy nếu có, và làm theo hướng dẫn của hãng.</div>
+          <summary class="cos-faq-q">Dùng được cho máy giặt cửa trên và cửa trước&nbsp;không?</summary>
+          <div class="cos-faq-a">Sản phẩm dùng được cho cả máy giặt cửa trên (lồng đứng) và cửa trước (lồng ngang). Với máy cửa trước, bạn nên ưu tiên chế độ vệ sinh lồng của hãng máy nếu có, và làm theo hướng dẫn của&nbsp;hãng.</div>
         </details>
         <details class="cos-faq-item">
-          <summary class="cos-faq-q">Một chai 500ml dùng được mấy lần?</summary>
-          <div class="cos-faq-a">Liều dùng trên nhãn là ½ – 1 chai (250ml – 500ml) mỗi lần, nên 1 chai dùng được khoảng 1 – 2 lần tùy dung tích lồng và mức độ bám bẩn. Thông thường nên vệ sinh lồng khoảng 1 – 2 tháng/lần; mua combo 2 – 3 chai sẽ tiết kiệm hơn và đủ dùng cho nhiều lần.</div>
+          <summary class="cos-faq-q">Một chai 500ml dùng được mấy&nbsp;lần?</summary>
+          <div class="cos-faq-a">Liều dùng trên nhãn là ½ – 1 chai (250ml – 500ml) mỗi lần, nên 1 chai dùng được khoảng 1 – 2 lần tùy dung tích lồng và mức độ bám bẩn. Thông thường nên vệ sinh lồng khoảng 1 – 2 tháng/lần; mua combo 2 – 3 chai sẽ tiết kiệm hơn và đủ dùng cho nhiều&nbsp;lần.</div>
         </details>
         <details class="cos-faq-item">
-          <summary class="cos-faq-q">Có làm hỏng máy giặt không?</summary>
-          <div class="cos-faq-a">Nhà sản xuất công bố sản phẩm không ăn mòn, bảo vệ lồng máy. Để an toàn, bạn hãy dùng đúng liều lượng, đúng hướng dẫn trên nhãn và không trộn với hóa chất khác.</div>
+          <summary class="cos-faq-q">Có làm hỏng máy giặt&nbsp;không?</summary>
+          <div class="cos-faq-a">Nhà sản xuất công bố sản phẩm không ăn mòn, bảo vệ lồng máy. Để an toàn, bạn hãy dùng đúng liều lượng, đúng hướng dẫn trên nhãn và không trộn với hóa chất&nbsp;khác.</div>
         </details>
         <details class="cos-faq-item">
-          <summary class="cos-faq-q">Có cần cho quần áo vào khi tẩy lồng không?</summary>
-          <div class="cos-faq-a">Không. Bạn nên để lồng trống, đổ chất tẩy vào rồi chạy chương trình giặt như hướng dẫn.</div>
+          <summary class="cos-faq-q">Có cần cho quần áo vào khi tẩy lồng&nbsp;không?</summary>
+          <div class="cos-faq-a">Không. Bạn nên để lồng trống, đổ chất tẩy vào rồi chạy chương trình giặt như hướng&nbsp;dẫn.</div>
         </details>
         <details class="cos-faq-item">
-          <summary class="cos-faq-q">Sản phẩm có an toàn cho trẻ nhỏ không?</summary>
-          <div class="cos-faq-a">Đây là hóa phẩm tẩy rửa, cần để xa tầm tay trẻ em, tránh tiếp xúc với mắt và da, không uống. Nếu nuốt phải, uống nhiều nước và đến cơ sở y tế gần nhất.</div>
+          <summary class="cos-faq-q">Sản phẩm có an toàn cho trẻ nhỏ&nbsp;không?</summary>
+          <div class="cos-faq-a">Đây là hóa phẩm tẩy rửa, cần để xa tầm tay trẻ em, tránh tiếp xúc với mắt và da, không uống. Nếu nuốt phải, uống nhiều nước và đến cơ sở y tế gần&nbsp;nhất.</div>
         </details>
         <details class="cos-faq-item">
-          <summary class="cos-faq-q">Giao hàng thế nào? Thanh toán ra sao?</summary>
-          <div class="cos-faq-a">Đơn hàng được xác nhận qua điện thoại, giao toàn quốc, miễn phí vận chuyển cho cả 3 gói (1, 2, 3 chai). Bạn thanh toán khi nhận hàng (COD). Đổi trả trong 7 ngày nếu sản phẩm lỗi hoặc giao sai.</div>
+          <summary class="cos-faq-q">Giao hàng thế nào? Thanh toán ra&nbsp;sao?</summary>
+          <div class="cos-faq-a">Đơn hàng được xác nhận qua điện thoại, giao toàn quốc, miễn phí vận chuyển cho cả 3 gói (1, 2, 3 chai). Bạn thanh toán khi nhận hàng (COD). Đổi trả trong 7 ngày nếu sản phẩm lỗi hoặc giao&nbsp;sai.</div>
         </details>
       </div>
     </div>
 
     <!-- Closing CTA -->
     <div class="cos-cta-block" style="background: linear-gradient(180deg, var(--cos-soft-pink) 0%, var(--tt-bg) 100%);">
-      <div class="cos-cta-headline">🧺 Làm Sạch Lồng Máy Giặt Ngay Hôm Nay — <b>từ 199.000đ</b></div>
-      <div class="cos-cta-sub">1 chai 199k · 2 chai 299k · 3 chai 399k · Freeship · COD</div>
+      <div class="cos-cta-headline">🧺 Làm Sạch Lồng Máy Giặt Ngay Hôm Nay&nbsp;— <b>từ&nbsp;199.000đ</b></div>
+      <div class="cos-cta-sub">1 chai 199k · 2 chai 299k · 3 chai 399k · Freeship ·&nbsp;COD</div>
       <button class="cos-cta-btn" type="button" onclick="onBuyClick()">
         <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21 4.96 19.27 4H5.21l-.94-2H1z"/></svg>
-        Đặt Hàng Ngay
+        Đặt Hàng&nbsp;Ngay
       </button>
     </div>
 
     <!-- Brand Footer -->
     <div class="cos-brand-footer">
       <div class="cos-brand-name">GIUOWOW</div>
-      <div class="cos-brand-tag">Tẩy lồng máy giặt · Sạch sâu · Khử mùi · Diệt khuẩn</div>
+      <div class="cos-brand-tag">Tẩy lồng máy giặt · Sạch sâu · Khử mùi · Diệt&nbsp;khuẩn</div>
       <div class="cos-brand-text">
-        Sản phẩm sản xuất và phân phối bởi Công ty TNHH Global Lifecare Việt Nam (theo nhãn sản phẩm). Tư vấn miễn phí qua hotline 0868 468 832.
+        Sản phẩm sản xuất và phân phối bởi Công ty TNHH Global Lifecare Việt Nam (theo nhãn sản phẩm). Tư vấn miễn phí qua hotline 0868 468&nbsp;832.
       </div>
       <div class="cos-brand-certs">
         <span class="cos-brand-cert">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-          Sản xuất tại VN
+          Sản xuất tại&nbsp;VN
         </span>
         <span class="cos-brand-cert">
           <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-          Không ăn mòn
+          Không ăn&nbsp;mòn
         </span>
         <span class="cos-brand-cert">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-          Đổi trả 7 ngày
+          Đổi trả 7&nbsp;ngày
         </span>
       </div>
     </div>
@@ -2187,17 +2213,17 @@ a { color: inherit; text-decoration: none; }
     <!-- Legal Footer -->
     <div class="cos-legal-footer">
       <div class="cos-legal-distrib">
-        <div class="cos-legal-label">Phân phối bởi</div>
-        <div class="cos-legal-company">GiuoWow · Hotline 0868 468 832</div>
+        <div class="cos-legal-label">Phân phối&nbsp;bởi</div>
+        <div class="cos-legal-company">GiuoWow · Hotline 0868 468&nbsp;832</div>
       </div>
       <div class="cos-legal-links">
-        <a class="cos-legal-link" href="chinh-sach-doi-tra.html">Chính sách đổi trả</a>
+        <a class="cos-legal-link" href="chinh-sach-doi-tra.html">Chính sách đổi&nbsp;trả</a>
         <span class="cos-legal-sep">·</span>
         <a class="cos-legal-link" href="chinh-sach-bao-mat.html">Bảo mật</a>
         <span class="cos-legal-sep">·</span>
-        <a class="cos-legal-link" href="dieu-khoan.html">Điều khoản</a>
+        <a class="cos-legal-link" href="dieu-khoan.html">Điều&nbsp;khoản</a>
       </div>
-      <div class="cos-legal-copy">© 2026 GiuoWow · 643 Phạm Văn Đồng, Nam Từ Liêm, Hà Nội · Đọc kỹ hướng dẫn sử dụng trước khi dùng</div>
+      <div class="cos-legal-copy">© 2026 GiuoWow · 643 Phạm Văn Đồng, Nam Từ Liêm, Hà Nội · Đọc kỹ hướng dẫn sử dụng trước khi&nbsp;dùng</div>
     </div>
 
   </section>
@@ -2217,8 +2243,8 @@ a { color: inherit; text-decoration: none; }
     </a>
   </div>
   <div class="tts-cta-buy">
-    <button class="tts-btn-cart" type="button" onclick="onBuyClick()">Chọn gói</button>
-    <button class="tts-btn-buy" type="button" onclick="onBuyClick()">Mua ngay</button>
+    <button class="tts-btn-cart" type="button" onclick="onBuyClick()">Chọn&nbsp;gói</button>
+    <button class="tts-btn-buy" type="button" onclick="onBuyClick()">Mua&nbsp;ngay</button>
   </div>
 </div>
 
