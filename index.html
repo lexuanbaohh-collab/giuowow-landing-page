@@ -1705,6 +1705,38 @@ h1,h2,h3,
 .tts-feature-chips{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .tts-feat-chip{flex-direction:column;justify-content:center;text-align:center;gap:4px;padding:8px 6px;font-size:13px;line-height:1.25;white-space:normal;min-height:58px}
 .tts-feat-chip svg{width:16px;height:16px}
+/* ===== Nền đồng bộ: xanh dương nước nhạt cho mọi section có nền màu ===== */
+:root{--water:#EAF4FB;--water-line:#CFE4F4;--water-ink:#1F5C8F;
+  --cos-soft-pink:#EAF4FB;--cos-soft-peach:#EAF4FB;--cos-soft-mint:#EAF4FB;
+  --tt-grad-pastel:linear-gradient(180deg,#EAF4FB 0%,#DCEBF7 100%)}
+.cos-pain-strip,.cos-ingredient,.cos-ba,.cos-routine,.gw-multi{background:var(--water) !important}
+.cos-cta-block.gw-close{background:linear-gradient(180deg,var(--water) 0%,#FFFFFF 100%) !important}
+.cos-ing-item{border-color:var(--water-line) !important}
+.cos-ing-name .cos-ing-cert,.cos-ing-cert{background:#D9EBF8 !important;color:var(--water-ink) !important}
+.cos-img-wrap > img.cos-ben-banner,.cos-img-wrap > img.cos-ing-hero{background:var(--water) !important}
+.cos-pain-item{border-color:var(--water-line) !important}
+/* ===== Nền xanh nước đồng bộ cho cả khối từng là hồng/đỏ/xanh lá ===== */
+.cos-license{background:var(--water) !important;border-top:0 !important}
+.cos-lic-badge{background:var(--water-ink) !important;box-shadow:none !important}
+.cos-stats{background:linear-gradient(135deg,#2F86C4 0%,#1F5C8F 100%) !important}
+.cos-brand-footer{background:var(--water) !important}
+.cos-saf-callout,.cos-rt-pm-note,.cos-pain-cta{border-color:var(--water-line) !important}
+.cos-saf-callout{background:linear-gradient(90deg,#EAF4FB 0%,#FFFFFF 100%) !important}
+.cos-lic-feat{border-color:var(--water-line) !important;box-shadow:0 1px 4px rgba(31,92,143,.08) !important}
+.cos-ing-circle,.cos-pain-num{box-shadow:0 2px 6px rgba(209,10,17,.2)}
+
+/* ===== Chú thích căn giữa: dòng trên dài hơn dòng dưới (không cân bằng 2 dòng) ===== */
+.cos-pain-sub,.cos-ing-sub,.cos-saf-sub,.cos-lic-sub,.cos-ben-sub,.cos-ba-sub,.cos-tex-sub,.cos-rt-sub,
+.cos-cta-sub,.cos-ba-note,.cos-rt-pm-note,.cos-brand-text,.cos-brand-tag,.gw-note,.cos-saf-callout-text,
+.cos-lic-sub,.cos-ben-desc,.cos-saf-desc,.cos-stat-label,.cos-lic-feat-text,.cos-ba-stat-label{text-wrap:wrap !important}
+/* Nhãn công nghệ: một dòng, dấu tích và chữ thành một cụm căn giữa */
+.cos-lic-badge{display:flex !important;width:fit-content;max-width:100%;margin:0 auto 16px !important;align-items:center;justify-content:center;gap:7px;padding:8px 16px !important;white-space:nowrap;letter-spacing:.2px !important;font-size:min(12px,3.05vw) !important;line-height:1}
+.cos-lic-badge svg{width:15px !important;height:15px !important;flex:0 0 15px;margin:0 !important;display:block}
+.cos-lic-badge span{display:block;text-align:center}
+/* Khoảng cách đều giữa các khối cùng nền: 32px (thay vì 48px) */
+.cos-pain-strip + .cos-ingredient{padding-top:8px !important}
+.gw-multi + .cos-ba{padding-top:8px !important}
+@media (max-width:380px){.cos-pain-cta{font-size:13.5px !important;letter-spacing:0}}
 </style>
 </head>
 <body>
@@ -1904,7 +1936,7 @@ h1,h2,h3,
           <span class="cos-pain-text"><b>Gọi thợ vệ sinh tốn&nbsp;kém</b> — mất thời gian chờ đợi, hẹn lịch, lại phát sinh chi&nbsp;phí.</span>
         </div>
       </div>
-      <div class="cos-pain-cta">↓ GiuoWow giải quyết cả 5 vấn đề&nbsp;↓<br>Đổ vào, chạy máy, không cần tháo&nbsp;máy</div>
+      <div class="cos-pain-cta">↓ Đổ vào, chạy máy, không cần tháo&nbsp;máy ↓</div>
     </div>
 
     <!-- Ingredient Spotlight: công dụng -->
@@ -1941,7 +1973,7 @@ h1,h2,h3,
           </div>
         </div>
       </div>
-      <p style="font-size:12.5px;color:var(--tt-text-muted);margin-top:12px;line-height:1.5;text-align:center">* Theo công bố và kết quả kiểm nghiệm của nhà sản xuất. Hiệu quả thực tế có thể khác nhau tùy tình trạng máy giặt và mức độ bám&nbsp;bẩn.</p>
+      <p class="gw-note" style="margin-top:12px">* Theo công bố và kết quả kiểm nghiệm của nhà sản xuất. Hiệu quả thực tế có thể khác nhau tùy tình trạng máy giặt và mức độ bám&nbsp;bẩn.</p>
     </div>
 
     <!-- Safety -->
@@ -1962,9 +1994,7 @@ h1,h2,h3,
     <!-- Product info -->
     <div class="cos-license">
       <div class="cos-lic-badge">
-        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-        Công nghệ Nhật Bản · Sản xuất tại nhà máy ở Việt&nbsp;Nam
-      </div>
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Công nghệ Nhật Bản - Sản xuất tại Việt&nbsp;Nam</span></div>
       <h2 class="cos-lic-title">Thông Tin Rõ&nbsp;Ràng —&nbsp;<em>Trên&nbsp;Nhãn</em></h2>
       <p class="cos-lic-sub">Thành phần, hướng dẫn sử dụng và cảnh báo được in đầy đủ trên nhãn sản phẩm. Gọi 0776 210 408 để được tư vấn cách dùng cho từng loại máy&nbsp;giặt.</p>
 
@@ -2091,7 +2121,7 @@ h1,h2,h3,
     <!-- Vì sao nên mua 2-3 chai -->
     <div class="cos-texture">
       <h2 class="cos-tex-title">Vì Sao Nên Mua 2–3 Chai Một&nbsp;Lần?</h2>
-      <p class="cos-tex-sub">Mua 1 chai: 199.000đ — dùng được 1–2&nbsp;lần.<br>Mua 2 chai chỉ 299.000đ, mua 3 chai chỉ 399.000đ&nbsp;— <b>FREESHIP</b> cả 3&nbsp;gói.</p>
+      <p class="cos-tex-sub">Mua&nbsp;1&nbsp;chai: 199.000đ — dùng được 1–2&nbsp;lần. Mua&nbsp;2&nbsp;chai chỉ 299.000đ, mua&nbsp;3&nbsp;chai chỉ 399.000đ&nbsp;— <b>FREESHIP</b>.</p>
       <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
         <img class="cos-tex-img" src="assets/gw-10-gia-combo.webp" width="1254" height="1254" alt="Bảng giá GiuoWow: 1 chai 199.000đ, 2 chai 299.000đ, 3 chai 399.000đ, freeship cả 3 gói" loading="lazy">
       </div>
@@ -2118,7 +2148,7 @@ h1,h2,h3,
     <!-- Cách dùng -->
     <div class="cos-routine">
       <h2 class="cos-rt-title">Cách Dùng — Chỉ 5 Bước Đơn&nbsp;Giản</h2>
-      <p class="cos-rt-sub">Làm theo hướng dẫn in trên nhãn sản&nbsp;phẩm.<br>Nên vệ sinh lồng khoảng 1 - 2&nbsp;tháng/lần.</p>
+      <p class="cos-rt-sub">Làm theo hướng dẫn in trên nhãn sản&nbsp;phẩm. Nên vệ sinh lồng khoảng 1 - 2&nbsp;tháng/lần.</p>
       <div class="cos-img-wrap gw-photo" style="aspect-ratio:1/1">
         <img class="cos-rt-img" src="assets/gw-11-cach-dung-5-buoc.webp" width="1254" height="1254" alt="Cách dùng 5 bước đơn giản: để lồng giặt trống, đổ ½–1 chai, chọn chế độ giặt, chạy hết chương trình, mở cửa để khô" loading="lazy">
       </div>
@@ -2400,6 +2430,67 @@ function getUTMParams(){
     document.addEventListener('DOMContentLoaded', function () { TikTokTabNav.init(); });
   } else { TikTokTabNav.init(); }
 })(window);
+
+
+/* ============================================================
+ * Chú thích căn giữa: dòng trên dài hơn dòng dưới
+ * (thu hẹp dần khung chữ cho tới khi dòng cuối ngắn hơn dòng đầu)
+ * ============================================================ */
+(function () {
+  var SEL = '.cos-pain-sub,.cos-ing-sub,.cos-saf-sub,.cos-lic-sub,.cos-ben-sub,.cos-ba-sub,.cos-tex-sub,.cos-rt-sub,.cos-cta-sub,.cos-ba-note,.cos-rt-pm-note,.cos-brand-text,.cos-pain-cta,.gw-note,.cos-saf-callout-text';
+  function lineWidths(el) {
+    var lines = {}, tw = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), n;
+    while ((n = tw.nextNode())) {
+      if (!n.textContent.trim()) continue;
+      var rg = document.createRange(); rg.selectNodeContents(n);
+      var rs = rg.getClientRects();
+      for (var i = 0; i < rs.length; i++) {
+        if (rs[i].width < 2) continue;
+        var k = Math.round(rs[i].top / 4), L = lines[k] || (lines[k] = { l: 1e9, r: -1e9 });
+        L.l = Math.min(L.l, rs[i].left); L.r = Math.max(L.r, rs[i].right);
+      }
+    }
+    return Object.keys(lines).map(Number).sort(function (a, b) { return a - b; })
+      .map(function (k) { return lines[k].r - lines[k].l; });
+  }
+  function reset(el) { el.style.maxWidth = ''; el.style.width = ''; el.style.marginLeft = ''; el.style.marginRight = ''; }
+  function setW(el, w, full) {
+    if (w <= full) { el.style.width = ''; el.style.maxWidth = w + 'px'; el.style.marginLeft = 'auto'; el.style.marginRight = 'auto'; }
+    else { var x = -(w - full) / 2; el.style.maxWidth = 'none'; el.style.width = w + 'px'; el.style.marginLeft = x + 'px'; el.style.marginRight = x + 'px'; }
+  }
+  function fit(el) {
+    reset(el);
+    if (getComputedStyle(el).textAlign !== 'center' || !el.offsetWidth) return;
+    var base = lineWidths(el);
+    if (base.length < 2) return;
+    function score(w) {            // dòng đầu dài nhất, dòng cuối ngắn rõ rệt
+      var first = w[0], last = w[w.length - 1], mx = Math.max.apply(null, w);
+      if (first < mx * 0.995) return null;
+      var r = last / first;
+      return (r >= 0.25 && r <= 0.92) ? r : null;
+    }
+    if (score(base) !== null) return;
+    var full = el.getBoundingClientRect().width;
+    var par = el.parentElement.getBoundingClientRect().width;
+    var maxW = Math.min(par - 10, full + 24);
+    var best = null, bestW = null;
+    for (var w = Math.round(maxW); w >= full * 0.58; w -= 4) {
+      setW(el, w, full);
+      var ls = lineWidths(el);
+      if (ls.length < 2 || ls.length > base.length) continue;
+      var sc = score(ls);
+      if (sc !== null && (best === null || sc < best - 0.02)) { best = sc; bestW = w; }
+    }
+    if (best === null) { reset(el); return; }
+    setW(el, bestW, full);
+  }
+  function run() { Array.prototype.forEach.call(document.querySelectorAll(SEL), fit); }
+  var t; function later() { clearTimeout(t); t = setTimeout(run, 120); }
+  if (document.readyState === 'complete') run(); else window.addEventListener('load', run);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(run);
+  window.addEventListener('resize', later);
+  window.addEventListener('orientationchange', later);
+})();
 
 /* ============================================================
  * Hero Gallery
